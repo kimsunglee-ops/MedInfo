@@ -1,312 +1,1018 @@
-# Weekly Syllabus — Medical Informatics
-
-Status: **DRAFT v0.1 — pending module lead approval**
-Last updated: 2026-11-12
-Governed by: `Module_Architecture.md`, `Approved_MLOs.md`
-
-Singapore items marked **[VERIFY]** must be checked against official sources (MOH, Synapxe, HealthHub, Singapore Statutes Online) before content is written. All patient cases and datasets are **synthetic**.
-
-## 1. Overview
-
-| Wk | Topic | Central Question | Big Idea | Bloom peak | MLOs (primary) | Assessment |
-|---|---|---|---|---|---|---|
-| 1 | Healthcare problems & information | Why can a correct lab result still fail the patient? | Healthcare runs on information; its value depends on reaching the right person, at the right time, in a usable form. | Explain | 1 | Quiz |
-| 2 | Health data & data quality | When can we trust a health record? | Data quality is fitness-for-purpose, and it is largely decided at the point of capture. | Interpret | 2 | Quiz, Portfolio 1 |
-| 3 | Information systems & interoperability | Why can't a hospital system simply "send" a result to a polyclinic? | Systems must share meaning, not just data — standards make information portable. | Apply | 2, 3 | Quiz |
-| 4 | Electronic health records | Does an electronic record make care safer? | EHRs are socio-technical systems: safety depends on design, workflow and use, not digitisation alone. | Analyse | 3 | Quiz, Portfolio 2 |
-| 5 | Clinical & laboratory informatics | How does a specimen become a trusted, actionable result? | Laboratory informatics controls error across the total testing process. | Analyse | 2, 3 | Quiz, CA1 released |
-| 6 | Health data analytics | What can routine data reveal that a single result cannot? | Aggregated data reveal patterns, but patterns are not explanations. | Analyse | 4 | Quiz, Portfolio 3 |
-| 7 | AI in healthcare | Should we trust an algorithm that "outperforms" a specialist? | AI performance is only meaningful relative to its data, validation and context of use. | Evaluate | 4 | Quiz, **CA1 due** |
-| 8 | Clinical decision support & digital health | When does a digital alert help — and when does it harm? | Decision support works only when it fits human workflow and judgement. | Evaluate | 3, 4 | Quiz, CA3 released |
-| 9 | Data governance, ethics & privacy | Who should be allowed to use your health data, and for what? | Trust is the infrastructure of digital health; governance makes data use legitimate. | Evaluate | 5 | Quiz, Portfolio 4 |
-| 10 | Precision & population health | How do lab, genomic and clinical data combine to personalise care and protect populations? | Integration multiplies value — and multiplies quality, equity and governance risks. | Evaluate | 4, 5 | Quiz |
-| 11 | Evaluating digital health solutions | How do we know a digital health solution actually works? | Adoption must follow evidence across clinical, usability, economic and ethical dimensions. | Justify | 6 | **CA3 report due** |
-| 12 | Future directions & professional practice | What must a biomedical scientist do differently in a data-driven health system? | Informatics competence is now part of biomedical professional competence. | Design / Justify | 6 | **CA3 pitch** |
-
-Cognitive progression: Explain (1) → Interpret (2) → Apply (3) → Analyse (4–6) → Evaluate (7–10) → Justify/Design (11–12). ✔ No regression.
-
+# Medical Informatics
+## Structured 10-Week Syllabus
+ 
+**Programme:** Diploma in Biomedical Science (BMS)
+**Institution:** Ngee Ann Polytechnic, School of Life Sciences & Chemical Technology
+**Target students:** Year 3 BMS students
+**Proposed duration:** 10 weeks
+**Proposed weekly learning hours:** 2 hours online asynchronous learning (OAL) + 2 hours practical/applied learning
+**Document status:** Working draft — not yet approved
+**Version:** 0.2.4 (12 November 2026)
+ 
 ---
-
-## 2. Weekly constructive alignment matrices
-
-### Week 1 — Healthcare problems and information
-
-| Component | Design |
-|---|---|
-| Central Question | Why can a correct lab result still fail the patient? |
-| Big Idea | Healthcare runs on information; its value depends on reaching the right person, at the right time, in a usable form. |
-| LO1 | Explain the difference between data, information and knowledge using a laboratory example. (MLO1) |
-| LO2 | Map the information flow of a patient episode from test request to clinical action. (MLO1) |
-| LO3 | Identify points where information failure can cause patient harm. (MLO1, MLO5) |
-| Anchor | DIKW model; case of a critical potassium result that reached no one in time (hypothetical). |
-| Augment | Students ask GenAI to list causes of "missed results", then compare against the mapped workflow. |
-| Advance | Groups propose one information-flow fix and justify its impact on patient safety. |
-| OAL | Microlecture (DIKW); annotated patient-journey diagram; case card; 5-item retrieval check; reflection prompt. |
-| Practical | Swim-lane mapping of a synthetic polyclinic → lab → clinician episode; mark failure points; prioritise one fix. |
-| Formative assessment | Quiz: classify items as data/information/knowledge; identify the failure point in a short scenario. |
-| Evidence of learning | Annotated information-flow map with ≥3 failure points and a justified fix. |
-| Singapore context | Overview of healthcare ecosystem: MOH, public healthcare clusters, polyclinics, Synapxe as national HealthTech agency **[VERIFY]**. |
-| Biomedical context | The biomedical scientist as information producer: results only matter if acted on. |
-| PAIR opportunity | P: why results go missing · A: GenAI to brainstorm causes · I: ask it to rank by likelihood and justify · R: check each cause against the map; flag unsupported claims. |
-| Builds on / Prepares for | Laboratory Techniques, Research Methodology / W2 data quality. |
-
-### Week 2 — Health data and data quality
-
-| Component | Design |
-|---|---|
-| Central Question | When can we trust a health record? |
-| Big Idea | Data quality is fitness-for-purpose, and it is largely decided at the point of capture. |
-| LO1 | Describe dimensions of data quality (accuracy, completeness, timeliness, consistency, validity). (MLO2) |
-| LO2 | Interpret a synthetic laboratory dataset to detect data-quality problems. (MLO2) |
-| LO3 | Explain how a data-quality issue could affect a clinical or public-health decision. (MLO1, MLO2) |
-| Anchor | Quality dimensions; structured vs unstructured data; units and reference ranges. |
-| Augment | Spreadsheet filters/conditional formatting to surface errors; GenAI to suggest validation rules. |
-| Advance | Decide whether the dataset is fit for (a) individual care and (b) surveillance; justify difference. |
-| OAL | Microlecture; worked example (unit mismatch mmol/L vs mg/dL); interactive "spot the error"; short reading; check. |
-| Practical | Data-quality audit of a synthetic HbA1c/creatinine dataset; produce issue log and fitness verdict. |
-| Formative assessment | Match errors to quality dimensions; misconception item ("more data = better data"). |
-| Evidence of learning | Issue log + fitness-for-purpose judgement (**Portfolio 1**). |
-| Singapore context | Data sharing via NEHR depends on upstream quality **[VERIFY current NEHR scope]**. |
-| Biomedical context | Pre-analytical errors, mislabelled specimens, units, reference intervals. |
-| PAIR opportunity | P: detect invalid records · A: GenAI proposes validation rules · I: students test rules on data, refine false positives · R: report which AI rules failed and why. |
-| Builds on / Prepares for | W1 information flow / W3 standards; W5 LIS. |
-
-### Week 3 — Healthcare information systems and interoperability
-
-| Component | Design |
-|---|---|
-| Central Question | Why can't a hospital system simply "send" a result to a polyclinic? |
-| Big Idea | Systems must share meaning, not just data — standards make information portable. |
-| LO1 | Describe the main types of healthcare information systems and their roles. (MLO3) |
-| LO2 | Explain syntactic vs semantic interoperability using HL7 FHIR, LOINC, SNOMED CT and ICD as examples. (MLO2) |
-| LO3 | Apply a terminology standard to code a set of laboratory tests and diagnoses. (MLO2, MLO3) |
-| Anchor | System landscape (EHR, LIS, RIS/PACS, pharmacy, patient portal); levels of interoperability. |
-| Augment | Use public terminology browsers (e.g. LOINC/SNOMED CT browsers) to find codes. |
-| Advance | Diagnose why two "identical" glucose results cannot be merged; recommend a standards-based fix. |
-| OAL | System map; microlecture on interoperability; worked FHIR resource (read-only, no coding); coding exercise; check. |
-| Practical | Map local test names from two synthetic labs to LOINC; identify mismatches and clinical risk. |
-| Formative assessment | Classify standards by purpose; scenario: identify interoperability level that failed. |
-| Evidence of learning | Completed mapping table with justified resolution of ≥2 conflicts. |
-| Singapore context | National data-exchange and standards adoption **[VERIFY: current Synapxe/MOH standards guidance]**. |
-| Biomedical context | Same analyte, different methods/units/specimens — why coding must capture this. |
-| PAIR opportunity | P: map test names to codes · A: GenAI suggests LOINC codes · I: students verify every code in official browser · R: record AI error rate; explain why hallucinated codes are dangerous. |
-| Builds on / Prepares for | W2 data quality / W4 EHR; W5 LIS. |
-
-### Week 4 — Electronic health records
-
-| Component | Design |
-|---|---|
-| Central Question | Does an electronic record make care safer? |
-| Big Idea | EHRs are socio-technical systems: safety depends on design, workflow and use, not digitisation alone. |
-| LO1 | Describe the core functions and structure of an EHR. (MLO3) |
-| LO2 | Analyse how EHR design and workflow can introduce or prevent errors. (MLO3) |
-| LO3 | Explain how national record sharing supports continuity of care, and its limits. (MLO1, MLO5) |
-| Anchor | EHR components; EMR vs EHR vs PHR; socio-technical model. |
-| Augment | Navigate a sandbox/synthetic EHR (or provided screenshots) to complete clinical tasks. |
-| Advance | Root-cause analysis of a hypothetical EHR-related incident; recommend design/workflow changes. |
-| OAL | Microlecture; annotated EHR screen walkthrough; case (copy-paste error, wrong-patient order); check. |
-| Practical | Sandbox EHR task + incident analysis using a socio-technical framework. |
-| Formative assessment | Identify error type in screenshots; misconception: "digital = accurate". |
-| Evidence of learning | Incident analysis with ≥2 contributing factors and justified recommendations (**Portfolio 2**). |
-| Singapore context | NEHR; HealthHub as patient-facing access **[VERIFY features and access rules]**. |
-| Biomedical context | How lab results appear (and get missed) in the clinician's view. |
-| PAIR opportunity | P: root-cause an incident · A: GenAI drafts a fishbone · I: students challenge each cause with case evidence · R: identify AI-assumed facts not in the case. |
-| Builds on / Prepares for | W3 systems / W5 LIS; W8 CDS. |
-
-### Week 5 — Clinical and laboratory informatics
-
-| Component | Design |
-|---|---|
-| Central Question | How does a specimen become a trusted, actionable result? |
-| Big Idea | Laboratory informatics controls error across the total testing process. |
-| LO1 | Describe LIS functions across pre-analytical, analytical and post-analytical phases. (MLO3) |
-| LO2 | Analyse how LIS features (barcoding, autoverification, delta checks, critical-value alerts) reduce error. (MLO2, MLO3) |
-| LO3 | Evaluate whether a set of results should be autoverified, held or escalated. (MLO2) |
-| Anchor | Total testing process; LIS–analyser–EHR integration; QC data. |
-| Augment | Apply delta-check and critical-value rules to a synthetic result batch in a spreadsheet. |
-| Advance | Design/critique autoverification rules for a test; justify thresholds and risks. |
-| OAL | Process-flow diagram; microlecture; worked delta-check example; interactive decision items; check. |
-| Practical | "Validation bench": triage 30 synthetic results — release, hold, repeat or call — with justification. |
-| Formative assessment | Phase-of-error classification; calculate a delta and decide action. |
-| Evidence of learning | Triage log with rule-based justifications. CA1 brief released. |
-| Singapore context | Laboratory accreditation and LIS in public/private labs **[VERIFY: relevant accreditation body and requirements]**. |
-| Biomedical context | Core professional domain — direct link to clinical chemistry, haematology, microbiology practice. |
-| PAIR opportunity | P: set autoverification limits · A: GenAI proposes thresholds · I: students test against synthetic batch, inspect misclassifications · R: justify final thresholds independently of AI. |
-| Builds on / Prepares for | W2–4 / W6 analytics; W8 alerts. |
-
-### Week 6 — Health data analytics
-
-| Component | Design |
-|---|---|
-| Central Question | What can routine data reveal that a single result cannot? |
-| Big Idea | Aggregated data reveal patterns, but patterns are not explanations. |
-| LO1 | Explain descriptive, diagnostic, predictive and prescriptive analytics with healthcare examples. (MLO4) |
-| LO2 | Interpret summary statistics, trends and dashboards from routine health data. (MLO4) |
-| LO3 | Analyse limitations (confounding, bias, missing data) in an analytic conclusion. (MLO2, MLO4) |
-| Anchor | Analytics types; surveillance concepts; correlation vs causation. |
-| Augment | Pivot tables/charts in a spreadsheet; read a provided dashboard. |
-| Advance | Judge whether a dashboard "trend" justifies a public-health action. |
-| OAL | Microlecture; worked pivot-table example; dashboard interpretation task; misconception item; check. |
-| Practical | Synthetic regional lab-surveillance dataset (e.g. dengue NS1 positives): describe trend, test a claim, write a briefing. |
-| Formative assessment | Interpret a chart; spot a misleading visualisation. |
-| Evidence of learning | One-page analytic briefing with stated limitations (**Portfolio 3**). |
-| Singapore context | Public-health surveillance (e.g. dengue) **[VERIFY: use only publicly published data/descriptions]**. |
-| Biomedical context | Lab data as the backbone of disease surveillance. |
-| PAIR opportunity | P: interpret a trend · A: GenAI writes a draft interpretation · I: students check every numeric claim against the data · R: annotate overclaims and causal language. |
-| Builds on / Prepares for | Basic Statistics, W2 quality / W7 AI. |
-
-### Week 7 — Artificial intelligence in healthcare
-
-| Component | Design |
-|---|---|
-| Central Question | Should we trust an algorithm that "outperforms" a specialist? |
-| Big Idea | AI performance is only meaningful relative to its data, validation and context of use. |
-| LO1 | Explain at a conceptual level how supervised machine learning learns from labelled data. (MLO4) |
-| LO2 | Interpret AI performance metrics (sensitivity, specificity, PPV/NPV, AUC) from a confusion matrix. (MLO4) |
-| LO3 | Evaluate an AI study claim for bias, generalisability and clinical usefulness. (MLO4, MLO5) |
-| Anchor | ML concepts without code; training/validation/test; prevalence effect on PPV. |
-| Augment | No-code classifier demo or provided model outputs; compute metrics in spreadsheet. |
-| Advance | Critique a (simplified) published AI diagnostic study; recommend adopt/pilot/reject. |
-| OAL | Microlecture; animated confusion matrix; worked PPV-at-different-prevalence example; case; check. |
-| Practical | Digital pathology / blood-film AI case with synthetic outputs: calculate metrics, test subgroup performance, decide. |
-| Formative assessment | Calculate metrics; misconception: "95% accuracy = 95% chance the positive is correct". |
-| Evidence of learning | Metric calculations + structured critique. **CA1 due.** |
-| Singapore context | National AI-in-healthcare guidance **[VERIFY: current MOH/HSA/IMDA AI guidelines]**. |
-| Biomedical context | AI in digital pathology, haematology, microbiology imaging. |
-| PAIR opportunity | P: is the model fit for our population? · A: GenAI summarises the study · I: students interrogate it for sample, validation, subgroups · R: compare AI summary against the paper; list omissions. |
-| Builds on / Prepares for | W6 analytics, Basic Statistics / W8 CDS; W9 ethics. |
-
-### Week 8 — Clinical decision support and digital health
-
-| Component | Design |
-|---|---|
-| Central Question | When does a digital alert help — and when does it harm? |
-| Big Idea | Decision support works only when it fits human workflow and judgement. |
-| LO1 | Describe types of clinical decision support and consumer digital health tools. (MLO3) |
-| LO2 | Analyse how alert design and alert fatigue affect clinical decisions. (MLO3) |
-| LO3 | Evaluate a CDS rule or digital health tool against workflow, safety and usability criteria. (MLO4, MLO6) |
-| Anchor | Rule-based vs AI-based CDS; "five rights" of CDS; telehealth, remote monitoring, patient apps. |
-| Augment | Simulate a rule set (spreadsheet) on synthetic patients; count true/false alerts. |
-| Advance | Redesign an alert to reduce fatigue while preserving safety; justify trade-offs. |
-| OAL | Microlecture; alert-burden simulation; case (critical value alert ignored); check. |
-| Practical | CDS rule redesign workshop: AKI/creatinine or drug–lab interaction alert. |
-| Formative assessment | Classify CDS types; trade-off scenario question. |
-| Evidence of learning | Redesigned rule with alert counts before/after and justification. CA3 brief released. |
-| Singapore context | Patient-facing digital tools and telehealth **[VERIFY: HealthHub features; telehealth regulation]**. |
-| Biomedical context | Lab-driven alerts (critical values, AKI, antimicrobial stewardship). |
-| PAIR opportunity | P: reduce alert fatigue · A: GenAI proposes alternative rules · I: students run each on the synthetic set · R: choose and defend a rule on evidence, not AI preference. |
-| Builds on / Prepares for | W4–7 / W11 evaluation. |
-
-### Week 9 — Data governance, ethics and privacy
-
-| Component | Design |
-|---|---|
-| Central Question | Who should be allowed to use your health data, and for what? |
-| Big Idea | Trust is the infrastructure of digital health; governance makes data use legitimate. |
-| LO1 | Explain key principles of data protection, consent and secondary use relevant to health data in Singapore. (MLO5) |
-| LO2 | Analyse privacy and security risks in a health-data scenario, including re-identification. (MLO5) |
-| LO3 | Evaluate a proposed secondary use of health data using an ethical and governance framework. (MLO5, MLO6) |
-| Anchor | PDPA principles; consent; de-identification vs anonymisation; cybersecurity basics. |
-| Augment | Re-identification exercise on a synthetic "de-identified" dataset. |
-| Advance | Ethics committee role-play: approve, modify or reject a research data request. |
-| OAL | Microlecture; case study of a major healthcare data breach **[VERIFY facts from official public inquiry report]**; reading; check. |
-| Practical | Data-request review panel with stakeholder roles; written decision. |
-| Formative assessment | Scenario items on consent and permitted use; misconception: "removing names = anonymous". |
-| Evidence of learning | Governance decision memo (**Portfolio 4**). |
-| Singapore context | PDPA; Health Information Bill; HBRA for research **[VERIFY: current legislative status and provisions]**. |
-| Biomedical context | Biobanking, residual specimens, research use of lab data. |
-| PAIR opportunity | P: assess a data request · A: GenAI summarises applicable rules · I: students verify each legal claim on Singapore Statutes Online · R: document AI legal inaccuracies; explain why legal claims need primary sources. |
-| Builds on / Prepares for | W2, W4, W7 / W10 integration; W11 evaluation. |
-
-### Week 10 — Integrated applications: precision and population health
-
-| Component | Design |
-|---|---|
-| Central Question | How do lab, genomic and clinical data combine to personalise care and protect populations? |
-| Big Idea | Integration multiplies value — and multiplies quality, equity and governance risks. |
-| LO1 | Explain how integrated data support precision medicine and population health management. (MLO1, MLO4) |
-| LO2 | Interpret a pharmacogenomic or risk-stratification output for a synthetic patient. (MLO4) |
-| LO3 | Evaluate equity, consent and data-quality risks of integrated data initiatives. (MLO5) |
-| Anchor | Precision medicine pipeline; pharmacogenomics; risk stratification; population health. |
-| Augment | Use public resources (e.g. ClinPGx/PharmGKB, CPIC guidelines) to interpret a genotype. |
-| Advance | Advise on a synthetic patient's therapy using genotype + lab + clinical data; flag uncertainty. |
-| OAL | Data-integration diagram; worked pharmacogenomic example; case; check. |
-| Practical | Integrated case: synthetic patient record + genotype → recommendation; then population view of the same cohort. |
-| Formative assessment | Interpret a genotype–phenotype table; equity scenario. |
-| Evidence of learning | Patient-level recommendation + population-level risk note with limitations. |
-| Singapore context | National precision medicine and population health initiatives **[VERIFY: current programme names, status and scope]**. |
-| Biomedical context | Molecular biology, genetics and bioinformatics applied to care. |
-| PAIR opportunity | P: interpret a genotype for prescribing · A: GenAI explains the gene–drug pair · I: students cross-check against CPIC/ClinPGx · R: identify outdated or overconfident AI statements. |
-| Builds on / Prepares for | Molecular Biology, Basic Bioinformatics, W6–9 / W11. |
-
-### Week 11 — Evaluating digital health solutions
-
-| Component | Design |
-|---|---|
-| Central Question | How do we know a digital health solution actually works? |
-| Big Idea | Adoption must follow evidence across clinical, usability, economic and ethical dimensions. |
-| LO1 | Describe evaluation dimensions and frameworks for digital health technologies. (MLO6) |
-| LO2 | Evaluate a digital health solution against an evidence framework. (MLO6) |
-| LO3 | Justify an adoption recommendation for a specified healthcare setting. (MLO6) |
-| Anchor | Evaluation frameworks (e.g. NICE Evidence Standards Framework, WHO digital health evaluation guidance); outcomes vs outputs. |
-| Augment | GenAI-assisted evidence scan; students verify sources. |
-| Advance | Groups finalise CA3 evaluation and recommendation. |
-| OAL | Microlecture; framework walkthrough; worked evaluation of an example app; check. |
-| Practical | CA3 studio: peer review of draft evaluations against rubric. |
-| Formative assessment | Peer feedback using rubric; self-check on evidence quality. |
-| Evidence of learning | **CA3 report due.** |
-| Singapore context | Health technology assessment and procurement considerations **[VERIFY: ACE/MOH HTA role]**. |
-| Biomedical context | Evaluating lab-related tools (e.g. point-of-care testing connectivity, AI triage). |
-| PAIR opportunity | P: build an evidence base · A: GenAI finds candidate sources · I: students verify existence and claims of each source · R: declare AI use; list rejected sources and why. |
-| Builds on / Prepares for | All prior weeks / W12 pitch. |
-
-### Week 12 — Future directions and professional practice
-
-| Component | Design |
-|---|---|
-| Central Question | What must a biomedical scientist do differently in a data-driven health system? |
-| Big Idea | Informatics competence is now part of biomedical professional competence. |
-| LO1 | Justify a digital health recommendation to a stakeholder panel. (MLO6) |
-| LO2 | Evaluate emerging trends (GenAI, automation, wearables, federated data) for impact on biomedical roles. (MLO5, MLO6) |
-| LO3 | Design a personal informatics development plan linked to professional practice. (MLO6) |
-| Anchor | Trend scan; informatics roles in labs and health systems. |
-| Augment | GenAI used as simulated stakeholder to stress-test pitch arguments. |
-| Advance | CA3 pitch and defence; personal development plan. |
-| OAL | Short trend microlectures; career/role profiles; reflection. |
-| Practical | **CA3 pitch** + module synthesis (revisit Week 1 information map with new lens). |
-| Formative assessment | Final reflection against MLOs. |
-| Evidence of learning | Pitch performance; development plan. |
-| Singapore context | Healthcare workforce and digital transformation directions **[VERIFY: current national plans]**. |
-| Biomedical context | Future lab: automation, digital pathology, data roles. |
-| PAIR opportunity | P: anticipate stakeholder objections · A: GenAI role-plays stakeholder · I: students rebut and refine · R: reflect on which objections AI missed. |
-| Builds on / Prepares for | Whole module / Industry attachment and practice. |
-
----
-
-## 3. Coherence check
-
-| Check | Result |
-|---|---|
-| Prerequisites | Draws on Basic Statistics (W6–7), Molecular Biology/Bioinformatics (W10), Lab Techniques (W1, W5). No programming required. ✔ |
-| Repetition | Data quality revisited intentionally (W2, W3, W5, W6) with rising cognitive level. Watch W8/W11 evaluation overlap. ⚠ |
-| Conceptual progression | Information → data → systems → analytics/AI → decisions → responsibility → integration. ✔ |
-| Cognitive progression | Explain → Interpret → Apply → Analyse → Evaluate → Justify/Design. ✔ |
-| Practical progression | Mapping → auditing → coding → analysing → deciding → redesigning → recommending. ✔ |
-| Assessment progression | Portfolio (W2–9) → CA1 (W7) → CA3 (W11–12). ✔ |
-| GenAI progression | Brainstorm/verify → test AI-generated rules → critique AI claims → defend against AI stakeholder. ✔ |
-
-## 4. Risks and decisions required
-
-| # | Issue | Consequence | Proposal | Decision |
-|---|---|---|---|---|
-| 1 | Assessment structure is proposed, not sourced | Misalignment with approved syllabus | Confirm against official module document | Module lead |
-| 2 | W7 (AI) + CA1 due same week | Workload peak | Move CA1 due to W8 or reduce W7 practical scope | Module lead |
-| 3 | W5 and W10 content-heavy | OAL overload (>2 h) | Limit to 5 learning objects; cut breadth not depth | Developer |
-| 4 | Sandbox EHR availability (W4) | Practical may be screenshot-only | Confirm tool access by W2 | IT / module lead |
-| 5 | Many Singapore facts flagged [VERIFY] | Inaccuracy risk | Verify during storyboard stage, cite sources | Developer |
-
-## 5. Approval record
-
-| Version | Date | Change | Approved by |
+ 
+# 0. Change Log
+ 
+## 0.1 Version history
+ 
+| Version | Date | Change | Authority |
 |---|---|---|---|
-| 0.1 | 2026-11-12 | Initial 12-week draft | — |
+| 0.1 | — | Initial working draft | Curriculum owner |
+| 0.2 | 1 Nov 2026 | Revisions D1–D16 from the independent review applied | Curriculum owner instruction, 1 Nov 2026 |
+| 0.2.1 | 1 Nov 2026 | MLOs (§2) approved; §8 items 1 and 3 updated | Curriculum owner, 1 Nov 2026 |
+| 0.2.2 | 1 Nov 2026 | Summative structure Option A recorded; Week 10 hosts C3; §8 items 2 and 4 updated | Curriculum owner, 1 Nov 2026 |
+| 0.2.3 | 12 Nov 2026 | Weeks 7 and 9 case wording "after discharge" → "following the clinic review"; alignment matrix G3 (Week 6) and G4 (Week 9) applied; Week 10 setting decided (community INR POCT network); PAIR added to §6.4; blueprint reference `30_` → `03_Assessment_Blueprint_v0.1.md`. OAL key concepts for Weeks 6, 8 and 9 grouped into five (topics unchanged; see `05_Weekly_Learning_Architecture_W2-W10_v0.1.md`) | Curriculum owner, 12 Nov 2026 |
+| 0.2.4 | 12 Nov 2026 | Alignment matrix G2 applied (WLO 3.1 adds "lifecycle stage"); G5 applied (WLOs 9.1 and 9.2 merged; Week 9 now has three WLOs); Patient A case values approved and recorded in `06_Case_State_Register_v0.1.md`; §8 item 15 closed | Curriculum owner, 12 Nov 2026 |
+ 
+## 0.2 Changes applied in v0.2
+ 
+Topic titles and sequence are **unchanged**. All changes are content, mapping, practical-design or documentation changes.
+ 
+| Ref | Change | Sections affected |
+|---|---|---|
+| D1 | Health Information Bill updated to Health Information Act (passed 12 Jan 2026; intended effect early 2027). Pre-delivery verification step added. | Weeks 4, 8, 9; §7 |
+| D2 | AI split between MLOs: MLO3 = outputs; MLO4 = technologies. **Approved 1 Nov 2026.** | §2; Weeks 6, 7 |
+| D3 | Week 6 rescoped; predictive models no longer a standalone topic. | Week 6 |
+| D4 | Weeks 1 and 2 share one practical artefact. | Weeks 1, 2 |
+| D5 | Week 7 = technology fitness for purpose; Week 9 = organisational implementation. | Weeks 7, 9 |
+| D6 | One primary artefact per practical. | All weeks; §5 |
+| D7 | "Lens" statements added where concepts recur. | Weeks 1–5 |
+| D8 | Singapore context threaded through Weeks 1, 4, 8, 9. | Weeks 1, 4, 8, 9 |
+| D9 | GenAI use mapped by week (Anchor → Augment → Advance). | All weeks; §6.4 |
+| D10 | Four-way distinction: analytical QC, result validation, population analytics, clinical decision support. | Week 6; §6.5 |
+| D11 | Point-of-care and patient self-testing as the Week 7 anchor. | Week 7 |
+| D12 | One privacy decision embedded in each practical, Weeks 1–6. | Weeks 1–6 |
+| D13 | LIS downtime scenario added as a Week 2 option. | Week 2 |
+| D14 | Week 10 OAL defined; new setting; individual component. | Week 10 |
+| D15 | Case-state line added to each week. | All weeks; §3.0 |
+| D16 | Module glossary added. | §11 |
+ 
+Mapping changes: Week 6 MLO4 S → — and MLO5 — → S; Week 9 MLO2 P → S.
+ 
+---
+ 
+# 1. Module Overview
+ 
+## 1.1 Module Purpose
+ 
+Medical Informatics explores how healthcare data are generated, managed, exchanged, analysed and used to support healthcare delivery, laboratory operations and decision-making.
+ 
+For Biomedical Science students, the emphasis is on understanding and evaluating healthcare information systems and data workflows rather than developing software or acquiring advanced computing skills.
+ 
+Students examine how information moves from a healthcare encounter and laboratory test request through specimen processing, result validation, reporting and subsequent use. They also explore digital-health technologies, healthcare analytics, interoperability, artificial intelligence, information security and governance.
+ 
+The module uses biomedical laboratory scenarios, fictional patient records, healthcare information workflows and examples relevant to Singapore's healthcare environment.
+ 
+## 1.2 Central Learning Question
+ 
+**How does a test order become a reliable laboratory result, reach the right healthcare professional, and support an appropriate decision?**
+ 
+## 1.3 Conceptual Learning Journey
+ 
+**TEST ORDER → HEALTHCARE SYSTEMS → LABORATORY DATA → VALIDATION → INFORMATION EXCHANGE → INSIGHT AND DECISION → TRUST AND GOVERNANCE → IMPLEMENTATION AND IMPROVEMENT**
+ 
+The sequence is a teaching framework, not a strictly linear representation of every workflow. In practice, these processes interact and may involve feedback loops.
+ 
+## 1.4 Intended Graduate Capability
+ 
+By the end of the module, students should be able to examine a biomedical or healthcare information problem, identify the relevant data and information systems, evaluate data quality and analytical outputs, recognise privacy and safety risks, and propose a reasoned improvement to a healthcare information workflow.
+ 
+Students are not expected to become software developers, clinical diagnosticians or healthcare IT system administrators.
+ 
+---
+ 
+# 2. Module Learning Outcomes
+ 
+**Approved by curriculum owner, 1 November 2026** (v0.2 wording, including D2). Programme-outcome mapping remains open.
+ 
+| MLO | Module learning outcome | v0.2 status |
+|---|---|---|
+| **MLO1** | Explain and interpret healthcare data, including data types, lifecycle, quality, context and terminology, in biomedical and healthcare contexts. | Unchanged |
+| **MLO2** | Analyse how healthcare information systems and interoperability enable the generation, management and exchange of reliable laboratory and clinical information. | Unchanged |
+| **MLO3** | Apply appropriate analytical and visualisation approaches to healthcare data and evaluate analytical, decision-support and model-generated outputs for healthcare decision-making, including their limitations. | Approved (D2) |
+| **MLO4** | Evaluate digital-health technologies, including AI-enabled tools, for clinical and biomedical applications, considering validity, safety, usability, bias, regulatory status and fitness for purpose. | Approved (D2) |
+| **MLO5** | Analyse privacy, cybersecurity, ethical, legal and governance requirements associated with healthcare data and digital technologies, and propose appropriate risk controls. | Unchanged |
+| **MLO6** | Integrate medical informatics concepts to evaluate or design a BMS-relevant healthcare solution or workflow and communicate its rationale, benefits, risks and trade-offs. | Unchanged |
+ 
+**D2 rationale:** MLO3 assesses judgement about *outputs* (a chart, dashboard, alert or AI interpretation). MLO4 assesses judgement about *technologies* (a device, app or AI tool) as fit for a purpose. This removes the overlap in v0.1, where AI evaluation sat in both.
+ 
+**Alignment note:** MLOs describe end-of-module capabilities. Weekly learning outcomes (WLOs) specify capabilities developed in individual weeks. They are not interchangeable.
+ 
+**Note on compound MLOs:** MLO3, MLO4 and MLO5 each contain two actions. If NP rules permit compound outcomes, assess each component with a separate rubric criterion.
+ 
+---
+ 
+# 3. Structured Ten-Week Syllabus
+ 
+## 3.0 Longitudinal case (D15; values approved 12 Nov 2026 — see `06_Case_State_Register_v0.1.md`)
+ 
+A fictional, non-identifiable patient, **Patient A**, is followed through Weeks 1–9. All data are synthetic. Week 10 uses a **different** case and setting to test transfer.
+ 
+**Baseline (established Week 1):** Patient A is a fictional adult with type 2 diabetes attending a fictional hospital outpatient clinic. A doctor orders a renal panel (including potassium) and HbA1c. Patient A is **not admitted**; later events follow the clinic review (v0.2.3).
+ 
+Each week records a case-state line: what is established, what is new and what students must not assume. A separate case-state document should be maintained during weekly development. Students must never depend on details they were not given.
+ 
+**Each week also states:**
+- **Lens:** the specific angle taken on concepts that recur across weeks (D7).
+- **Privacy decision:** one privacy judgement embedded in the practical, Weeks 1–6 (D12).
+- **GenAI:** whether and how AI is used, following Anchor → Augment → Advance (D9).
+- **Primary artefact:** the single required practical output (D6).
+---
+ 
+## Week 1 — Introduction to Medical Informatics and the Healthcare Information Ecosystem
+ 
+### 1. Topics
+ 
+- What medical informatics is and why it matters in healthcare.
+- Healthcare data, information and knowledge.
+- **Singapore orientation map — who does what:** MOH, Synapxe, healthcare clusters and providers, NEHR, HealthHub. Distinctions only; depth is in Week 9. *(D8)*
+- Healthcare information flows across patients, healthcare professionals, laboratories and healthcare organisations.
+- The patient-to-laboratory-to-clinician information journey.
+- **Healthcare information systems named by role only** (e.g. "the system where the order is placed", "the system that manages laboratory work"). Functions are taught in Week 2; LIS vs LIMS in Week 4. *(D4, D7)*
+- Introduction to confidentiality, integrity, availability and responsible data use, including the rule that identifiable patient information is never entered into external AI tools. *(D9)*
+### 2. Weekly Learning Outcomes
+ 
+By the end of this week, students should be able to:
+ 
+1. Explain the role of medical informatics in supporting healthcare delivery and biomedical laboratory operations.
+2. Distinguish data, information and knowledge using biomedical or healthcare examples.
+3. Map the main stages through which a laboratory test request becomes a reported result.
+4. Identify key stakeholders, information hand-offs and potential information risks within a healthcare workflow. *(v0.2: "information systems" replaced with "information hand-offs"; systems layer moves to Week 2.)*
+### 3. Content Boundaries
+ 
+**Include:**
+- Foundational concepts and terminology.
+- A simplified, accurate orientation to Singapore's healthcare information ecosystem.
+- How laboratory information contributes to healthcare decisions.
+- Basic awareness of privacy, security and patient safety.
+**Exclude:**
+- System functions in detail (Week 2) and LIS/LIMS distinctions (Week 4).
+- Detailed system architecture or interface specifications.
+- In-depth analytics, detailed legal interpretation, clinical diagnosis or treatment.
+**Lens:** the journey as people, information and risk — not yet as systems.
+ 
+### 4. Practical or Applied Learning
+ 
+**Activity: Map the journey of a laboratory test (Part 1 of a two-week artefact)**
+ 
+Using the Patient A scenario, students map the journey from test ordering to result reporting, identifying:
+- The people involved and the information each creates or uses.
+- Hand-offs between stakeholders.
+- Points of potential error, delay or information loss.
+- Where confidentiality and data integrity matter.
+Students explain why a laboratory result is not reliable solely because an instrument has produced a numerical value.
+ 
+**Privacy decision:** students mark which stakeholders genuinely need to see the result and which do not.
+ 
+**GenAI:** none in the task. The AI confidentiality rule is introduced.
+ 
+**Primary artefact:** information-journey map (retained and extended in Week 2).
+ 
+### 5. Case state
+ 
+Established: Patient A; outpatient clinic; renal panel and HbA1c ordered. New: none. Do not assume: any system names or results.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO1, MLO2.
+- **Supporting:** MLO5, MLO6.
+### 7. Proposed Assessment Evidence
+ 
+- Primary: information-journey map.
+- OAL: short formative questions distinguishing data, information and knowledge.
+**Evidence purpose:** establish whether students understand the basic information journey and the main parts of the ecosystem.
+ 
+---
+ 
+## Week 2 — Healthcare Information Systems and Clinical Workflows
+ 
+### 1. Topics
+ 
+- Functions of healthcare information systems: EHRs, hospital information systems and laboratory information systems (functional level).
+- Laboratory information systems and their relationship with clinical systems.
+- Clinical workflows and information hand-offs.
+- Patient identification, test ordering, specimen registration and result reporting.
+- Role-based access and user interactions with information systems.
+- System integration and the consequences of incomplete or inconsistent information.
+- **System downtime and continuity procedures** — what happens when an information system is unavailable. *(D13)*
+- Commercial EHR environments as **generic, vendor-neutral illustrations**. Any vendor-specific statement requires verified documentation.
+### 2. Weekly Learning Outcomes
+ 
+1. Describe the roles of common healthcare information systems and distinguish their principal functions.
+2. Explain how information systems support different stages of a clinical and laboratory workflow.
+3. Analyse how incorrect, missing, delayed or unavailable information can affect laboratory operations and patient safety.
+4. Identify appropriate information-system controls for reducing common workflow errors.
+### 3. Content Boundaries
+ 
+**Include:**
+- Functional roles of EHRs, hospital information systems and LISs.
+- Typical clinical and laboratory workflows; user roles, permissions and hand-offs.
+- Generic electronic test ordering and result reporting.
+- Downtime as a workflow risk at a conceptual level.
+**Exclude:**
+- Software configuration, system administration and database design.
+- Vendor-specific implementation or claims not supported by documentation.
+- LIS vs LIMS distinctions and interfaces (Week 4).
+**Lens:** identifiers as a **workflow control** — where identity is entered and checked.
+ 
+### 4. Practical or Applied Learning
+ 
+**Activity: Add the systems layer and analyse a failure (Part 2 of the Week 1 artefact)** *(D4)*
+ 
+Students extend their Week 1 map by adding where information is entered, retrieved, transferred or checked by information systems for Patient A's order.
+ 
+Each group then analyses **one** failure scenario:
+- A mismatched patient identifier on the specimen label.
+- An incorrectly entered test request.
+- A result not visible to the intended recipient.
+- **The LIS is unavailable for two hours during peak specimen receipt.** *(D13)*
+For the chosen failure, students state the consequence and propose one control.
+ 
+**Privacy decision:** students assign role-based access to two roles on their map and justify one restriction.
+ 
+**GenAI:** none.
+ 
+**Primary artefact:** annotated systems-layer map with one failure-mode analysis.
+ 
+### 5. Case state
+ 
+Established: Week 1 map. New: order placed electronically; specimen collected and labelled. Do not assume: any results.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO2.
+- **Supporting:** MLO1, MLO5, MLO6.
+### 7. Proposed Assessment Evidence
+ 
+- Primary: annotated map with failure-mode analysis.
+- OAL: system-function matching exercise.
+**Evidence purpose:** determine whether students can explain how systems support workflows, not merely memorise system names.
+ 
+---
+ 
+## Week 3 — Laboratory Data: Generation, Quality, Meaning and Context
+ 
+### 1. Topics
+ 
+- Types of biomedical and healthcare data: structured and unstructured; qualitative and quantitative.
+- Laboratory data generation and the laboratory testing process.
+- Pre-analytical, analytical and post-analytical sources of error.
+- Data quality dimensions: accuracy, completeness, consistency, timeliness, validity and uniqueness.
+- Data provenance and traceability.
+- Standardised terminology, units and reference intervals.
+- Patient, specimen and testing context.
+- Distinguishing an analytical measurement from its clinical interpretation.
+- **Data lifecycle beyond generation:** retention, archiving and secondary use, taught and checked at Understand level (v0.2.4, G2). *(links to MLO1 "lifecycle"; assessed in C1.6)*
+### 2. Weekly Learning Outcomes
+ 
+1. Classify common biomedical and healthcare data according to their characteristics, intended use and lifecycle stage. *(v0.2.4: "lifecycle stage" added — alignment matrix G2)*
+2. Evaluate laboratory data for selected quality problems, including missing values, inconsistent units, implausible values and mismatched identifiers.
+3. Explain how specimen characteristics, testing methods, units and reference intervals influence the interpretation of laboratory information.
+4. Distinguish the generation of an analytical result from its subsequent validation and clinical interpretation.
+### 3. Content Boundaries
+ 
+**Include:**
+- Data-quality dimensions; laboratory data and metadata.
+- Specimen traceability and provenance.
+- Basic standardisation of units and terminology.
+- Pre-, intra- and post-analytical error categories.
+**Exclude:**
+- Advanced statistical modelling or diagnostic algorithms.
+- In-depth metrology, method validation or reference-interval derivation.
+- Data-cleaning scripts or programming.
+- Problems arising **between** systems during transfer (Week 4).
+**Lens:** quality **within one dataset** — identifiers, units and codes as data-quality problems.
+ 
+### 4. Practical or Applied Learning
+ 
+**Activity: Investigate a flawed laboratory dataset**
+ 
+Students receive a fictional dataset including Patient A's results and other fictional records, containing selected issues:
+- Missing specimen identifiers; duplicate records.
+- Inconsistent units; incorrect date formats.
+- Implausible values; inconsistent terminology.
+- Missing or inappropriate contextual information.
+Students classify the problems, explain their consequences and decide whether each can be corrected from a verified source or must be investigated and escalated.
+ 
+**Privacy decision:** the dataset contains one identifier not needed for the audit; students identify and justify removing it.
+ 
+**GenAI — Augment:** after completing their own audit, students ask an approved AI tool to critique it using the fictional dataset only, then verify every AI claim against the data and record which claims were wrong.
+ 
+**Primary artefact:** data-quality audit with correction/escalation justifications.
+ 
+### 5. Case state
+ 
+Established: Weeks 1–2. New: Patient A's renal panel and HbA1c results appear in the lab dataset; one sample carries a haemolysis comment. Do not assume: the clinical meaning of results.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO1.
+- **Supporting:** MLO2, MLO5, MLO6.
+### 7. Proposed Assessment Evidence
+ 
+- Primary: data-quality audit.
+- OAL: classification of data types and quality dimensions.
+**Evidence purpose:** assess whether students critically examine data quality and context rather than assume electronic data are reliable.
+ 
+---
+ 
+## Week 4 — Laboratory Information Management, Interoperability and Healthcare Data Exchange
+ 
+### 1. Topics
+ 
+- **LIS vs LIMS:** patient-centred clinical laboratory systems vs sample-centred research, industrial and quality-control laboratory systems. *(D7; relevant to BMS graduate destinations)*
+- Laboratory information workflows and traceability.
+- Interfaces between instruments, LISs and other healthcare systems.
+- Interoperability levels, **citing the framework used** (e.g. foundational/technical, structural/syntactic, semantic and organisational levels; verify the citation). *(review B22)*
+- Data formats, identifiers, terminology and units; preservation of meaning.
+- **A limited set of example standards:** one laboratory result message (HL7 v2), FHIR Observation and LOINC, as read-only examples. Verify which are used locally before teaching. *(review B22)*
+- Common reasons for failed or incomplete information exchange.
+- **NEHR as an exchange destination for laboratory results.** Under the Health Information Act, laboratory test results are among the key health information that licensed providers will be required to contribute. *(D1, D8)*
+### 2. Weekly Learning Outcomes
+ 
+1. Explain the principal functions of LISs and LIMSs and distinguish their typical settings.
+2. Describe how laboratory information may be exchanged between instruments, laboratory systems, clinical systems and shared records such as NEHR.
+3. Distinguish levels of interoperability using relevant examples.
+4. Analyse how mismatched identifiers, units, codes or data formats can affect the reliability and usability of exchanged information.
+### 3. Content Boundaries
+ 
+**Include:**
+- System functions and information flows; conceptual interfaces.
+- Basic interoperability concepts and the preservation of meaning.
+- The selected example standards only.
+**Exclude:**
+- Programming interfaces, API development or interface-engine configuration.
+- Advanced standards implementation; unverified vendor capabilities.
+- Technical architecture of NEHR.
+- The assumption that all organisations use the same systems or exchange every type of information.
+**Lens:** identifiers, units and codes as **meaning lost or preserved between systems**.
+ 
+### 4. Practical or Applied Learning
+ 
+**Activity: Investigate an interoperability failure**
+ 
+Patient A's result is transferred from the LIS to the clinic EHR and onward to a shared record. Source and destination records contain discrepancies:
+- Different units.
+- Different test names or codes.
+- Inconsistent patient identifiers.
+- Missing timestamps.
+- A result that has lost its context (e.g. the haemolysis comment).
+Students classify each discrepancy by interoperability level, explain its consequence and recommend a control. Simplified message examples are provided read-only; no coding.
+ 
+**Privacy decision:** students decide whether the haemolysis comment and the ordering clinician's free-text note should travel with the result, and justify the choice.
+ 
+**GenAI:** none.
+ 
+**Primary artefact:** interoperability comparison table with controls.
+ 
+### 5. Case state
+ 
+Established: Weeks 1–3. New: result transferred to the clinic EHR and a shared record; discrepancies appear. Do not assume: which discrepancy caused any later event.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO2.
+- **Supporting:** MLO1, MLO5, MLO6.
+### 7. Proposed Assessment Evidence
+ 
+- Primary: interoperability comparison table.
+- OAL: annotated information-exchange diagram (formative).
+**Evidence purpose:** determine whether students understand that successful transmission does not guarantee successful information exchange.
+ 
+---
+ 
+## Week 5 — Laboratory Result Validation and Reporting Safety
+ 
+### 1. Topics
+ 
+- The purpose of laboratory result validation.
+- Analytical quality control (IQC, EQA) versus individual-result validation. **Prerequisite check required** — see §8, item 8. *(review B13)*
+- Result plausibility and consistency checks.
+- Reference intervals, abnormal-result flags and critical values.
+- Delta checks and contextual checks.
+- Repeat testing, result holds and escalation.
+- Autoverification and manual review.
+- **Critical-result notification:** timeliness, recipient identification, read-back and documentation. *(review B23)*
+- Result reporting, amendments and traceability.
+- Human oversight, accountability and patient safety.
+- Optional: laboratory accreditation requirements for information management (ISO 15189; verify current edition and local accreditation requirements).
+### 2. Weekly Learning Outcomes
+ 
+1. Distinguish analytical quality control from the validation of individual patient results.
+2. Apply a supplied set of laboratory validation rules to identify results requiring acceptance, further review or escalation.
+3. Explain how reference intervals, critical-value rules, delta checks and contextual information support result review.
+4. Justify why some results should not be released automatically and identify the appropriate need for human review.
+### 3. Content Boundaries
+ 
+**Include:**
+- Conceptual and applied result-validation workflows.
+- Common rules used to identify potentially problematic results.
+- Automated checks vs professional judgement; escalation and documentation.
+- Limitations of rules-based autoverification.
+**Exclude:**
+- Independent clinical diagnosis.
+- Creating real-world release rules or modifying quality systems.
+- Complex clinical decision algorithms.
+- The assumption that one abnormal flag means a result is erroneous or dangerous.
+**Lens:** identifiers as an **identity check before release**.
+ 
+### 4. Practical or Applied Learning
+ 
+**Activity: Laboratory result review simulation**
+ 
+Students receive fictional results, including Patient A's, with supplied reference intervals and validation rules, and classify each as:
+1. Accept under the supplied rules.
+2. Hold for further review.
+3. Escalate according to the supplied protocol.
+Cases include: a result outside the reference interval; a potentially implausible result; a significant delta from a previous result; a critical-value flag; a specimen-quality concern (Patient A's haemolysed sample with raised potassium); a result requiring identity confirmation.
+ 
+Students justify each decision from supplied evidence. They do not diagnose.
+ 
+**Privacy decision:** for the critical result, students decide what minimum information is shared by phone and how the recipient is verified.
+ 
+**GenAI — Boundary:** AI is not used for release decisions. Students compare an AI-generated explanation of a delta check with the supplied protocol and identify discrepancies.
+ 
+**Primary artefact:** result-review worksheet with a documented decision per case.
+ 
+### 5. Case state
+ 
+Established: Weeks 1–4. New: Patient A's potassium is raised on a haemolysed sample; a previous result is available. Do not assume: the patient's true potassium level.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO1, MLO2.
+- **Supporting:** MLO3, MLO5, MLO6.
+### 7. Proposed Assessment Evidence
+ 
+- Primary: result-review worksheet.
+- OAL: short explanation distinguishing automated checks from human review.
+**Evidence purpose:** assess application of defined rules, recognition of uncertainty and safe handling of laboratory information.
+ 
+---
+ 
+## Week 6 — Healthcare Data Analytics, Visualisation and Decision Support
+ 
+*(Rescoped in v0.2 — D3)*
+ 
+### 1. Topics
+ 
+- Healthcare data analytics: patient-level vs population-level use of laboratory data.
+- Descriptive statistics and summaries.
+- Trends, comparisons and patterns in laboratory and healthcare data.
+- Selecting appropriate charts; common misleading representations.
+- Dashboard interpretation.
+- **Four-way distinction:** analytical QC · individual-result validation/autoverification · population analytics · clinical decision support, using Week 5 examples. *(D10)*
+- Clinical decision-support (CDS) alerts and model-generated outputs as **outputs to be evaluated**, not models to be built.
+- Sensitivity, specificity and positive predictive value **only as needed to judge an alert**, including the effect of prevalence.
+- **De-identification, re-identification risk and secondary use** of laboratory datasets. *(D12)*
+- Limitations of associations, predictions and automated recommendations; bias in data and outputs.
+**Removed from v0.1:** "Overview of predictive models" as a standalone topic. AI-*technology* evaluation moves to Week 7.
+ 
+**OAL key concepts (v0.2.3):** the topics above are taught as five grouped key concepts; no topic is removed (see `05_` architecture).
+ 
+### 2. Weekly Learning Outcomes
+ 
+1. Summarise a supplied biomedical dataset using appropriate descriptive measures.
+2. Select and interpret a suitable visualisation for a defined healthcare or laboratory question.
+3. Evaluate a dashboard or analytical output for misleading presentation, inappropriate comparison or unsupported conclusions.
+4. Distinguish analytical QC, individual-result validation, population analytics and clinical decision support.
+5. Evaluate a decision-support or AI-generated output for its limitations and the need for human oversight.
+### 3. Content Boundaries
+ 
+**Include:**
+- Descriptive analysis; distributions, trends and comparisons.
+- Common charts and dashboards.
+- Alert performance measures at an introductory level.
+- Context, data quality, de-identification and human oversight.
+**Exclude:**
+- Programming-intensive analytics or advanced statistics.
+- Machine-learning development or model internals.
+- Evaluation of AI *tools* as products (Week 7).
+- The assumption that correlation establishes causation, or that accuracy alone proves clinical usefulness.
+### 4. Practical or Applied Learning
+ 
+**Activity: Analyse a laboratory dataset and critique an output**
+ 
+Students use a supplied, de-identified fictional dataset of HbA1c results from a diabetes clinic cohort (including Patient A) and a spreadsheet tool to:
+- Calculate selected summary statistics and compare groups or periods.
+- Create one appropriate chart and interpret the main pattern.
+- Identify one limitation or source of bias.
+Then, in a short second part, students critique **one** of: a misleading dashboard, a CDS alert about Patient A's renal function, or an AI-generated interpretation of the dataset.
+ 
+**Privacy decision:** before analysis, students check whether the dataset could re-identify any patient and state one mitigation.
+ 
+**GenAI — Augment:** critique of an AI-generated interpretation (option above); students verify each claim against their own analysis.
+ 
+**Primary artefact:** one chart with a concise interpretation and output critique.
+ 
+### 5. Case state
+ 
+Established: Weeks 1–5. New: clinic cohort dashboard; a CDS alert concerning Patient A's renal function. Do not assume: that the alert is correct.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO3.
+- **Supporting:** MLO1, MLO5, MLO6. *(v0.2: MLO4 S removed; MLO5 S added)*
+### 7. Proposed Assessment Evidence
+ 
+- Primary: chart, interpretation and critique.
+- OAL: four-way distinction check; alert-performance worked example; **output-evaluation check covering all three output types (dashboard, CDS alert, AI-generated interpretation), so every student is evidenced on MLO3c–e regardless of practical option** *(alignment matrix G3, accepted 12 Nov 2026)*.
+**Evidence purpose:** assess whether students interpret data and evaluate conclusions rather than generate charts or repeat an AI explanation.
+ 
+---
+ 
+## Week 7 — Digital Health and Remote Healthcare
+ 
+### 1. Topics
+ 
+- Introduction to digital health; telehealth and telemedicine.
+- **Point-of-care testing (POCT) and patient self-testing** (e.g. glucose, INR): device connectivity, data capture and quality assurance outside the laboratory. *(D11 — anchor example)*
+- Remote patient monitoring; wearables and connected devices.
+- Patient-generated health data and mobile health applications (generic; HealthHub depth is in Week 9).
+- **AI-enabled digital-health tools:** evidence of validity, intended use, bias and regulatory status (e.g. software as a medical device; verify current HSA requirements). *(D2, review B16)*
+- Integration of digital-health data into healthcare workflows.
+- Data quality, reliability and usability challenges.
+- Human factors, accessibility and digital inclusion; bias in who benefits. *(moved from Week 8)*
+- Digital health as support for, not automatic replacement of, healthcare professionals.
+### 2. Weekly Learning Outcomes
+ 
+1. Describe selected digital-health technologies, including POCT, and explain how they generate or use healthcare data.
+2. Evaluate the quality, limitations and contextual relevance of data generated by a digital-health technology.
+3. Evaluate a digital-health or AI-enabled tool's fitness for a defined purpose, including evidence of validity, bias and regulatory status.
+4. Recommend conditions under which a digital-health solution should or should not be used for a defined healthcare need.
+### 3. Content Boundaries
+ 
+**Include:**
+- Common digital-health applications; data generation, transmission and use.
+- Reliability, usability, workflow integration and quality assurance of POCT.
+- Awareness-level regulatory status of devices and AI tools.
+- Privacy, accessibility and digital inclusion.
+**Exclude:**
+- Building applications; device engineering; clinical prescribing.
+- Claims that consumer wearables equal validated clinical instruments.
+- Organisational implementation planning (Week 9).
+- Detailed cybersecurity engineering.
+**Lens:** **technology fitness for purpose** — does this tool produce data good enough for this decision?
+ 
+### 4. Practical or Applied Learning
+ 
+**Activity: Evaluate a digital-health solution**
+ 
+Following the clinic review, Patient A is offered home glucose self-testing linked to a remote-monitoring service with an AI-generated risk flag. Students evaluate the proposed solution against:
+- Suitability for the intended purpose.
+- Reliability, completeness and quality assurance of the data.
+- Ease of use and accessibility.
+- Potential for missing or misleading readings.
+- Evidence and regulatory status of the AI flag.
+- Privacy and access controls.
+- Consequences of missed alerts or over-reliance.
+Students make a reasoned recommendation with conditions for use.
+ 
+**GenAI:** none in the task; the AI flag is the object of evaluation.
+ 
+**Primary artefact:** digital-health evaluation matrix with a conditional recommendation.
+ 
+### 5. Case state
+ 
+Established: Weeks 1–6. New: following the clinic review, home self-testing and remote monitoring proposed. Do not assume: device accuracy or the AI flag's validation.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO4.
+- **Supporting:** MLO1, MLO3, MLO5, MLO6.
+### 7. Proposed Assessment Evidence
+ 
+- Primary: evaluation matrix and recommendation.
+**Evidence purpose:** determine whether students evaluate technology against a defined purpose rather than equate novelty with effectiveness.
+ 
+---
+ 
+## Week 8 — Healthcare Data Privacy, Cybersecurity, Ethics and Governance
+ 
+### 1. Topics
+ 
+- The sensitive nature of healthcare and laboratory data, including genetic information.
+- Privacy, confidentiality and appropriate use.
+- **Singapore legal and governance framework (awareness level):** *(D1)*
+  - **Health Information Act** — Health Information Bill passed 12 January 2026; MOH intends it to take effect from early 2027. Covers mandatory contribution of key health information to NEHR, access limited generally to patient care, prohibition of access for employment or insurance purposes, cybersecurity and data-security requirements, and notification of confirmed incidents and breaches to MOH. **Verify commencement and subsidiary legislation before each delivery.**
+  - **Personal Data Protection Act (PDPA)** — scope by provider type to be verified.
+  - **Healthcare Services Act** and **Cybersecurity Act** — applicability to be verified.
+- Access controls and role-based permissions; "break-glass" access and audit.
+- Authentication, audit trails and accountability.
+- Common threats: data breaches, phishing, ransomware.
+- Data minimisation, retention and secure handling.
+- Ethical considerations in healthcare data use. *(Bias and fairness of outputs and tools are taught in Weeks 6 and 7; Week 8 addresses governance of them.)*
+- Responsible use of GenAI with healthcare information.
+- Incident reporting and risk mitigation.
+- **Authentic Singapore anchor case:** one documented incident, e.g. the 2018 SingHealth cyberattack and its Committee of Inquiry report (suitability and sources to be confirmed). *(review B15)*
+**OAL key concepts (v0.2.3):** the topics above are taught as five grouped key concepts; no topic is removed (see `05_` architecture).
+ 
+### 2. Weekly Learning Outcomes
+ 
+1. Identify privacy, security and ethical risks associated with handling healthcare data.
+2. Explain the purpose of selected governance and security controls, including those required under Singapore's health-information framework.
+3. Analyse a healthcare data-handling scenario for legal, ethical or cybersecurity concerns.
+4. Recommend proportionate controls and appropriate escalation actions for a defined information-risk scenario.
+### 3. Content Boundaries
+ 
+**Include:**
+- Core principles of responsible healthcare data handling.
+- Awareness of relevant Singapore legislation, distinguishing legal obligations from recommended good practice.
+- Access-control and security scenarios; common threats.
+- Ethical use of data and AI; incident reporting.
+**Exclude:**
+- Formal legal advice or interpretation.
+- Penetration testing or security configuration.
+- The assumption that all data-sharing situations have identical legal requirements, or that one Act applies uniformly to all providers.
+- Real patient information.
+### 4. Practical or Applied Learning
+ 
+**Activity: Investigate a healthcare data incident**
+ 
+Students examine one fictional incident involving Patient A:
+- A laboratory report sent to the wrong recipient.
+- Unauthorised access to the patient record.
+- A staff member pasting identifiable results into an unapproved GenAI tool.
+- A suspicious email requesting access to laboratory records.
+Students identify the information at risk, consequences, immediate protective actions, reporting and escalation, and preventive controls. They distinguish what they may do themselves from what authorised personnel must handle.
+ 
+**GenAI — Governance:** the unapproved-tool scenario is the object of analysis.
+ 
+**Primary artefact:** risk-assessment worksheet with justified controls.
+ 
+### 5. Case state
+ 
+Established: Weeks 1–7. New: an information incident involving Patient A's record. Do not assume: that a breach has been confirmed.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO5.
+- **Supporting:** MLO1, MLO2, MLO4, MLO6.
+### 7. Proposed Assessment Evidence
+ 
+- Primary: risk-assessment worksheet.
+- OAL: scenario-based check on legal obligations vs good practice.
+**Evidence purpose:** assess whether students recognise risks and recommend responsible actions, rather than list terminology.
+ 
+---
+ 
+## Week 9 — Singapore's Healthcare Digital Ecosystem: Validation, Implementation and Transformation
+ 
+**Scope note (D5, review B10):** In this week, **"validation" means pre-implementation evaluation of a digital solution** — evidence that it works as intended in the target setting. It is distinct from Week 5 individual-result validation. See Glossary.
+ 
+### 1. Topics
+ 
+- Singapore's healthcare digital ecosystem in depth: building on the Week 1 orientation map.
+- Synapxe and its role in the public healthcare technology environment (verify current description).
+- NEHR and its role in information sharing; **effect of the Health Information Act** on participation and access from early 2027. *(D1)*
+- HealthHub's patient-facing functions, including patients' ability to view NEHR access and set access restrictions. *(D8)*
+- Distinctions between institutional systems, shared health-information infrastructure and patient-facing services.
+- **Organisational implementation:** stakeholder analysis, workflow integration, usability and human factors, change management. *(D5)*
+- Validation before deployment; benefits realisation; monitoring performance, risks and unintended consequences.
+**OAL key concepts (v0.2.3):** the topics above are taught as five grouped key concepts; no topic is removed (see `05_` architecture).
+ 
+### 2. Weekly Learning Outcomes
+ 
+1. Describe the roles of selected components of Singapore's healthcare digital ecosystem, including the effect of the Health Information Act, and distinguish the purposes of institutional healthcare systems, shared health-information infrastructure and patient-facing digital services. *(v0.2.4: former WLOs 9.1 and 9.2 merged — alignment matrix G5)*
+2. Evaluate the implementation readiness of a proposed healthcare information solution, considering stakeholders, workflow, information quality, usability, safety and change management.
+3. Recommend measures for assessing whether a digital-health implementation achieves its intended benefits.
+### 3. Content Boundaries
+ 
+**Include:**
+- Selected, verified Singapore examples.
+- Broad purposes of NEHR, HealthHub and relevant systems.
+- Implementation, validation and evaluation principles; stakeholder needs and change management.
+**Exclude:**
+- Technical architecture of national systems.
+- The assumption that NEHR holds every healthcare record (it holds key health information) or that all access is identical.
+- Procurement, system administration or infrastructure engineering.
+- Re-evaluating a technology's intrinsic fitness for purpose (Week 7).
+**Lens:** **organisational implementation** — can this solution work here, for these people, and how will we know?
+ 
+### 4. Practical or Applied Learning
+ 
+**Activity: Evaluate the implementation of an information improvement**
+ 
+A fictional community provider caring for Patient A following the clinic review must begin contributing laboratory results to NEHR when the Health Information Act takes effect, and proposes a new result-sharing workflow with the hospital laboratory.
+ 
+Students evaluate:
+- The problem and intended users.
+- Stakeholders affected and their concerns.
+- Workflow, usability and interoperability implications.
+- Privacy and security obligations.
+- Implementation barriers and change-management needs.
+- Measures of success and evidence needed before wider deployment.
+**Communication criterion:** students write a short stakeholder-facing summary of their plan for a non-specialist (e.g. the clinic manager), stating rationale, benefits, risks and trade-offs. This is part of the existing plan, not a new task. *(alignment matrix G4, accepted 12 Nov 2026)*
+ 
+**GenAI — Advance:** students ask an approved AI tool to generate counter-arguments to their plan, then verify each and defend or revise their position.
+ 
+**Primary artefact:** implementation and evaluation plan with justified trade-offs, including the stakeholder-facing summary.
+ 
+### 5. Case state
+ 
+Established: Weeks 1–8. New: community provider; Health Information Act obligations. Do not assume: specific system names or national technical arrangements.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO4, MLO6.
+- **Supporting:** MLO2, MLO3, MLO5. *(v0.2: MLO2 P → S)*
+### 7. Proposed Assessment Evidence
+ 
+- Primary: implementation and evaluation plan (with communication criterion).
+- OAL: ecosystem-distinction check (institutional vs shared vs patient-facing).
+**Evidence purpose:** determine whether students can apply informatics concepts to a realistic implementation problem and communicate it to a stakeholder.
+ 
+---
+ 
+## Week 10 — Integration and Application of Medical Informatics
+ 
+### 1. Topics
+ 
+- Integration of the laboratory and healthcare information journey.
+- Data quality and context; systems and interoperability; result validation and reporting safety.
+- Analytics and decision support; digital-health integration.
+- Privacy, cybersecurity and governance; evaluation of solutions.
+- Communication of recommendations and limitations.
+### 2. Weekly Learning Outcomes
+ 
+1. Analyse an integrated biomedical or healthcare scenario involving multiple information systems and stakeholders.
+2. Identify and prioritise problems involving data quality, information exchange, result validation, analytical interpretation or governance.
+3. Propose an improvement to the information workflow, justified by evidence and principles.
+4. Communicate the benefits, limitations, risks and trade-offs of the proposed solution.
+### 3. Content Boundaries
+ 
+**Include:**
+- Integration and application of previously taught concepts.
+- A **new case in a new setting** requiring transfer.
+- Prioritisation, justification and communication.
+**Exclude:**
+- Major new technical concepts; programming; clinical diagnosis.
+- Reuse of Patient A or reproduction of earlier weekly activities.
+### 4. OAL (defined in v0.2 — D14)
+ 
+- Case brief for the new scenario (released at the start of the week).
+- Integrative retrieval practice across Weeks 1–9 (mixed-topic quiz with feedback).
+- Guidance on the expected structure of the integrated response.
+### 5. Practical or Applied Learning
+ 
+**Activity: Integrated healthcare information case**
+ 
+Students receive a **new** fictional scenario in a different setting: a **community anticoagulation INR point-of-care testing network** linking GP clinics, a device connectivity hub, clinic EHRs, NEHR contribution and a network dashboard, with hospital-laboratory POCT oversight *(setting decided 12 Nov 2026)*. The scenario involves a test request, specimen processing, result generation, information transfer and subsequent use.
+ 
+The scenario contains selected issues:
+- Incomplete or inconsistent data.
+- A potential result-validation concern.
+- A mismatch between systems.
+- A potentially misleading analytical summary.
+- An information-sharing or privacy risk.
+Students:
+1. Map the relevant information flow.
+2. Identify and prioritise the problems.
+3. Explain implications for information reliability and workflow safety.
+4. Propose corrective or preventive measures.
+5. Explain how the solution should be evaluated.
+6. Communicate limitations and unresolved uncertainties.
+**Individual component:** each student submits or presents an individual analysis of the case's governance issues with proposed controls, and a justification of one prioritised problem and proposed measure, to provide individual evidence and protect academic integrity. *(D14; blueprint C3 individual element)*
+ 
+**GenAI — Advance:** permitted only as defined in the approved assessment rules; verification evidence required.
+ 
+**Primary artefact:** integrated case analysis with a prioritised problem-and-risk table and individual justification.
+ 
+**Summative:** Week 10 hosts component C3 (Option A, decided 1 Nov 2026; see `03_Assessment_Blueprint_v0.1.md`). Weeks 1–9 practicals provide scaffolding; dates and weights TBC.
+ 
+### 6. Links to MLOs
+ 
+- **Primary:** MLO6.
+- **Integrative:** MLO1, MLO2, MLO3, MLO4, MLO5.
+### 7. Proposed Assessment Evidence
+ 
+- Integrated case analysis and annotated information-flow diagram.
+- Prioritised problem-and-risk table.
+- Individual governance analysis and justification (written or short presentation; format TBC).
+**Evidence purpose:** evaluate whether students integrate the module's concepts and make defensible recommendations in an unfamiliar context.
+ 
+---
+ 
+# 4. Cross-Week Curriculum Alignment
+ 
+**Key:** P = Primary; S = Supporting; I = Integrative. **[changed]** = changed in v0.2.
+ 
+| Week | MLO1 Data | MLO2 Systems | MLO3 Analytics | MLO4 Digital health and AI tools | MLO5 Governance | MLO6 Integration |
+|---|---|---|---|---|---|---|
+| 1. Introduction and ecosystem | P | P | — | — | S | S |
+| 2. Information systems and workflows | S | P | — | — | S | S |
+| 3. Laboratory data quality and context | P | S | — | — | S | S |
+| 4. Laboratory information management and interoperability | S | P | — | — | S | S |
+| 5. Result validation and reporting safety | P | P | S | — | S | S |
+| 6. Analytics and decision support | S | — | P | — **[changed]** | S **[changed]** | S |
+| 7. Digital health and remote healthcare | S | — | S | P | S | S |
+| 8. Privacy, cybersecurity, ethics and governance | S | S | — | S | P | S |
+| 9. Singapore's digital ecosystem and implementation | — | S **[changed]** | S | P | S | P |
+| 10. Integration and application | I | I | I | I | I | P |
+ 
+### Alignment observations
+ 
+1. **MLO1 and MLO2** are introduced early and revisited throughout. MLO2 now has four primary weeks (1, 2, 4, 5).
+2. **MLO3 has one primary week (Week 6).** Week 6 has been rescoped to make this achievable; MLO3 is also applied in Weeks 5, 7, 9 and 10. Summative evidence for MLO3 is in C2.
+3. **MLO4 is primary in Weeks 7 and 9.** With D2, Week 6 evaluates *outputs* (MLO3) and Week 7 evaluates *tools* (MLO4).
+4. **MLO5 has one primary week (Week 8)** but now produces evidence in every practical from Week 1 through embedded privacy decisions.
+5. **MLO6 is cumulative:** Week 9 implementation planning with a communication criterion (G4), Week 10 integration in a new setting.
+6. **Assessment alignment:** this table shows learning coverage. Formal assessment is defined in the alignment matrix and `03_Assessment_Blueprint_v0.1.md`.
+---
+ 
+# 5. Proposed Assessment Evidence Across the Ten Weeks
+ 
+Formative evidence plan; not a final summative scheme. One primary artefact per practical (D6).
+ 
+| Week | Primary practical artefact | Intended assessment purpose |
+|---|---|---|
+| 1 | Information-journey map (Part 1) | Foundational understanding of information flows |
+| 2 | Systems-layer map with one failure-mode analysis (Part 2) | System functions and workflow risks |
+| 3 | Data-quality audit | Identifying and justifying handling of data-quality problems |
+| 4 | Interoperability comparison table | Information exchange and preservation of meaning |
+| 5 | Result-review worksheet | Applying validation rules and safe escalation |
+| 6 | Chart, interpretation and output critique | Analytical interpretation and evaluation of outputs |
+| 7 | Digital-health evaluation matrix | Technology fitness for purpose |
+| 8 | Risk-assessment worksheet | Responsible handling of healthcare information |
+| 9 | Implementation and evaluation plan (with stakeholder-facing summary) | Organisational implementation reasoning and communication |
+| 10 | Integrated case analysis + individual justification (C3) | Integration and transfer |
+ 
+### Assessment design considerations
+ 
+Before deciding formal assessments, determine:
+- Which MLOs require individual evidence of achievement.
+- Which activities are formative and which contribute to grades.
+- Individual, pair or group work.
+- Required evidence modes: practical application, written analysis, oral communication.
+- Academic integrity and GenAI rules for each assessment.
+- Proportionate workload for a ten-week module.
+- How criteria distinguish description from analysis, evaluation and justified recommendation.
+**Recommendation:** do not assign marks to every weekly activity. Use formative tasks to prepare students for a smaller number of well-designed assessments.
+ 
+---
+ 
+# 6. Content Boundaries for the Module as a Whole
+ 
+## 6.1 Emphasise
+ 
+- Applied healthcare and biomedical informatics.
+- Laboratory information workflows and systems.
+- Data quality, traceability and contextual interpretation.
+- Interoperability and reliable information exchange.
+- Result validation and reporting safety.
+- Basic healthcare data analytics and visualisation.
+- Evaluation of analytical, decision-support and AI outputs, and of digital-health and AI tools.
+- Privacy, cybersecurity, ethics and governance.
+- Singapore healthcare applications.
+- Evidence-based evaluation of information workflows and digital solutions.
+## 6.2 Do not teach in depth
+ 
+- Programming or software engineering.
+- Database administration.
+- Advanced statistics or machine learning; development of clinical AI.
+- Healthcare IT configuration.
+- Cybersecurity engineering.
+- Independent clinical diagnosis or treatment.
+- Formal legal interpretation.
+- Engineering of instruments or national health-information infrastructure.
+## 6.3 Expected level of performance
+ 
+Students **explain, interpret, apply, analyse and evaluate** using supplied information and defined scenarios. They do not develop software, author clinical release rules or make clinical decisions beyond their role.
+ 
+## 6.4 GenAI use across the module (D9)
+ 
+| Week | Stage | Use |
+|---|---|---|
+| 1 | Rule | Introduce the confidentiality rule for AI tools; no AI task |
+| 2 | — | None |
+| 3 | Augment | AI critiques the student's completed audit; every claim verified against the dataset |
+| 4 | — | None |
+| 5 | Boundary | AI excluded from release decisions; AI explanation of a delta check compared with protocol |
+| 6 | Augment | Critique of an AI-generated interpretation of the dataset |
+| 7 | Object | AI risk flag evaluated as a tool, not used |
+| 8 | Governance | Unapproved-tool data-entry incident analysed |
+| 9 | Advance | AI generates counter-arguments; student verifies and defends |
+| 10 | Advance | As permitted by approved assessment rules, with verification evidence |
+ 
+**Rules:** fictional data only; independent attempt before any AI use; AI output is never authoritative because it is fluent; verification must be evidenced.
+ 
+**PAIR (adopted 12 Nov 2026):** wherever students use AI, they document Problem formulation → AI tool selection → Interaction → Reflection. PAIR structures the Augment and Advance stages; it adds no AI use to weeks where the table shows none.
+ 
+## 6.5 Four-way distinction (D10)
+ 
+| Activity | Question it answers | Scope | Taught |
+|---|---|---|---|
+| Analytical quality control | Is the analytical process performing correctly? | Method/run | Prerequisite; contrasted in Week 5 |
+| Individual-result validation / autoverification | Is this patient's result fit to release? | Single result | Week 5 |
+| Population analytics | What patterns exist across many results or patients? | Cohort/service | Week 6 |
+| Clinical decision support | What might this clinician consider for this patient now? | Clinical decision | Week 6 |
+ 
+---
+ 
+# 7. Singapore Context and Source Verification
+ 
+Singapore examples are chosen because they illuminate learning outcomes, not for local colour.
+ 
+## 7.1 Verified as of 1 November 2026
+ 
+| Item | Status | Source |
+|---|---|---|
+| Health Information Bill passed | Passed in Parliament 12 Jan 2026 | gov.sg explainer, 13 Jan 2026 |
+| Commencement | MOH intends effect from early 2027 | gov.sg explainer |
+| Scope | All licensed providers to share key health information with NEHR, including laboratory test results | gov.sg explainer |
+| Access | Generally for patient care; employment and insurance purposes prohibited | gov.sg explainer |
+| Patient controls | Patients can monitor access and set NEHR access restrictions via HealthHub | gov.sg explainer |
+| Security duties | Cybersecurity and data-security requirements; notify MOH of confirmed incidents and breaches | gov.sg explainer |
+ 
+Source: *What is the Health Information Bill?*, gov.sg, 13 January 2026, https://www.gov.sg/explainers/health-information-bill/ (accessed 1 November 2026). Commencement ("early 2027") re-checked 9 November 2026 against MOH's Second Reading speech; see `05_` §6.
+ 
+## 7.2 Requires verification before teaching
+ 
+- HIA commencement date and subsidiary legislation, including definitions of sensitive health information.
+- Which data-protection regime applies to public, private and laboratory providers.
+- Applicability of the Healthcare Services Act, Cybersecurity Act and HSA software-as-medical-device requirements.
+- Current official description of Synapxe.
+- Interoperability standards and code sets used locally.
+- Any Epic, TD Synergy or Cerner/Oracle Health statement.
+- Suitability and sources of the 2018 SingHealth incident case.
+- ISO 15189 edition and local accreditation requirements (optional content).
+## 7.3 Source-verification rules
+ 
+1. Use authoritative sources for legislation, regulation and national initiatives.
+2. Re-verify legal status and terminology before each delivery.
+3. Distinguish national infrastructure from institutional systems.
+4. Do not imply all healthcare information is stored in one system; NEHR holds key health information.
+5. Verify vendor-specific capabilities before using them as examples of actual behaviour.
+6. Label illustrative workflows explicitly as generic.
+7. Use fictional patient information and synthetic data only.
+---
+ 
+# 8. Unresolved Decisions
+ 
+Items 1–5 block approval.
+ 
+| # | Decide or verify | Action | Blocks approval |
+|---|---|---|---|
+| 1 | Programme-outcome mapping (MLO wording **closed** — approved 1 Nov 2026) | Obtain PLOs from programme documentation | Yes |
+| 2 | Assessment blueprint: structure **decided** (Option A, 1 Nov 2026); weights, conditions and GenAI rules pending | See `03_Assessment_Blueprint_v0.1.md` §8 | Yes |
+| 3 | ~~Accept proposed MLO3/MLO4 wording (D2)~~ **Closed — approved 1 Nov 2026** | — | — |
+| 4 | Teaching calendar and dates for C1–C3 (Week 10 hosts C3 — **decided** 1 Nov 2026) | Confirm with school | Yes |
+| 5 | HIA commencement date and subsidiary legislation; cohort timing vs early 2027 | Verify with MOH before each delivery | Yes |
+| 6 | Data-protection regime by provider type | Verify with authoritative legal sources | No |
+| 7 | Applicability of Healthcare Services Act, Cybersecurity Act and HSA SaMD rules | Verify | No |
+| 8 | Prior coverage of IQC/EQA and sensitivity/specificity | Confirm with BMS programme; add OAL refresher if absent | No |
+| 9 | Interoperability standards and code sets used locally | Verify with official documentation | No |
+| 10 | Vendor claims | Verify or stay vendor-neutral | No |
+| 11 | Practical tools (spreadsheet, visualisation, simulated LIS) and approved GenAI tool | Confirm availability and approval | No |
+| 12 | 2018 SingHealth case for Week 8 | Confirm suitability | No |
+| 13 | Week 9 "Validation": keep with definition, or rename | Owner decides; renaming needs approval | No |
+| 14 | ISO 15189 content (optional) | Verify and decide | No |
+| 15 | ~~Patient A case outline~~ **Closed — values approved 12 Nov 2026**; maintained in `06_Case_State_Register_v0.1.md` | — | — |
+| 16 | ~~Week 10 setting~~ **Closed — community INR POCT network, 12 Nov 2026** | — | — |
+ 
+---
+ 
+# 9. Approval Sequence — Current Position
+ 
+| Stage | Description | Status |
+|---|---|---|
+| 1 | Curriculum validation (MLOs, scope, hours) | Open — items 1, 4 |
+| 2 | Independent critical review | Completed 1 Nov 2026 |
+| 3 | Curriculum-owner decisions on review recommendations | D1–D16 applied in v0.2; D2 approved 1 Nov 2026 |
+| 4 | Constructive-alignment matrix and assessment blueprint | Working drafts: matrix v0.1.3 (G2–G5 closed); blueprint v0.1.2 (§8 decisions 1–6 open) |
+| 5 | Approval and version control | Not started |
+| 6 | Weekly instructional design | Week 1 Stages A–C in `W01/`; Stage A for Weeks 2–10 in `05_` |
+ 
+---
+ 
+# 10. Overall Position
+ 
+v0.2 retains the v0.1 sequence, titles and laboratory-centred progression. It corrects the legal content, separates AI across MLO3 and MLO4, rescopes Week 6, removes duplicated practicals, sets one primary artefact per week, threads privacy, Singapore context and GenAI through the module, and defines the longitudinal case and Week 10. v0.2.3 and v0.2.4 record owner decisions of 12 November 2026.
+ 
+The syllabus remains a **working draft** until items 1–5 in Section 8 are closed.
+ 
+---
+ 
+# 11. Glossary (D16)
+ 
+| Term | Meaning in this module |
+|---|---|
+| Weekly learning outcome (WLO) | What students should be able to do by the end of a week. Replaces "weekly learning objective" used in v0.1. |
+| Analytical quality control (QC) | Monitoring analytical performance using control materials (IQC) and external schemes (EQA). Concerns the method or run, not one patient. |
+| Individual-result validation | Review of a single patient result before release, using rules and professional judgement. |
+| Autoverification | Rule-based automatic release of results meeting defined criteria; results failing criteria go to manual review. |
+| Delta check | Comparison of a result with the same patient's previous result to detect implausible change. |
+| Critical result | A result requiring urgent notification under a defined protocol. |
+| Validation (Week 9 sense) | Pre-implementation evaluation that a digital solution works as intended in its target setting. Distinct from result validation. |
+| Population analytics | Analysis of results across many patients or services to identify patterns. |
+| Clinical decision support (CDS) | Information or alerts presented to clinicians to support a decision for a specific patient. |
+| LIS | Laboratory information system: patient-centred system managing clinical laboratory workflow. |
+| LIMS | Laboratory information management system: sample-centred system, typical in research, industrial and QC laboratories. |
+| Interoperability | The ability of systems to exchange information and use it with its meaning preserved; taught by level. |
+| NEHR | National Electronic Health Record: a national repository of key health information, not every healthcare record. |
+| HealthHub | Patient-facing digital service; not the NEHR. |
+| Health Information Act | Singapore legislation governing sharing of key health information via NEHR (Bill passed 12 Jan 2026; intended effect early 2027). |
+| POCT | Point-of-care testing: testing performed near the patient, outside the central laboratory. |
+| INR | International normalised ratio: a standardised clotting-time result used to monitor warfarin therapy (Week 10 case). |
+| De-identification | Removing or transforming identifiers to reduce the risk of identifying individuals. |
+| PAIR | Problem formulation → AI tool selection → Interaction → Reflection: the documented process students follow whenever AI use is permitted. |

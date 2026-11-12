@@ -84,12 +84,14 @@ Never assume that generated content is academically correct. Flag uncertain info
 
 | File | Governs |
 |---|---|
-| `Module_Architecture.md` | Purpose, graduate capability, intellectual architecture, assessment strategy |
-| `Approved_MLOs.md` | Module learning outcomes and MLO–week–assessment map |
-| `Weekly_Syllabus.md` | Weekly Central Question, Big Idea, LOs, 3As, PAIR, practical |
+| `Weekly_Syllabus.md` | **Authoritative** 10-week syllabus v0.2.4: MLOs, topics, WLOs, content boundaries, practicals, Patient A case state, lens, privacy decisions, GenAI stages, Singapore verification, glossary |
+| `Approved_MLOs.md` | Approved MLOs (1 Nov 2026) and MLO × week map, extracted from the syllabus |
+| `Module_Architecture.md` | Summary of purpose, learning journey, 10-week structure, design threads, missing referenced documents |
 | `Development_Standards.md` | Naming, versioning, content, accessibility, SCORM, QA |
 
-Precedence when files conflict: Approved_MLOs > Module_Architecture > Weekly_Syllabus > Development_Standards. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
+Module: **10 weeks**, 2 h OAL + 2 h practical/week. Patient A runs Weeks 1–9; Week 10 is a new case (community INR POCT network).
+
+Precedence when files conflict: Weekly_Syllabus > Approved_MLOs > Module_Architecture > Development_Standards. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
 
 ### Folder map
 
