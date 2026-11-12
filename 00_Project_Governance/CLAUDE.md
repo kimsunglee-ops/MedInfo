@@ -88,10 +88,31 @@ Never assume that generated content is academically correct. Flag uncertain info
 | `Approved_MLOs.md` | Approved MLOs (1 Nov 2026) and MLO × week map, extracted from the syllabus |
 | `Module_Architecture.md` | Summary of purpose, learning journey, 10-week structure, design threads, missing referenced documents |
 | `Development_Standards.md` | Naming, versioning, content, accessibility, SCORM, QA |
+| `02_Constructive_Alignment_Matrix_v0.1.1.md` | Alignment matrix v0.1.3: MLO × week, WLO → MLO (40 WLOs), MLO component coverage, gaps G1–G7 |
+| `03_Assessment_Blueprint_v0.1.md` | Blueprint v0.1.2: C1–C3 (Option A), criteria, GenAI/integrity rules; weights/dates TBC |
+| `06_Case_State_Register_v0.1.md` | Register v0.3: **single authority for Patient A facts, values, identifiers and release week**; Week 10 transfer case |
+
+Design documents elsewhere:
+
+| File | Contents |
+|---|---|
+| `02_Learning_Design/05_Weekly_Learning_Architecture_W2-W10_v0.1.md` | Stage A designs W2–W10 (v0.3): weekly template, PAIR map, central questions, big ideas, OAL/practical outlines, open decisions D8–D15 |
+| `03_Development/Week_01/W01_Stage_A_Instructional_Design_v0.1.md` | Week 1 Stage A design (reference week) |
+
+Filename aliases used inside these documents:
+
+| Cited as | File in this repository |
+|---|---|
+| `01_Approved_10_Week_Syllabus_v0.2.2.md`, `10_Week_Syllabus_v0.2.md` | `00_Project_Governance/Weekly_Syllabus.md` |
+| `20_Constructive_Alignment_Matrix_v0.1.md` | `00_Project_Governance/02_Constructive_Alignment_Matrix_v0.1.1.md` |
+| `30_Assessment_Blueprint_v0.1.md` | `00_Project_Governance/03_Assessment_Blueprint_v0.1.md` |
+| `W01/` … `W10/` | `03_Development/Week_01/` … `Week_10/` |
+
+Case rule: every Patient A fact must match `06_Case_State_Register_v0.1.md`; update the register in the same change when a week adds a fact.
 
 Module: **10 weeks**, 2 h OAL + 2 h practical/week. Patient A runs Weeks 1–9; Week 10 is a new case (community INR POCT network).
 
-Precedence when files conflict: Weekly_Syllabus > Approved_MLOs > Module_Architecture > Development_Standards. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
+Precedence when files conflict: Weekly_Syllabus > Approved_MLOs > Alignment Matrix > Assessment Blueprint > Case-State Register > Weekly Learning Architecture > Module_Architecture > Development_Standards. Exception: for Patient A facts, the Case-State Register prevails. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
 
 ### Folder map
 

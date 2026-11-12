@@ -76,15 +76,21 @@ A teaching framework, not a strictly linear workflow; real processes interact an
 **Do not teach in depth:** programming, databases, advanced statistics/ML, IT configuration, cybersecurity engineering, clinical diagnosis, legal interpretation, infrastructure engineering.
 **Performance level:** explain, interpret, apply, analyse and evaluate using supplied information and defined scenarios.
 
-## 8. Referenced documents not yet in repository
+## 8. Referenced documents
 
-| Document | Needed for |
-|---|---|
-| `03_Assessment_Blueprint_v0.1.md` (v0.1.2) | C1–C3 weights, conditions, GenAI rules |
-| Constructive-alignment matrix v0.1.3 | WLO–activity–assessment mapping (G2–G5) |
-| `05_Weekly_Learning_Architecture_W2-W10_v0.1.md` | Stage A designs W2–10; OAL key-concept groupings W6, W8, W9; verification notes §6 |
-| `06_Case_State_Register_v0.1.md` | Approved Patient A values |
-| `W01/` Stages A–C | Week 1 reference-week design |
+**In repository:** alignment matrix (v0.1.3), assessment blueprint (v0.1.2), case-state register (v0.3), weekly learning architecture W2–W10 (v0.3), Week 1 Stage A (v0.1).
+
+**Cited but not yet in repository:**
+
+| Document | Cited by | Needed for |
+|---|---|---|
+| `04_Teaching_and_Learning_Design_v0.1.md` (v0.1.2) | 05, W01 | Weekly OAL/practical template, quiz standard, GenAI §8, NRIC rule §10 |
+| `00_Module_Design_Principles.md` | 05 | Design principles baseline |
+| `50_Singapore_Context_and_Sources_v0.1.md` (R1–R14) | W01 | Verified Singapore facts and source IDs |
+| Production Specification | W01 (I12) | Build/visual production rules |
+| W01 OAL storyboard v0.1.1 + Stage B/C (quiz, practical) | 05, 06 | Reference-week materials |
+| W02–W10 Stage B packages, datasets, C3 case pack + marking guide | 05 §8, 06 | Practical materials |
+| `scripts/gen_w10.py` | 06 §6 | W10 synthetic extract generator |
 
 ## 9. Open decisions (blocking approval — Syllabus §8 items 1–5)
 

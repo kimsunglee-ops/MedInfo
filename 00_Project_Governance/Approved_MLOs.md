@@ -43,7 +43,7 @@ P = Primary · S = Supporting · I = Integrative · — = not addressed
 ## 3. Assessment
 
 - Structure: **Option A** (decided 1 Nov 2026), components C1–C3; **Week 10 hosts C3** (integrated case + individual governance analysis/justification).
-- Weights, dates, conditions and GenAI rules: **pending** — see `03_Assessment_Blueprint_v0.1.md` §8 **[NOT YET IN REPOSITORY]**.
+- Weights, dates, conditions and GenAI rules: **pending** — see `03_Assessment_Blueprint_v0.1.md` §8.
 - MLO3 summative evidence is in C2 (Syllabus §4, observation 2).
 - Weekly practical artefacts are formative scaffolding; do not assign marks to every weekly activity.
 
