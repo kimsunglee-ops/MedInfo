@@ -5,24 +5,26 @@ Last updated: 2026-11-12
 
 ## 1. File naming
 
-Pattern: `MI_W<XX>_<Type>_<ShortTitle>_v<major>.<minor>.<ext>`
+Follows the convention already used in the project documents.
 
-| Type code | Artefact |
-|---|---|
-| `LN` | Lecture notes (lecturer) |
-| `LS` | Lecturer script |
-| `SB` | Storyboard |
-| `OAL` | OAL learning object |
-| `PR` | Practical — student handout |
-| `PRF` | Practical — facilitator guide |
-| `DS` | Dataset (synthetic) |
-| `FA` | Formative assessment |
-| `SA` | Summative assessment brief / rubric |
-| `QA` | Quality review report |
-| `SCORM` | SCORM package |
+**Weekly files:** `W<XX>_Stage_<S>_<Descriptor>_v<x.y>.<ext>`
 
-Examples: `MI_W05_PR_ValidationBench_v1.0.docx`, `MI_W07_DS_PathologyAI_v0.2.xlsx`
-Module-level files use `W00`. No spaces; use `_`. Dates only inside files, not filenames.
+| Part | Rule | Example |
+|---|---|---|
+| `W<XX>` | Two-digit week | `W01`, `W10` |
+| `Stage_<S>` | Development stage: A = instructional design · B = OAL storyboard and practical materials · C = formative items · D–F = later stages (definitions to be confirmed) | `Stage_B` |
+| `<Descriptor>` | Title_Case words joined by `_` | `OAL_Storyboard`, `Practical_Package`, `Formative_Quiz` |
+| `v<x.y>` | Version at creation | `v0.1` |
+
+Examples: `W01_Stage_A_Instructional_Design_v0.1.md`, `W01_Stage_B_OAL_Storyboard_v0.1.md`, `W01_Stage_C_Formative_Quiz_v0.1.md`
+
+**Module-level files:** `<NN>_<Title>_v<x.y>.md`, two-digit prefix as already assigned (`00_`, `02_`, `03_`, `04_`, `05_`, `06_`, `50_`). New module-level files take an unused prefix.
+
+**Other weekly outputs:** `W<XX>_SCORM_v<x.y>.zip` (package) · `W<XX>_QA_Review_v<x.y>.md` (QA report) · datasets `W<XX>_Stage_B_<Descriptor>.csv`.
+
+**Stable filenames:** the filename keeps its original version once other documents cite it; the current version is recorded in the document header (e.g. `W01_Stage_B_OAL_Storyboard_v0.1.md` holds v0.1.1). Do not rename cited files without updating every reference.
+
+No spaces. Dates only inside files, not filenames.
 
 ## 2. Versioning and status
 
@@ -112,7 +114,7 @@ Flag any week exceeding limits in its week design.
 ## 10. SCORM standards
 
 - Standard: **SCORM 1.2**; target LMS: **NP Brightspace**.
-- One reusable package per week: `MI_W<XX>_SCORM_v<x.y>.zip`, built from the approved reference-week template.
+- One reusable package per week: `W<XX>_SCORM_v<x.y>.zip`, built from the approved reference-week template.
 - Valid `imsmanifest.xml` and launch file at package root.
 - Tracking: bookmarking (`cmi.core.lesson_location` / `cmi.suspend_data`), completion status (`cmi.core.lesson_status`), assessment score (`cmi.core.score.raw`).
 - Completion: all learning objects viewed + formative check attempted.
@@ -140,7 +142,7 @@ Run `review-week` for every week before `APPROVED`. Minimum checklist:
 - [ ] Continuity with previous/next week stated
 - [ ] SCORM 1.2 tested in NP Brightspace (bookmark, completion, score)
 
-Sign-off recorded in `05_Quality_Assurance/MI_W<XX>_QA_v<x.y>.md`: reviewer, date, outcome, actions.
+Sign-off recorded in `05_Quality_Assurance/W<XX>_QA_Review_v<x.y>.md`: reviewer, date, outcome, actions.
 
 ## 12. Change control
 
