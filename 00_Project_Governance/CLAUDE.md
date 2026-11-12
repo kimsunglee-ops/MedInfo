@@ -1,68 +1,116 @@
-# CLAUDE.md — Medical Informatics Curriculum Project
+# Medical Informatics – Project Instructions
 
-Status: **DRAFT v0.1 — pending module lead approval**
-Last updated: 2026-11-12
+Status: **v0.2** · Last updated: 2026-11-12
 
-## 1. Project purpose
+## 1. Project Context
 
-Develop a complete, constructively aligned 12-week Medical Informatics module for Year 3 Diploma in Biomedical Science students, from governance through SCORM release.
+Develop teaching and learning materials for the Year 3 Diploma in Biomedical Science (BMS), Ngee Ann Polytechnic, Singapore.
 
-Claude acts as **curriculum co-designer**, not content generator. Every artefact must be pedagogically purposeful, aligned to approved MLOs, biomedically relevant and contextualised to Singapore healthcare.
+The module covers Medical Informatics, healthcare information systems, laboratory informatics, healthcare data, interoperability, analytics, digital health, AI and data governance.
 
-## 2. Module profile
+Students have a biomedical science background but are not computer science students.
 
-| Item | Value |
-|---|---|
-| Module | Medical Informatics |
-| Programme | Diploma in Biomedical Science |
-| Level | Year 3 (final year) |
-| Credits | 4 CU |
-| Duration | 12 teaching weeks |
-| Weekly structure | 2 h Online Asynchronous Learning (OAL) + 2 h practical/application |
-| Learners | Biomedical Science students — **no programming, database or advanced maths assumed** |
-| Prior learning | Cell Biology & Genetics; Anatomy & Physiology; Microbiology; Biochemistry; Molecular Biology; Basic Statistics; Research Methodology; Laboratory Techniques; Basic Bioinformatics |
+## 2. Academic Authority
 
-## 3. Sources of truth (read before any development task)
+- The approved module architecture, MLOs and weekly syllabus are authoritative.
+- Existing lecture notes, PowerPoint slides and practical materials are the primary content sources.
+- Do not introduce new topics or change the intended learning outcomes without explicit approval.
+- Do not remove important scientific explanations merely to simplify the materials.
+- Distinguish established facts, emerging technologies and illustrative examples.
+- Use Singapore healthcare examples wherever relevant, including MOH, Synapxe, NEHR, HealthHub and healthcare institutions.
+
+## 3. Pedagogical Requirements
+
+- Develop materials appropriate for Year 3 BMS students.
+- Emphasise biomedical and healthcare applications rather than computer programming.
+- Use authentic healthcare and laboratory scenarios.
+- Integrate active learning, case studies, data interpretation and problem-solving.
+- Incorporate the Anchor, Augment and Advance approach to GenAI.
+- Maintain constructive alignment between learning outcomes, teaching activities and assessment.
+
+## 4. Learning Material Design
+
+Develop interactive, visually engaging and accessible learning materials.
+
+Use:
+
+- Clear explanations and visual representations.
+- Healthcare and biomedical case studies.
+- Interactive knowledge checks.
+- Formative assessments.
+- Practical applications and simulations.
+- Reflection and application activities.
+
+Provide lecturer narration scripts where appropriate.
+
+## 5. Technical Requirements
+
+- Develop reusable SCORM 1.2 learning packages.
+- Ensure compatibility with NP Brightspace.
+- Support bookmarking, completion status and assessment score tracking.
+- Include accessible navigation and visible audio controls where narration is provided.
+- Use local assets where possible.
+- Ensure the SCORM package has the correct `imsmanifest.xml` and launch files.
+
+## 6. Quality Assurance
+
+Before releasing any learning material, check:
+
+1. Scientific and technical accuracy.
+2. Alignment with the approved MLOs.
+3. Completeness of the original teaching content.
+4. Clarity and suitability for BMS students.
+5. Accuracy of Singapore healthcare examples.
+6. Assessment validity and answer accuracy.
+7. Accessibility and usability.
+8. SCORM technical compatibility.
+
+Never assume that generated content is academically correct. Flag uncertain information for lecturer review.
+
+## 7. Development Approach
+
+- Work on one reference week first.
+- Obtain approval of the storyboard and learning architecture before implementation.
+- Establish a reusable template and technical framework.
+- Reuse the approved framework for subsequent weeks.
+- Do not overwrite original source materials.
+- Maintain version control and document all significant changes.
+
+---
+
+## 8. Project Reference
+
+### Governing files (`00_Project_Governance/`)
 
 | File | Governs |
 |---|---|
 | `Module_Architecture.md` | Purpose, graduate capability, intellectual architecture, assessment strategy |
 | `Approved_MLOs.md` | Module learning outcomes and MLO–week–assessment map |
 | `Weekly_Syllabus.md` | Weekly Central Question, Big Idea, LOs, 3As, PAIR, practical |
-| `Development_Standards.md` | Naming, versioning, quality, accessibility, SCORM, QA |
+| `Development_Standards.md` | Naming, versioning, content, accessibility, SCORM, QA |
 
-Precedence when files conflict: Approved_MLOs > Module_Architecture > Weekly_Syllabus > Development_Standards > source materials. Flag any conflict; do not resolve silently.
+Precedence when files conflict: Approved_MLOs > Module_Architecture > Weekly_Syllabus > Development_Standards. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
 
-## 4. Non-negotiable rules
+### Folder map
 
-1. **Never silently change approved architecture or MLOs.** If a weakness is found: state the problem → consequence → proposed revision → decision required.
-2. **Problem before technology. Meaning before mechanics.**
-3. **Biomedical identity** — anchor in laboratory data, diagnostics, pathology, genomics, surveillance, clinical decisions.
-4. **Singapore context** (MOH, Synapxe, HealthHub, NEHR, clusters, PDPA, Health Information Bill) — **verify current status against official sources; never fabricate** facts, statistics, dates, system capabilities or citations. Mark unverified claims `[VERIFY]`.
-5. **GenAI** must raise cognitive demand (3As + PAIR), never replace the thinking students are meant to learn.
-6. Distinguish **established fact / illustrative example / hypothetical scenario / interpretive judgement**.
-7. Separate **LECTURER CONTENT / STUDENT-FACING CONTENT / FACILITATOR NOTES / ASSESSMENT CONTENT**.
-8. Content completeness ≠ curriculum quality. Prefer less, better-aligned content.
+| Folder | Contents |
+|---|---|
+| `01_Source_Materials/` | Original lecture notes, slides, scripts, practicals, assessments, references — **read-only** |
+| `02_Learning_Design/` | Storyboards, activity designs, assessment blueprints |
+| `03_Development/Week_XX/` | Working artefacts per week |
+| `04_SCORM_Packages/` | Built SCORM 1.2 packages |
+| `05_Quality_Assurance/` | Review reports, checklists, sign-offs |
+| `06_Release/` | Approved, versioned release files only |
 
-## 5. Development workflow
+### Workflow gates
 
 ```
-Governance (00) → Source review (01) → Learning design (02) → Build (03)
-→ SCORM packaging (04) → QA (05) → Release (06)
+Source review → Storyboard + learning architecture → [APPROVAL]
+→ Academic content → Visual/interactive build → QA review
+→ SCORM build + Brightspace test → [SIGN-OFF] → Release
 ```
 
-Per week, follow this order and do not skip approval gates:
-
-1. Confirm week position, Central Question, Big Idea, LOs from `Weekly_Syllabus.md`
-2. Storyboard → `02_Learning_Design/Storyboards/`
-3. Academic content (lecture notes, OAL, practical) → `03_Development/Week_XX/`
-4. **Gate: module lead approval of academic content**
-5. Visual/interactive transformation
-6. Quality review (`review-week`) → `05_Quality_Assurance/`
-7. SCORM build → `04_SCORM_Packages/`
-8. **Gate: final QA sign-off** → `06_Release/`
-
-## 6. Skills to use
+### Skills
 
 | Task | Skill |
 |---|---|
@@ -73,23 +121,8 @@ Per week, follow this order and do not skip approval gates:
 | Assessment | `design-assessment` |
 | Pre-release review | `review-week` |
 
-## 7. Folder map
+### End-of-task Alignment Check
 
-| Folder | Contents |
-|---|---|
-| `00_Project_Governance/` | This file + governing documents (change only via approval) |
-| `01_Source_Materials/` | Existing/legacy inputs — read-only reference |
-| `02_Learning_Design/` | Storyboards, activity designs, assessment blueprints |
-| `03_Development/Week_XX/` | Working artefacts per week |
-| `04_SCORM_Packages/` | Built packages |
-| `05_Quality_Assurance/` | Review reports, checklists, sign-offs |
-| `06_Release/` | Approved, versioned release files only |
-
-## 8. End-of-task requirement
-
-Close every substantial task with:
-
-### Alignment Check
 - Module alignment:
 - Weekly alignment:
 - Cognitive level:

@@ -107,16 +107,23 @@ Flag any week exceeding limits in its week design.
 
 ## 10. SCORM standards
 
-- Standard: **SCORM 1.2** by default **[VERIFY LMS requirement — 1.2 vs 2004]**.
-- One package per week: `MI_W<XX>_SCORM_v<x.y>.zip`.
-- Completion: all learning objects viewed + formative check attempted; score reported where applicable.
-- Test in SCORM Cloud (or equivalent) and the target LMS before release; record results in `05_Quality_Assurance/`.
+- Standard: **SCORM 1.2**; target LMS: **NP Brightspace**.
+- One reusable package per week: `MI_W<XX>_SCORM_v<x.y>.zip`, built from the approved reference-week template.
+- Valid `imsmanifest.xml` and launch file at package root.
+- Tracking: bookmarking (`cmi.core.lesson_location` / `cmi.suspend_data`), completion status (`cmi.core.lesson_status`), assessment score (`cmi.core.score.raw`).
+- Completion: all learning objects viewed + formative check attempted.
+- Narration: visible, keyboard-accessible audio controls; transcript provided.
+- Assets local to the package where possible; no reliance on external CDNs.
+- Test in SCORM Cloud (or equivalent) and NP Brightspace before release; record results in `05_Quality_Assurance/`.
 - Mobile-responsive; works in current Chrome, Edge, Safari.
 
 ## 11. Quality assurance
 
 Run `review-week` for every week before `APPROVED`. Minimum checklist:
 
+- [ ] Scientific and technical accuracy checked; uncertain content flagged for lecturer review
+- [ ] Original teaching content complete (nothing important removed)
+- [ ] Assessment answers verified
 - [ ] LOs measurable and mapped to MLOs
 - [ ] Central Question and Big Idea evident in OAL and practical
 - [ ] 3As and PAIR present and cognitively meaningful
@@ -127,7 +134,7 @@ Run `review-week` for every week before `APPROVED`. Minimum checklist:
 - [ ] Workload within limits
 - [ ] Accessibility checks passed
 - [ ] Continuity with previous/next week stated
-- [ ] SCORM tested (if built)
+- [ ] SCORM 1.2 tested in NP Brightspace (bookmark, completion, score)
 
 Sign-off recorded in `05_Quality_Assurance/MI_W<XX>_QA_v<x.y>.md`: reviewer, date, outcome, actions.
 
