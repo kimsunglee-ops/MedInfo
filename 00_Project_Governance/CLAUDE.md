@@ -92,7 +92,7 @@ Never assume that generated content is academically correct. Flag uncertain info
 | `03_Assessment_Blueprint_v0.1.md` | Blueprint v0.1.2: C1–C3 (Option A), criteria, GenAI/integrity rules; weights/dates TBC |
 | `00_Module_Design_Principles.md` | Module identity, conceptual model, progression, design principles, items requiring confirmation |
 | `04_Teaching_and_Learning_Design_v0.1.md` | T&L design v0.1.2: **weekly package specification** — OAL (8 segments, 120 min) and practical (7 segments, 120 min) templates, ≤ 5 key concepts, workload, formative item standard, quiz settings, GenAI/PAIR rules, accessibility, QA |
-| `05_Singapore_Context_and_Sources_v0.1.md` | Singapore source register v0.1 (verified 1 Nov 2026): organisations, NEHR, HealthHub, HIA, other instruments, SingHealth 2018 case; status labels V-O / V-S / Verify / Illustrative; sources R1–R28 |
+| `50_Singapore_Context_and_Sources_v0.1.md` | Singapore source register v0.1 (verified 1 Nov 2026): organisations, NEHR, HealthHub, HIA, other instruments, SingHealth 2018 case; status labels V-O / V-S / Verify / Illustrative; sources R1–R28 |
 | `06_Case_State_Register_v0.1.md` | Register v0.3: **single authority for Patient A facts, values, identifiers and release week**; Week 10 transfer case |
 
 Design documents elsewhere:
@@ -112,10 +112,9 @@ Filename aliases used inside these documents:
 | `01_Approved_10_Week_Syllabus_v0.2.2.md`, `10_Week_Syllabus_v0.2.md` | `00_Project_Governance/Weekly_Syllabus.md` |
 | `20_Constructive_Alignment_Matrix_v0.1.md` | `00_Project_Governance/02_Constructive_Alignment_Matrix_v0.1.1.md` |
 | `30_Assessment_Blueprint_v0.1.md` | `00_Project_Governance/03_Assessment_Blueprint_v0.1.md` |
-| `50_Singapore_Context_and_Sources_v0.1.md` | `00_Project_Governance/05_Singapore_Context_and_Sources_v0.1.md` (not the `05_` weekly architecture) |
 | `W01/` … `W10/` | `03_Development/Week_01/` … `Week_10/` |
 
-Singapore rule: every Singapore claim cites an R-number from `05_Singapore_Context_and_Sources_v0.1.md` and respects its status label (only V-O taught as fact; V-S as "reported"; Verify not taught as fact). Re-verify legal items before each delivery.
+Singapore rule: every Singapore claim cites an R-number from `50_Singapore_Context_and_Sources_v0.1.md` and respects its status label (only V-O taught as fact; V-S as "reported"; Verify not taught as fact). Re-verify legal items before each delivery.
 
 Case rule: every Patient A fact must match `06_Case_State_Register_v0.1.md`; update the register in the same change when a week adds a fact.
 
