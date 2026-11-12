@@ -38,6 +38,8 @@ Only `APPROVED` artefacts move to `04_SCORM_Packages/`; only `RELEASED` artefact
 
 ## 3. Weekly package — required contents (`03_Development/Week_XX/`)
 
+> `04_Teaching_and_Learning_Design_v0.1.md` §11 is the authoritative package specification; this list is a file checklist only.
+
 | # | Artefact | Audience |
 |---|---|---|
 | 1 | Week design (alignment matrix, journey, workload) | Lecturer |
@@ -85,6 +87,8 @@ Only `APPROVED` artefacts move to `04_SCORM_Packages/`; only `RELEASED` artefact
 
 ## 8. Workload limits
 
+> `04_Teaching_and_Learning_Design_v0.1.md` §2–§3 (OAL and practical segment timings, ≤ 5 key concepts, ~4 h/week) prevails over this table.
+
 | Component | Limit |
 |---|---|
 | OAL total | ≤ 120 min including checks |
@@ -101,7 +105,7 @@ Flag any week exceeding limits in its week design.
 - Priority: meaning → clarity → accuracy → accessibility → consistency → polish.
 - One dominant idea per slide/screen; progressive disclosure for complex models.
 - Use preferred visual structures (system map, process flow, data-flow diagram, comparison table, decision tree, case card).
-- Target **WCAG 2.1 AA**: contrast ≥ 4.5:1, alt text on all images, captions/transcripts for all audio/video, no colour-only meaning, keyboard-navigable interactions, restrained animation.
+- Target **WCAG 2.1 AA** (proposed; T&L Design §9 defers the standard to the Production Specification, not yet supplied): contrast ≥ 4.5:1, alt text on all images, captions/transcripts for all audio/video, no colour-only meaning, keyboard-navigable interactions, restrained animation.
 - Apply approved NP/LSCT brand kit if available; do not invent brand rules.
 - Visuals must not imply false causation, false clinical certainty or nonexistent Singapore processes.
 

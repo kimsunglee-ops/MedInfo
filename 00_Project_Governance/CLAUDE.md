@@ -90,6 +90,8 @@ Never assume that generated content is academically correct. Flag uncertain info
 | `Development_Standards.md` | Naming, versioning, content, accessibility, SCORM, QA |
 | `02_Constructive_Alignment_Matrix_v0.1.1.md` | Alignment matrix v0.1.3: MLO × week, WLO → MLO (40 WLOs), MLO component coverage, gaps G1–G7 |
 | `03_Assessment_Blueprint_v0.1.md` | Blueprint v0.1.2: C1–C3 (Option A), criteria, GenAI/integrity rules; weights/dates TBC |
+| `00_Module_Design_Principles.md` | Module identity, conceptual model, progression, design principles, items requiring confirmation |
+| `04_Teaching_and_Learning_Design_v0.1.md` | T&L design v0.1.2: **weekly package specification** — OAL (8 segments, 120 min) and practical (7 segments, 120 min) templates, ≤ 5 key concepts, workload, formative item standard, quiz settings, GenAI/PAIR rules, accessibility, QA |
 | `06_Case_State_Register_v0.1.md` | Register v0.3: **single authority for Patient A facts, values, identifiers and release week**; Week 10 transfer case |
 
 Design documents elsewhere:
@@ -115,7 +117,7 @@ Case rule: every Patient A fact must match `06_Case_State_Register_v0.1.md`; upd
 
 Module: **10 weeks**, 2 h OAL + 2 h practical/week. Patient A runs Weeks 1–9; Week 10 is a new case (community INR POCT network).
 
-Precedence when files conflict: Weekly_Syllabus > Approved_MLOs > Alignment Matrix > Assessment Blueprint > Case-State Register > Weekly Learning Architecture > Module_Architecture > Development_Standards. Exception: for Patient A facts, the Case-State Register prevails. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
+Precedence when files conflict: Weekly_Syllabus > Approved_MLOs > Alignment Matrix > Assessment Blueprint > Teaching & Learning Design > Case-State Register > Weekly Learning Architecture > Module Design Principles > Module_Architecture > Development_Standards. Exception: for Patient A facts, the Case-State Register prevails. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
 
 ### Folder map
 

@@ -78,14 +78,12 @@ A teaching framework, not a strictly linear workflow; real processes interact an
 
 ## 8. Referenced documents
 
-**In repository:** alignment matrix (v0.1.3), assessment blueprint (v0.1.2), case-state register (v0.3), weekly learning architecture W2–W10 (v0.3), Week 1 Stage A (v0.1), Stage B OAL storyboard (v0.1.1) and practical package (v0.1), Stage C quiz (v0.1).
+**In repository:** module design principles, teaching & learning design (v0.1.2), alignment matrix (v0.1.3), assessment blueprint (v0.1.2), case-state register (v0.3), weekly learning architecture W2–W10 (v0.3), Week 1 Stage A (v0.1), Stage B OAL storyboard (v0.1.1) and practical package (v0.1), Stage C quiz (v0.1).
 
 **Cited but not yet in repository:**
 
 | Document | Cited by | Needed for |
 |---|---|---|
-| `04_Teaching_and_Learning_Design_v0.1.md` (v0.1.2) | 05, W01 | Weekly OAL/practical template, quiz standard, GenAI §8, NRIC rule §10 |
-| `00_Module_Design_Principles.md` | 05 | Design principles baseline |
 | `50_Singapore_Context_and_Sources_v0.1.md` (R1–R14) | W01 | Verified Singapore facts and source IDs |
 | Production Specification | W01 (I12) | Build/visual production rules |
 | W02–W10 Stage B packages, datasets, C3 case pack + marking guide | 05 §8, 06 | Practical materials |
