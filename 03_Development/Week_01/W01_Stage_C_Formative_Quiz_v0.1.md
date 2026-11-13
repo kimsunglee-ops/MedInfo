@@ -3,7 +3,7 @@
 **Module:** Medical Informatics (Year 3 BMS, Ngee Ann Polytechnic)
 **Week:** 1 — Introduction to Medical Informatics and the Healthcare Information Ecosystem
 **Version:** 0.1.1 (13 November 2026; filename retained for stable reference)
-**Status:** Draft for approval at design gate C. v0.1.1 applies issue I11: Q5, Q6 and Q8 stems open with "Suppose…" so hypothetical problems are not read as Patient A case facts (`06_Case_State_Register_v0.1.md` §1 rule 3); Q8 time removed to avoid conflict with the register's 11:32 report time
+**Status:** **Approved at design gate C** (curriculum owner, 13 Nov 2026). Pre-approval check: answer key matches marked options for all 8 items; every WLO covered; 4 of 8 items at Apply or above. Build note: 5 of 7 multiple-choice items are keyed B — shuffle options in Brightspace or rebalance at the next revision. v0.1.1 applies issue I11: Q5, Q6 and Q8 stems open with "Suppose…" so hypothetical problems are not read as Patient A case facts (`06_Case_State_Register_v0.1.md` §1 rule 3); Q8 time removed to avoid conflict with the register's 11:32 report time
 **Baseline:** Stage A blueprint §10 (approved); Stage B storyboard LO6-S1 (approved); T&L Design §6.2–6.3; Production Specification §5.1
  
 **Assessment type:** formative, ungraded. **GenAI:** not used (Week 1 Rule stage); the quiz is completed independently.
