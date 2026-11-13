@@ -2,8 +2,8 @@
  
 **Module:** Medical Informatics (Year 3 BMS, Ngee Ann Polytechnic)
 **Week:** 1 — Introduction to Medical Informatics and the Healthcare Information Ecosystem
-**Version:** 0.1 (1 November 2026)
-**Status:** Draft for approval at design gate C
+**Version:** 0.1.1 (13 November 2026; filename retained for stable reference)
+**Status:** Draft for approval at design gate C. v0.1.1 applies issue I11: Q5, Q6 and Q8 stems open with "Suppose…" so hypothetical problems are not read as Patient A case facts (`06_Case_State_Register_v0.1.md` §1 rule 3); Q8 time removed to avoid conflict with the register's 11:32 report time
 **Baseline:** Stage A blueprint §10 (approved); Stage B storyboard LO6-S1 (approved); T&L Design §6.2–6.3; Production Specification §5.1
  
 **Assessment type:** formative, ungraded. **GenAI:** not used (Week 1 Rule stage); the quiz is completed independently.
@@ -153,7 +153,7 @@ Which response is most accurate?
  
 **WLO 1.4 · Understand · Multiple choice**
  
-The analyser's internal quality control for potassium was within limits all morning. Patient A's potassium was measured on that analyser during the same period.
+Suppose the analyser's internal quality control for potassium was within limits all morning, and Patient A's potassium was measured on that analyser during the same period.
  
 What can you conclude?
  
@@ -179,7 +179,7 @@ What can you conclude?
  
 **WLO 1.4 · Analyse · Multiple choice**
  
-Four problems occur during Patient A's test journey. Which poses the **greatest** risk to patient safety, and why?
+Suppose four problems occurred during Patient A's test journey. Which would pose the **greatest** risk to patient safety, and why?
  
 | Option | Text | Key |
 |---|---|---|
@@ -229,7 +229,7 @@ Which example best shows medical informatics supporting **laboratory operations*
  
 **WLO 1.4 · Apply · Multiple choice**
  
-The laboratory releases Patient A's correct result at 11:00. It is sent only to a doctor who left the clinic last week, and no one else is notified.
+Suppose the laboratory released Patient A's correct result, but it was sent only to a doctor who had left the clinic the week before, and no one else was notified.
  
 Which risk type does this **best** represent?
  
