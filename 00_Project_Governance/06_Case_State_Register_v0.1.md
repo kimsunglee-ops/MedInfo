@@ -1,8 +1,8 @@
 # Medical Informatics — Case-State Register
  
 **Module:** Medical Informatics, Year 3 Diploma in BMS, Ngee Ann Polytechnic
-**Version:** 0.3 (12 November 2026)
-**Status:** §2–§5 **approved** (curriculum owner: D2 and D12, 12 Nov 2026). §2a records facts released by the Week 2–5 Stage B packages; §2b (W6–W9) and §6 (W10) are **proposed** pending gate B, D13 and D15.
+**Version:** 0.3.1 (13 November 2026)
+**Status:** §2–§5 **approved** (curriculum owner: D2 and D12, 12 Nov 2026). §2a records facts released by the Week 2–5 Stage B packages; §2b (W6–W9) and §6 (W10) are **proposed** pending gate B; D13 and D15 **approved** 13 Nov 2026.
 **Baseline:** syllabus v0.2.4 §3.0; `05_Weekly_Learning_Architecture_W2-W10_v0.1.md` §3; `W01/` Stage A–C
  
 **Purpose:** the single authoritative record of what is established about Patient A, and when students learn it. Every weekly package checks its case content against this register before release. When a week adds a fact, update this register in the same change.
@@ -51,7 +51,7 @@ All people, places, identifiers and values are **fictional and synthetic**. Valu
  
 | Week | Fact | Source |
 |---|---|---|
-| 6 | Repeat potassium 4.6 (non-haemolysed). Cohort file: Patient A = StudyID C-087, single row 40-49/F/sector 54/P2/2026-03/8.1%. **Sex (F) and age band (40–49) become inferable (D13)** | `W06/` package, CSV |
+| 6 | Repeat potassium 4.6 (non-haemolysed). Cohort file: Patient A = StudyID C-087, single row 40-49/F/sector 54/P2/2026-03/8.1%. **Sex (F) and age band (40–49) become inferable (D13, approved 13 Nov 2026)** | `W06/` package, CSV |
 | 6 | Fictional CDS "AKI risk" alert fires on eGFR 61 → 52; PPV ≈ 20% in the teaching example | `W06/` package |
 | 7 | 4-week home glucose log (52 rows; gap 31 Mar–2 Apr; duplicate 7 Apr; 24.8 contamination 9 Apr; 11 Apr clock error; 13–14 Apr in mg/dL). Fictional GlucoLink Home meter and RiskSense AI flag (HIGH on 13 Apr, probable unit artefact) | `W07/` package, CSV |
 | 8 | Four incident variants (misdirected report to Hillcrest Family Clinic; after-hours LIS access; public GenAI paste; phishing email quoting 26-0518). None confirms a breach. Teaching assumption: HIA CS/DS duties apply to RGH | `W08/` package |
@@ -84,7 +84,7 @@ All people, places, identifiers and values are **fictional and synthetic**. Valu
 | 6 | W1–5 | Repeat potassium 4.6; de-identified clinic HbA1c cohort (includes Patient A's 8.1%); CDS alert on eGFR fall 61 → 52 | That the alert is correct |
 | 7 | W1–6 | Following the clinic review, home glucose self-testing with remote monitoring and an AI risk flag proposed | Device accuracy; AI flag validation |
 | 8 | W1–7 | One information incident involving Patient A's record (four variants, one per group) | That a breach is confirmed |
-| 9 | W1–8 | Fictional community GP clinic (Harbourview) takes over Patient A's follow-up; electronic result delivery from RGH proposed. RGH laboratory contributes its reports to NEHR; the clinic contributes its own specified information (D15, proposed) | Specific system names; national technical arrangements |
+| 9 | W1–8 | Fictional community GP clinic (Harbourview) takes over Patient A's follow-up; electronic result delivery from RGH proposed. RGH laboratory contributes its reports to NEHR; the clinic contributes its own specified information (D15, approved 13 Nov 2026) | Specific system names; national technical arrangements |
 | 10 | — | Separate case (§6) | Anything from Patient A |
  
 ### Design constraints for Stage B (lecturer-facing; approved with D2)
@@ -107,7 +107,7 @@ These let W2–W5 use realistic identity checks without inventing details each w
 | ◇ Collection time | **08:40** | W2 | Same time as the W1 teaching example. With receipt at 10:15, this gives a 95-min collection-to-receipt interval that W3 can examine (delayed separation, per the W1-LO2 knowledge example) |
 | ◇ Doctors | **Doctor 1** (ordering), **Doctor 2** (covering, same clinic) | W2 | Role labels, not names; supports "result not visible to intended recipient" |
 | ◇ Haemolysis comment text | "Specimen haemolysed. Potassium may be falsely elevated." | W3 | Same wording reused in W4 (lost) and W5 (decision) |
-| ◇ Sex and date of birth | **Not released.** Lecturer-only: female, born 1984 (age 42) | Only if a week needs it | See consistency note |
+| ◇ Sex and date of birth | Sex (F) and age band (40–49) **inferable from the W6 cohort** (D13, approved 13 Nov 2026); exact date of birth **not released**. Lecturer-only: born 1984 (age 42) | W6 (inference only) | See consistency note |
  
 **Lecturer-only consistency note:** with the CKD-EPI 2021 creatinine equation, creatinine 118 µmol/L gives an eGFR of about 51–52 for a woman aged about 40–42. About 103 µmol/L would give the previous eGFR of 61. If a later week releases a previous creatinine, use about 103 µmol/L. Verify which eGFR equation Singapore laboratories report before stating it to students; the module does not teach the equation.
  
@@ -126,3 +126,4 @@ Fictional **Lakeside Anticoagulation Network**: clinics Alder (AL-), Birch (BI-)
 | 0.1 | 12 Nov 2026 | Register created; §2–§4 values approved (D2); §5 proposed | Curriculum owner |
 | 0.2 | 12 Nov 2026 | §5 approved (D12); §2a added for facts released in W2–W5 Stage B practical packages | Curriculum owner |
 | 0.3 | 12 Nov 2026 | §2b (W6–W9) and §6 (W10) added; W9 row corrected per MOH HIA FAQ v1.2 (D15) | Proposed; gate B |
+| 0.3.1 | 13 Nov 2026 | D13 (W6 sex and age-band inference) and D15 (laboratory contributes reports to NEHR) approved; §5 sex/DOB row updated. §2b and §6 remain pending gate B | Curriculum owner |

@@ -1,7 +1,7 @@
 # Medical Informatics — Weekly Learning Architecture, Weeks 2–10 (Stage A)
  
 **Module:** Medical Informatics, Year 3 Diploma in BMS, Ngee Ann Polytechnic
-**Version:** 0.3.2 (13 November 2026; filename retained for stable reference)
+**Version:** 0.3.3 (13 November 2026; filename retained for stable reference)
 **Status:** Stage A — owner decisions of 12 Nov 2026 applied; open items in §7
 **Baseline:** `01_Approved_10_Week_Syllabus_v0.2.2.md` (content v0.2.4), `02_Constructive_Alignment_Matrix_v0.1.1.md` (content v0.1.3), `03_Assessment_Blueprint_v0.1.md` (content v0.1.2), `06_Case_State_Register_v0.1.md`, `04_Teaching_and_Learning_Design_v0.1.md` (content v0.1.2), `00_Module_Design_Principles.md`
  
@@ -9,6 +9,7 @@
 **v0.3 changes:** case values approved (D2) and moved to `06_Case_State_Register_v0.1.md`; G2 and G5 applied (W3, W9); Week 2 aligned to the Week 1 package (A3 row G, roles, risk types, privacy lens); Week 1 consistency issues I10–I12 logged.
 **v0.3.1 changes:** I11 closed — W1 quiz v0.1.1 applies "Suppose…" stems to Q5, Q6 and Q8 (13 Nov 2026).
 **v0.3.2 changes:** D9 approved and applied — filename references standardised to current names; I9 closed (13 Nov 2026).
+**v0.3.3 changes:** D13 and D15 approved (13 Nov 2026); syllabus v0.2.5 and register v0.3.1 updated accordingly.
 **Scope:** Stage A only (weekly design and content outline). It does **not** contain lecture notes, slides, full quiz items, datasets or answer keys (Stages B–D). Topic titles, sequence, WLO wording and MLO mapping are unchanged from the baseline.
  
 ---
@@ -640,8 +641,8 @@ Named but **not yet verified** (check before Stage B): HIMSS interoperability le
 | D10 | Fix W1 potassium conflict (I10) | **Approved and applied** (W1 storyboard v0.1.1) |
 | D11 | Upload the Singapore Context and Production Specification documents cited by W1 (I12) | Open |
 | D12 | Approve proposed identifiers and lecturer-only values in `06_` §5 | **Approved** (register v0.2) |
-| D13 | W6 privacy task releases Patient A's sex (F) and age band (40–49) by inference | Open. Recommend approve (makes the re-identification lesson authentic) |
-| D15 | Correct W9 case: the generating laboratory, not the ordering clinic, contributes lab reports to NEHR (MOH HIA FAQ v1.2, 27 Aug 2026) | Open. Recommend approve (verified source) |
+| D13 | W6 privacy task releases Patient A's sex (F) and age band (40–49) by inference | **Approved** (13 Nov 2026) |
+| D15 | Correct W9 case: the generating laboratory, not the ordering clinic, contributes lab reports to NEHR (MOH HIA FAQ v1.2, 27 Aug 2026) | **Approved** (13 Nov 2026); applied in syllabus v0.2.5 W9 and register v0.3.1 |
  
 ## 8. Changes required to Project Knowledge
  
@@ -652,4 +653,4 @@ Named but **not yet verified** (check before Stage B): HIMSS interoperability le
 - Done (v0.3.2): D9 — filename references standardised.
 ---
  
-**Recommended next development step:** gate B approval of W6–W10 practicals, D13 and D15; then W6–W10 OAL storyboards mirroring each practical, then W6–W9 quizzes.
+**Recommended next development step:** gate B approval of W6–W10 practicals; then W6–W10 OAL storyboards mirroring each practical, then W6–W9 quizzes.

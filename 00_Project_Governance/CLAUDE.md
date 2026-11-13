@@ -84,7 +84,7 @@ Never assume that generated content is academically correct. Flag uncertain info
 
 | File | Governs |
 |---|---|
-| `01_Approved_10_Week_Syllabus_v0.2.2.md` | **Authoritative** 10-week syllabus v0.2.4: MLOs, topics, WLOs, content boundaries, practicals, Patient A case state, lens, privacy decisions, GenAI stages, Singapore verification, glossary |
+| `01_Approved_10_Week_Syllabus_v0.2.2.md` | **Authoritative** 10-week syllabus v0.2.5: MLOs, topics, WLOs, content boundaries, practicals, Patient A case state, lens, privacy decisions, GenAI stages, Singapore verification, glossary |
 | `Approved_MLOs.md` | Approved MLOs (1 Nov 2026) and MLO × week map, extracted from the syllabus |
 | `Module_Architecture.md` | Summary of purpose, learning journey, 10-week structure, design threads, missing referenced documents |
 | `Development_Standards.md` | Naming, versioning, content, accessibility, SCORM, QA |
@@ -93,13 +93,13 @@ Never assume that generated content is academically correct. Flag uncertain info
 | `00_Module_Design_Principles.md` | Module identity, conceptual model, progression, design principles, items requiring confirmation |
 | `04_Teaching_and_Learning_Design_v0.1.md` | T&L design v0.1.3: **weekly package specification** — OAL (8 segments, 120 min) and practical (7 segments, 120 min) templates, ≤ 5 key concepts, workload, formative item standard, quiz settings, GenAI/PAIR rules, accessibility, QA |
 | `50_Singapore_Context_and_Sources_v0.1.md` | Singapore source register v0.1 (verified 1 Nov 2026): organisations, NEHR, HealthHub, HIA, other instruments, SingHealth 2018 case; status labels V-O / V-S / Verify / Illustrative; sources R1–R28 |
-| `06_Case_State_Register_v0.1.md` | Register v0.3: **single authority for Patient A facts, values, identifiers and release week**; Week 10 transfer case |
+| `06_Case_State_Register_v0.1.md` | Register v0.3.1: **single authority for Patient A facts, values, identifiers and release week**; Week 10 transfer case |
 
 Design documents elsewhere:
 
 | File | Contents |
 |---|---|
-| `02_Learning_Design/05_Weekly_Learning_Architecture_W2-W10_v0.1.md` | Stage A designs W2–W10 (v0.3.2): weekly template, PAIR map, central questions, big ideas, OAL/practical outlines, open decisions D8–D15 |
+| `02_Learning_Design/05_Weekly_Learning_Architecture_W2-W10_v0.1.md` | Stage A designs W2–W10 (v0.3.3): weekly template, PAIR map, central questions, big ideas, OAL/practical outlines, open decisions D8–D15 |
 | `03_Development/Week_01/W01_Stage_A_Instructional_Design_v0.1.md` | Week 1 Stage A design (reference week) |
 | `03_Development/Week_01/W01_Stage_B_OAL_Storyboard_v0.1.md` | W1 OAL storyboard **v0.1.1** — approved gate B; D10 applied |
 | `03_Development/Week_01/W01_Stage_B_Practical_Package_v0.1.md` | W1 practical package v0.1 — draft, gate B |

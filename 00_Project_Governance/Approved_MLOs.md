@@ -1,7 +1,7 @@
 # Module Learning Outcomes — Medical Informatics
 
 Status: **APPROVED by curriculum owner, 1 November 2026** (v0.2 wording, including D2)
-Source: `01_Approved_10_Week_Syllabus_v0.2.2.md` v0.2.4, §2 and §4. If the two files differ, `01_Approved_10_Week_Syllabus_v0.2.2.md` prevails.
+Source: `01_Approved_10_Week_Syllabus_v0.2.2.md` v0.2.5, §2 and §4. If the two files differ, `01_Approved_10_Week_Syllabus_v0.2.2.md` prevails.
 Last updated: 2026-11-12
 
 > Programme-outcome (PLO) mapping remains open (Syllabus §8 item 1). Do not change MLO wording without curriculum-owner approval.
