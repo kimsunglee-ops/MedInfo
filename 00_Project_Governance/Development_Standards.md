@@ -107,11 +107,13 @@ Flag any week exceeding limits in its week design.
 - Priority: meaning → clarity → accuracy → accessibility → consistency → polish.
 - One dominant idea per slide/screen; progressive disclosure for complex models.
 - Use preferred visual structures (system map, process flow, data-flow diagram, comparison table, decision tree, case card).
-- Target **WCAG 2.1 AA** (proposed; T&L Design §9 defers the standard to the Production Specification, not yet supplied): contrast ≥ 4.5:1, alt text on all images, captions/transcripts for all audio/video, no colour-only meaning, keyboard-navigable interactions, restrained animation.
+- Target **WCAG 2.1 AA** (proposed; the SCORM Master Specification §30 lists requirements but names no formal standard): contrast ≥ 4.5:1, alt text on all images, captions/transcripts for all audio/video, no colour-only meaning, keyboard-navigable interactions, restrained animation.
 - Apply approved NP/LSCT brand kit if available; do not invent brand rules.
 - Visuals must not imply false causation, false clinical certainty or nonexistent Singapore processes.
 
 ## 10. SCORM standards
+
+> `SCORM_Master_Specification_v2.0_Medical_Informatics_10_Lessons.md` governs all SCORM, narration, audio, tracking, header and package requirements. Where this section differs, the Master Specification prevails.
 
 - Standard: **SCORM 1.2**; target LMS: **NP Brightspace**.
 - One reusable package per week: `W<XX>_SCORM_v<x.y>.zip`, built from the approved reference-week template.

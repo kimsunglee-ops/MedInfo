@@ -198,7 +198,7 @@ G3 and G4 accepted by curriculum owner, 12 Nov 2026.
 - Datasets readable without specialist software; spreadsheet tool **TBC** (syllabus §8, item 11).
 - OAL is self-paced within the week.
 - Delivery: SCORM 1.2 packages for NP Brightspace with bookmarking, completion status and score tracking, accessible navigation, visible audio controls where narrated, and local assets (project instructions §5; `Development_Standards.md` §10).
-- Accessibility standard: WCAG 2.1 AA proposed (`Development_Standards.md` §9); final standard follows the Production Specification (**to be supplied**).
+- Production rules (screens, interactions, narration and audio states, transcripts, tracking, accessibility, package structure, QA): `SCORM_Master_Specification_v2.0_Medical_Informatics_10_Lessons.md` (supplied 13 Nov 2026). Its §30 lists accessibility requirements but names no formal standard; WCAG 2.1 AA remains the proposed target (`Development_Standards.md` §9).
 ---
  
 ## 10. Privacy and data handling in teaching
@@ -261,7 +261,7 @@ Workload estimates (⚑) are revised after the first delivery using actual compl
 | 1 | Practical delivery mode, class size and group size | **Confirmed:** classroom face-to-face; ≤ 25; groups of 3–4 |
 | 2 | NP notional-hours and credit requirements | **Confirmed:** ~4 h guided learning per week |
 | 3 | Brightspace quiz settings and analytics available | **Confirmed:** §6.3 settings |
-| 4 | Accessibility standard and production specification | **Partly confirmed:** SCORM 1.2 / Brightspace requirements set by project instructions §5 (12 Nov 2026); accessibility standard and Production Specification to be supplied |
+| 4 | Accessibility standard and production specification | **Confirmed:** SCORM Master Specification v2.0 supplied 13 Nov 2026. Open: formal accessibility standard (spec §30 names none) and `SCORM_Architecture_FROZEN.md` (cited by the spec, not supplied) |
 | 5 | Approved practical tools (spreadsheet, visualisation, simulated LIS) and approved GenAI tool | Syllabus §8, item 11 |
 | 6 | Feedback turnaround for C1 and C2 | Depends on calendar |
 | 7 | Alignment matrix G3 and G4 | **Confirmed:** accepted 12 Nov 2026 |

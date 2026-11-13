@@ -93,6 +93,7 @@ Never assume that generated content is academically correct. Flag uncertain info
 | `00_Module_Design_Principles.md` | Module identity, conceptual model, progression, design principles, items requiring confirmation |
 | `04_Teaching_and_Learning_Design_v0.1.md` | T&L design v0.1.3: **weekly package specification** — OAL (8 segments, 120 min) and practical (7 segments, 120 min) templates, ≤ 5 key concepts, workload, formative item standard, quiz settings, GenAI/PAIR rules, accessibility, QA |
 | `50_Singapore_Context_and_Sources_v0.1.md` | Singapore source register v0.1 (verified 1 Nov 2026): organisations, NEHR, HealthHub, HIA, other instruments, SingHealth 2018 case; status labels V-O / V-S / Verify / Illustrative; sources R1–R28 |
+| `SCORM_Master_Specification_v2.0_Medical_Informatics_10_Lessons.md` | **Production Specification** (SCORM Master Spec v2.0): SCORM 1.2/Brightspace, screen design, narration and mandatory audio states, transcripts, tracking and completion, file structure, frozen header, cross-lesson continuity (§49), QA, acceptance. Cites `SCORM_Architecture_FROZEN.md` (not supplied) |
 | `06_Case_State_Register_v0.1.md` | Register v0.3.1: **single authority for Patient A facts, values, identifiers and release week**; Week 10 transfer case |
 
 Design documents elsewhere:
@@ -117,7 +118,7 @@ Case rule: every Patient A fact must match `06_Case_State_Register_v0.1.md`; upd
 
 Module: **10 weeks**, 2 h OAL + 2 h practical/week. Patient A runs Weeks 1–9; Week 10 is a new case (community INR POCT network).
 
-Precedence when files conflict: Syllabus (`01_`) > Approved_MLOs > Alignment Matrix > Assessment Blueprint > Teaching & Learning Design > Case-State Register > Weekly Learning Architecture > Module Design Principles > Module_Architecture > Development_Standards. Exception: for Patient A facts, the Case-State Register prevails. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
+Precedence when files conflict: Syllabus (`01_`) > Approved_MLOs > Alignment Matrix > Assessment Blueprint > Teaching & Learning Design > Case-State Register > Weekly Learning Architecture > Module Design Principles > Module_Architecture > Development_Standards. Exception: for Patient A facts, the Case-State Register prevails. For SCORM build, narration, audio, tracking, package structure and package QA, the SCORM Master Specification prevails over T&L Design §9 and Development_Standards. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
 
 ### Folder map
 
