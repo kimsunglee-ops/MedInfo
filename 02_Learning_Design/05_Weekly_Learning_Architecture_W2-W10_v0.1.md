@@ -1,12 +1,13 @@
 # Medical Informatics — Weekly Learning Architecture, Weeks 2–10 (Stage A)
  
 **Module:** Medical Informatics, Year 3 Diploma in BMS, Ngee Ann Polytechnic
-**Version:** 0.3 (12 November 2026; filename retained for stable reference)
+**Version:** 0.3.1 (13 November 2026; filename retained for stable reference)
 **Status:** Stage A — owner decisions of 12 Nov 2026 applied; open items in §7
 **Baseline:** `01_Approved_10_Week_Syllabus_v0.2.2.md` (content v0.2.4), `02_Constructive_Alignment_Matrix_v0.1.1.md` (content v0.1.3), `03_Assessment_Blueprint_v0.1.md` (content v0.1.2), `06_Case_State_Register_v0.1.md`, `04_Teaching_and_Learning_Design_v0.1.md` (content v0.1.2), `00_Module_Design_Principles.md`
  
 **v0.2 changes:** I1, I2, I4, I5, I7 closed; G3/G4 accepted; Week 10 rebuilt on blueprint C3 with the INR POCT network setting.
 **v0.3 changes:** case values approved (D2) and moved to `06_Case_State_Register_v0.1.md`; G2 and G5 applied (W3, W9); Week 2 aligned to the Week 1 package (A3 row G, roles, risk types, privacy lens); Week 1 consistency issues I10–I12 logged.
+**v0.3.1 changes:** I11 closed — W1 quiz v0.1.1 applies "Suppose…" stems to Q5, Q6 and Q8 (13 Nov 2026).
 **Scope:** Stage A only (weekly design and content outline). It does **not** contain lecture notes, slides, full quiz items, datasets or answer keys (Stages B–D). Topic titles, sequence, WLO wording and MLO mapping are unchanged from the baseline.
  
 ---
@@ -32,7 +33,7 @@
 | # | Issue | Rating | Consequence | Recommendation |
 |---|---|---|---|---|
 | I10 | W1 OAL (W1-LO2-S2 and LO2-S3 item 2) gives **Patient A a potassium of 5.8 mmol/L collected at 08:40**. The approved case has 6.3 mmol/L, first given in W3, and W1's own case state says "do not assume results" | **Red** | Two potassium values for the same specimen; the W3 reveal and the W5 haemolysis-vs-critical dilemma are undermined | In those two places only, change "Patient A" to "a clinic patient". Keep the 5.8 value and the teaching point. Needs approval because W1 Stage B is approved |
-| I11 | W1 quiz Q5, Q6 and Q8 place hypothetical problems in "Patient A's" journey (e.g. a result sent to a doctor who has left) | Amber | Students may read the hypotheticals as case facts | At the next W1 revision, open these stems with "Suppose…". Rule recorded in `06_` §1 |
+| I11 | W1 quiz Q5, Q6 and Q8 place hypothetical problems in "Patient A's" journey (e.g. a result sent to a doctor who has left) | **Closed (v0.3.1, 13 Nov 2026)** | Students may read the hypotheticals as case facts | Applied in W1 quiz v0.1.1: Q5, Q6 and Q8 open with "Suppose…"; Q8 release time removed (conflicted with register 11:32). Rule recorded in `06_` §1 |
 | I12 | W1 cites `50_Singapore_Context_and_Sources_v0.1.md` (R1–R14) and a Production Specification, neither in Project Knowledge | Amber | Weeks 2–10 cannot reuse the same source IDs; sources were re-verified separately here | Upload both, or confirm they are not yet written |
  
 *W1 items confirmed consistent:* fictional hospital name (Riverside General Hospital); 10-stage journey; risk types (error, delay, loss); A3 row G left blank for Week 2; LIS downtime foreshadowed in W1-LO5-S2; NEHR coursework rule; specimen receipt at 10:15 (W1-LO2-S3 item 5); teaching potassium reference interval 3.5–5.1 mmol/L.
