@@ -2,9 +2,9 @@
  
 **Programme:** Diploma in Biomedical Science, Ngee Ann Polytechnic
 **Module:** Medical Informatics (Year 3, 10 weeks)
-**Version:** 0.1.2 (12 November 2026)
-**Status:** Working draft (v0.1.1: §13 decisions 1–3 confirmed, 1 Nov 2026; v0.1.2: PAIR adopted, concept grouping for W6/W8/W9 approved, G3/G4 accepted, blueprint reference updated, 12 Nov 2026)
-**Baseline:** `10_Week_Syllabus_v0.2.md` (v0.2.3); `20_Constructive_Alignment_Matrix_v0.1.md` (v0.1.2); `03_Assessment_Blueprint_v0.1.md` (v0.1.1)
+**Version:** 0.1.3 (13 November 2026; filename retained for stable reference)
+**Status:** Working draft (v0.1.1: §13 decisions 1–3 confirmed, 1 Nov 2026; v0.1.2: PAIR adopted, concept grouping for W6/W8/W9 approved, G3/G4 accepted, blueprint reference updated, 12 Nov 2026; v0.1.3: references, development stages, SCORM requirements and NEHR rule updated — see §15, 13 Nov 2026)
+**Baseline:** `Weekly_Syllabus.md` (v0.2.4); `02_Constructive_Alignment_Matrix_v0.1.1.md` (v0.1.3); `03_Assessment_Blueprint_v0.1.md` (v0.1.2); `06_Case_State_Register_v0.1.md` (v0.3); `50_Singapore_Context_and_Sources_v0.1.md` (v0.1)
  
 **Purpose:** the module-level specification every weekly package must follow. It defines the OAL and practical structure, workload model, teaching strategies, formative feedback and assessment principles. It is not a set of lesson plans.
  
@@ -50,7 +50,7 @@ Target 4–6 learning objects per week; segments may be combined.
  
 **Rules**
 - Time estimates include pausing, note-taking and re-viewing ⚑; narrated time is roughly half to two-thirds of segment time.
-- Introduce no more than five new key concepts per week ⚑. Weeks 6, 8 and 9 group their syllabus topics into five key concepts (approved 12 Nov 2026; no topics removed; see `05_Weekly_Learning_Architecture_W2-W10_v0.1.md`). Week 1 must still be checked against this limit.
+- Introduce no more than five new key concepts per week ⚑. Weeks 6, 8 and 9 group their syllabus topics into five key concepts (approved 12 Nov 2026; no topics removed; see `05_Weekly_Learning_Architecture_W2-W10_v0.1.md`). Week 1 checked: five key concepts, at the limit, with the Singapore map as context only (W01 Stage A §3, §12).
 - Any optional extension is labelled optional and excluded from the 120 min.
 ### 2.2 Practical structure (120 min)
  
@@ -197,7 +197,8 @@ G3 and G4 accepted by curriculum owner, 12 Nov 2026.
 - Plain-language explanations with a module glossary (syllabus §11).
 - Datasets readable without specialist software; spreadsheet tool **TBC** (syllabus §8, item 11).
 - OAL is self-paced within the week.
-- Accessibility standard and Brightspace/SCORM requirements follow the approved production specification (**to be supplied**).
+- Delivery: SCORM 1.2 packages for NP Brightspace with bookmarking, completion status and score tracking, accessible navigation, visible audio controls where narrated, and local assets (project instructions §5; `Development_Standards.md` §10).
+- Accessibility standard: WCAG 2.1 AA proposed (`Development_Standards.md` §9); final standard follows the Production Specification (**to be supplied**).
 ---
  
 ## 10. Privacy and data handling in teaching
@@ -206,15 +207,27 @@ G3 and G4 accepted by curriculum owner, 12 Nov 2026.
 - Datasets are checked for accidental realism (e.g. real NRIC formats) before release.
 - No real patient information is requested from students, including from placements.
 - GenAI confidentiality rule introduced in W1 and enforced throughout.
+- Students never access NEHR or any real patient record for coursework, including on placement (W01 storyboard W1-LO5-S3, approved gate B; NEHR not permitted for teaching [Singapore Context R1]).
+- Synthetic identifiers follow the case-state register (e.g. `RGH-` + 6 digits) and never resemble NRIC/FIN formats.
 ---
  
 ## 11. Weekly package specification
  
-Each weekly package (development stages A–F, project instructions §6) must include:
+Each weekly package is developed in three stages, each closed by an approval gate:
+
+| Stage | Output | Gate |
+|---|---|---|
+| A | Instructional design and content outline (`W<XX>_Stage_A_…`) | A |
+| B | OAL storyboard and practical package, incl. datasets (`W<XX>_Stage_B_…`) | B |
+| C | Formative items to §6.2 (`W<XX>_Stage_C_…`) | C |
+
+After gate C, packages follow the build, QA, SCORM and release steps in the project instructions. File naming follows `Development_Standards.md` §1.
+
+The package must include:
  
 | Element | Source |
 |---|---|
-| Guiding question and case-state line | Syllabus week; case-state document |
+| Guiding question and case-state line | Syllabus week; `06_Case_State_Register_v0.1.md` |
 | WLOs, MLO links, cognitive levels | Syllabus; alignment matrix Matrix B |
 | Prerequisites and links to adjacent weeks | Syllabus; this document §5 |
 | Key concepts (≤ 5 ⚑) and content boundaries | Syllabus; `05_` architecture |
@@ -224,7 +237,7 @@ Each weekly package (development stages A–F, project instructions §6) must in
 | Formative items meeting §6.2 | This document |
 | Feed-forward to summative component | Blueprint |
 | Accessibility check | This document §9 |
-| Sources and verification flags | Syllabus §7 |
+| Sources and verification flags | Syllabus §7; R-numbers and status labels from `50_Singapore_Context_and_Sources_v0.1.md` |
  
 ---
  
@@ -248,7 +261,7 @@ Workload estimates (⚑) are revised after the first delivery using actual compl
 | 1 | Practical delivery mode, class size and group size | **Confirmed:** classroom face-to-face; ≤ 25; groups of 3–4 |
 | 2 | NP notional-hours and credit requirements | **Confirmed:** ~4 h guided learning per week |
 | 3 | Brightspace quiz settings and analytics available | **Confirmed:** §6.3 settings |
-| 4 | Accessibility standard and production specification | To be supplied |
+| 4 | Accessibility standard and production specification | **Partly confirmed:** SCORM 1.2 / Brightspace requirements set by project instructions §5 (12 Nov 2026); accessibility standard and Production Specification to be supplied |
 | 5 | Approved practical tools (spreadsheet, visualisation, simulated LIS) and approved GenAI tool | Syllabus §8, item 11 |
 | 6 | Feedback turnaround for C1 and C2 | Depends on calendar |
 | 7 | Alignment matrix G3 and G4 | **Confirmed:** accepted 12 Nov 2026 |
@@ -261,3 +274,13 @@ Workload estimates (⚑) are revised after the first delivery using actual compl
 G3 and G4 applied to syllabus Weeks 6 and 9 (v0.2.3) and alignment matrix (v0.1.2). Blueprint references changed from `30_` to `03_Assessment_Blueprint_v0.1.md`.
  
 **Next step:** Stage B for Weeks 2–5 (practical materials), following `05_Weekly_Learning_Architecture_W2-W10_v0.1.md`.
+
+---
+
+## 15. Change log
+
+| Version | Date | Change | Authority |
+|---|---|---|---|
+| 0.1.1 | 1 Nov 2026 | §13 decisions 1–3 confirmed | Curriculum owner |
+| 0.1.2 | 12 Nov 2026 | PAIR adopted; W6/W8/W9 concept grouping; G3/G4; blueprint reference | Curriculum owner |
+| 0.1.3 | 13 Nov 2026 | Baseline references updated to current files and versions; Week 1 concept check recorded (§2.1); development stages defined as A–C (§11); SCORM/Brightspace requirements added and §13 item 4 partly closed (§9); NEHR coursework and identifier rules added (§10); case register and Singapore register added as sources (§11) | Curriculum owner instruction, 13 Nov 2026 |

@@ -12,7 +12,7 @@ Follows the convention already used in the project documents.
 | Part | Rule | Example |
 |---|---|---|
 | `W<XX>` | Two-digit week | `W01`, `W10` |
-| `Stage_<S>` | Development stage: A = instructional design · B = OAL storyboard and practical materials · C = formative items · D–F = later stages (definitions to be confirmed) | `Stage_B` |
+| `Stage_<S>` | Development stage: A = instructional design · B = OAL storyboard and practical materials · C = formative items (T&L Design §11) | `Stage_B` |
 | `<Descriptor>` | Title_Case words joined by `_` | `OAL_Storyboard`, `Practical_Package`, `Formative_Quiz` |
 | `v<x.y>` | Version at creation | `v0.1` |
 
