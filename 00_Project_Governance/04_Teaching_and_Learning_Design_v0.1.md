@@ -4,7 +4,7 @@
 **Module:** Medical Informatics (Year 3, 10 weeks)
 **Version:** 0.1.3 (13 November 2026; filename retained for stable reference)
 **Status:** Working draft (v0.1.1: §13 decisions 1–3 confirmed, 1 Nov 2026; v0.1.2: PAIR adopted, concept grouping for W6/W8/W9 approved, G3/G4 accepted, blueprint reference updated, 12 Nov 2026; v0.1.3: references, development stages, SCORM requirements and NEHR rule updated — see §15, 13 Nov 2026)
-**Baseline:** `Weekly_Syllabus.md` (v0.2.4); `02_Constructive_Alignment_Matrix_v0.1.1.md` (v0.1.3); `03_Assessment_Blueprint_v0.1.md` (v0.1.2); `06_Case_State_Register_v0.1.md` (v0.3); `50_Singapore_Context_and_Sources_v0.1.md` (v0.1)
+**Baseline:** `01_Approved_10_Week_Syllabus_v0.2.2.md` (v0.2.4); `02_Constructive_Alignment_Matrix_v0.1.1.md` (v0.1.3); `03_Assessment_Blueprint_v0.1.md` (v0.1.2); `06_Case_State_Register_v0.1.md` (v0.3); `50_Singapore_Context_and_Sources_v0.1.md` (v0.1)
  
 **Purpose:** the module-level specification every weekly package must follow. It defines the OAL and practical structure, workload model, teaching strategies, formative feedback and assessment principles. It is not a set of lesson plans.
  

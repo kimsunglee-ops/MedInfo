@@ -4,7 +4,7 @@
 **Module:** Medical Informatics (Year 3, 10 weeks; 2 h OAL + 2 h practical per week)
 **Version:** 0.1.3 (12 November 2026)
 **Status:** Working draft (v0.1.1: Option A recorded, 1 Nov 2026; v0.1.2: G3 and G4 accepted, blueprint reference updated to `03_`, 12 Nov 2026; v0.1.3: G2 and G5 accepted, 12 Nov 2026)
-**Baseline:** `10_Week_Syllabus_v0.2.md` (v0.2.4); MLOs approved by curriculum owner on 1 Nov 2026
+**Baseline:** `01_Approved_10_Week_Syllabus_v0.2.2.md` (v0.2.4); MLOs approved by curriculum owner on 1 Nov 2026
  
 **Assumption:** the approved MLOs are the v0.2 wording, including the D2 revisions to MLO3 and MLO4. If any approved wording differs, Sections 2–5 need updating.
  
@@ -197,10 +197,10 @@ No weights, dates or formats are set here. The following are **requirements** an
  
 | Document | Change | Status |
 |---|---|---|
-| `10_Week_Syllabus_v0.2.md` §2 | Mark MLOs approved 1 Nov 2026 | Applied (v0.2.1) |
-| `10_Week_Syllabus_v0.2.md` §8 | Close items 1 (MLOs; PLO mapping remains open) and 3 | Applied (v0.2.1) |
-| `10_Week_Syllabus_v0.2.md` W6, W9 | G3, G4 | Applied (v0.2.3) |
-| `10_Week_Syllabus_v0.2.md` W3, W9 | G2, G5 | Applied (v0.2.4) |
+| `01_Approved_10_Week_Syllabus_v0.2.2.md` §2 | Mark MLOs approved 1 Nov 2026 | Applied (v0.2.1) |
+| `01_Approved_10_Week_Syllabus_v0.2.2.md` §8 | Close items 1 (MLOs; PLO mapping remains open) and 3 | Applied (v0.2.1) |
+| `01_Approved_10_Week_Syllabus_v0.2.2.md` W6, W9 | G3, G4 | Applied (v0.2.3) |
+| `01_Approved_10_Week_Syllabus_v0.2.2.md` W3, W9 | G2, G5 | Applied (v0.2.4) |
 | `03_Assessment_Blueprint_v0.1.md` C1 | C1.6 Data lifecycle (G2) | Applied (v0.1.2) |
  
 ---

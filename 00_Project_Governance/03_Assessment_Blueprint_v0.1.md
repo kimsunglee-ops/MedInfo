@@ -4,7 +4,7 @@
 **Module:** Medical Informatics (Year 3, 10 weeks)
 **Version:** 0.1.2 (12 November 2026)
 **Status:** Working draft (v0.1.1: alignment matrix G3 and G4 accepted; C3 setting decided; PAIR adopted. v0.1.2: G2 accepted, C1.6 added — curriculum owner, 12 Nov 2026)
-**Baseline:** `10_Week_Syllabus_v0.2.md` (v0.2.4); `20_Constructive_Alignment_Matrix_v0.1.md` (v0.1.3); MLOs approved 1 Nov 2026
+**Baseline:** `01_Approved_10_Week_Syllabus_v0.2.2.md` (v0.2.4); `02_Constructive_Alignment_Matrix_v0.1.1.md` (v0.1.3); MLOs approved 1 Nov 2026
  
 **Decision recorded:** Option A — three spaced summative components — selected by curriculum owner, 1 Nov 2026.
  
@@ -191,8 +191,8 @@ One criterion per MLO component for compound MLOs (requirement 4). Descriptors s
  
 | Document | Change | Status |
 |---|---|---|
-| `20_Constructive_Alignment_Matrix_v0.1.md` §2, §6.2, §7 | Record Option A; revise Σ cells; G1 Red → Amber | Applied (v0.1.1) |
-| `10_Week_Syllabus_v0.2.md` §8 items 2, 4; Week 10 | Structure decided; Week 10 hosts C3 | Applied (v0.2.2) |
+| `02_Constructive_Alignment_Matrix_v0.1.1.md` §2, §6.2, §7 | Record Option A; revise Σ cells; G1 Red → Amber | Applied (v0.1.1) |
+| `01_Approved_10_Week_Syllabus_v0.2.2.md` §8 items 2, 4; Week 10 | Structure decided; Week 10 hosts C3 | Applied (v0.2.2) |
 | Syllabus, matrix, teaching design | Blueprint references changed from `30_` to `03_Assessment_Blueprint_v0.1.md`; G3, G4 and C3 setting recorded | Applied (syllabus v0.2.3; matrix v0.1.2; teaching design v0.1.2) |
  
 **Next step:** confirm weights, timing and GenAI rules. Weekly design (Stage A, Weeks 2–10) is in `05_Weekly_Learning_Architecture_W2-W10_v0.1.md`.

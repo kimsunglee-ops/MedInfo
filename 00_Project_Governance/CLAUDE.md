@@ -84,7 +84,7 @@ Never assume that generated content is academically correct. Flag uncertain info
 
 | File | Governs |
 |---|---|
-| `Weekly_Syllabus.md` | **Authoritative** 10-week syllabus v0.2.4: MLOs, topics, WLOs, content boundaries, practicals, Patient A case state, lens, privacy decisions, GenAI stages, Singapore verification, glossary |
+| `01_Approved_10_Week_Syllabus_v0.2.2.md` | **Authoritative** 10-week syllabus v0.2.4: MLOs, topics, WLOs, content boundaries, practicals, Patient A case state, lens, privacy decisions, GenAI stages, Singapore verification, glossary |
 | `Approved_MLOs.md` | Approved MLOs (1 Nov 2026) and MLO × week map, extracted from the syllabus |
 | `Module_Architecture.md` | Summary of purpose, learning journey, 10-week structure, design threads, missing referenced documents |
 | `Development_Standards.md` | Naming, versioning, content, accessibility, SCORM, QA |
@@ -99,19 +99,16 @@ Design documents elsewhere:
 
 | File | Contents |
 |---|---|
-| `02_Learning_Design/05_Weekly_Learning_Architecture_W2-W10_v0.1.md` | Stage A designs W2–W10 (v0.3.1): weekly template, PAIR map, central questions, big ideas, OAL/practical outlines, open decisions D8–D15 |
+| `02_Learning_Design/05_Weekly_Learning_Architecture_W2-W10_v0.1.md` | Stage A designs W2–W10 (v0.3.2): weekly template, PAIR map, central questions, big ideas, OAL/practical outlines, open decisions D8–D15 |
 | `03_Development/Week_01/W01_Stage_A_Instructional_Design_v0.1.md` | Week 1 Stage A design (reference week) |
 | `03_Development/Week_01/W01_Stage_B_OAL_Storyboard_v0.1.md` | W1 OAL storyboard **v0.1.1** — approved gate B; D10 applied |
 | `03_Development/Week_01/W01_Stage_B_Practical_Package_v0.1.md` | W1 practical package v0.1 — draft, gate B |
 | `03_Development/Week_01/W01_Stage_C_Formative_Quiz_v0.1.md` | W1 formative quiz **v0.1.1** — draft, gate C; I11 applied |
 
-Filename aliases used inside these documents:
+Folder alias used inside these documents (filename references standardised under D9, 13 Nov 2026):
 
 | Cited as | File in this repository |
 |---|---|
-| `01_Approved_10_Week_Syllabus_v0.2.2.md`, `10_Week_Syllabus_v0.2.md` | `00_Project_Governance/Weekly_Syllabus.md` |
-| `20_Constructive_Alignment_Matrix_v0.1.md` | `00_Project_Governance/02_Constructive_Alignment_Matrix_v0.1.1.md` |
-| `30_Assessment_Blueprint_v0.1.md` | `00_Project_Governance/03_Assessment_Blueprint_v0.1.md` |
 | `W01/` … `W10/` | `03_Development/Week_01/` … `Week_10/` |
 
 Singapore rule: every Singapore claim cites an R-number from `50_Singapore_Context_and_Sources_v0.1.md` and respects its status label (only V-O taught as fact; V-S as "reported"; Verify not taught as fact). Re-verify legal items before each delivery.
@@ -120,7 +117,7 @@ Case rule: every Patient A fact must match `06_Case_State_Register_v0.1.md`; upd
 
 Module: **10 weeks**, 2 h OAL + 2 h practical/week. Patient A runs Weeks 1–9; Week 10 is a new case (community INR POCT network).
 
-Precedence when files conflict: Weekly_Syllabus > Approved_MLOs > Alignment Matrix > Assessment Blueprint > Teaching & Learning Design > Case-State Register > Weekly Learning Architecture > Module Design Principles > Module_Architecture > Development_Standards. Exception: for Patient A facts, the Case-State Register prevails. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
+Precedence when files conflict: Syllabus (`01_`) > Approved_MLOs > Alignment Matrix > Assessment Blueprint > Teaching & Learning Design > Case-State Register > Weekly Learning Architecture > Module Design Principles > Module_Architecture > Development_Standards. Exception: for Patient A facts, the Case-State Register prevails. Flag conflicts; do not resolve silently. If a weakness is found: problem → consequence → proposed revision → decision required.
 
 ### Folder map
 

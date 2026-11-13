@@ -1,6 +1,6 @@
 # Module Architecture — Medical Informatics
 
-Status: **Derived from `Weekly_Syllabus.md` v0.2.4 (12 Nov 2026)** — the syllabus prevails on any difference.
+Status: **Derived from `01_Approved_10_Week_Syllabus_v0.2.2.md` v0.2.4 (12 Nov 2026)** — the syllabus prevails on any difference.
 Last updated: 2026-11-12
 
 ## 1. Module profile

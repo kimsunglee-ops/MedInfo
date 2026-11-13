@@ -5,7 +5,7 @@
 **Version:** 0.1 (1 November 2026)
 **Status:** Working draft — reference register
 **Verified as at:** 1 November 2026
-**Baseline:** `10_Week_Syllabus_v0.2.md` (v0.2.2) §7
+**Baseline:** `01_Approved_10_Week_Syllabus_v0.2.2.md` (v0.2.2) §7
 
 **Purpose:** a single, sourced reference for the Singapore organisations, national systems, legislation and guidance used in teaching. Weekly packages cite this file rather than re-researching facts.
 

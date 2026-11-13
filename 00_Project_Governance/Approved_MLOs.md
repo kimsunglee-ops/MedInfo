@@ -1,7 +1,7 @@
 # Module Learning Outcomes — Medical Informatics
 
 Status: **APPROVED by curriculum owner, 1 November 2026** (v0.2 wording, including D2)
-Source: `Weekly_Syllabus.md` v0.2.4, §2 and §4. If the two files differ, `Weekly_Syllabus.md` prevails.
+Source: `01_Approved_10_Week_Syllabus_v0.2.2.md` v0.2.4, §2 and §4. If the two files differ, `01_Approved_10_Week_Syllabus_v0.2.2.md` prevails.
 Last updated: 2026-11-12
 
 > Programme-outcome (PLO) mapping remains open (Syllabus §8 item 1). Do not change MLO wording without curriculum-owner approval.
@@ -49,7 +49,7 @@ P = Primary · S = Supporting · I = Integrative · — = not addressed
 
 ## 4. Rules for WLOs
 
-- WLOs are fixed by `Weekly_Syllabus.md`; change only with curriculum-owner approval.
+- WLOs are fixed by `01_Approved_10_Week_Syllabus_v0.2.2.md`; change only with curriculum-owner approval.
 - Measurable verbs only; never "understand", "know", "appreciate".
 - Each learning object, activity and check must trace to a WLO and its MLO.
 
