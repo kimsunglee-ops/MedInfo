@@ -94,6 +94,7 @@ Never assume that generated content is academically correct. Flag uncertain info
 | `04_Teaching_and_Learning_Design_v0.1.md` | T&L design v0.1.3: **weekly package specification** — OAL (8 segments, 120 min) and practical (7 segments, 120 min) templates, ≤ 5 key concepts, workload, formative item standard, quiz settings, GenAI/PAIR rules, accessibility, QA |
 | `50_Singapore_Context_and_Sources_v0.1.md` | Singapore source register v0.1 (verified 1 Nov 2026): organisations, NEHR, HealthHub, HIA, other instruments, SingHealth 2018 case; status labels V-O / V-S / Verify / Illustrative; sources R1–R28 |
 | `SCORM_Master_Specification_v2.0_Medical_Informatics_10_Lessons.md` | **Production Specification** (SCORM Master Spec v2.0): SCORM 1.2/Brightspace, screen design, narration and mandatory audio states, transcripts, tracking and completion, file structure, frozen header, cross-lesson continuity (§49), QA, acceptance. Cites `SCORM_Architecture_FROZEN.md` (not supplied) |
+| `SCORM_Architecture_FROZEN.md` | **Draft v0.1** technical architecture from the Week 01 gold-standard build: frozen components, data contracts, build rules. Frozen on Week 01 approval |
 | `06_Case_State_Register_v0.1.md` | Register v0.3.1: **single authority for Patient A facts, values, identifiers and release week**; Week 10 transfer case |
 
 Design documents elsewhere:
@@ -105,6 +106,8 @@ Design documents elsewhere:
 | `03_Development/Week_01/W01_Stage_B_OAL_Storyboard_v0.1.md` | W1 OAL storyboard **v0.1.1** — approved gate B; D10 applied |
 | `03_Development/Week_01/W01_Stage_B_Practical_Package_v0.1.md` | W1 practical package v0.1 — **approved gate B** (13 Nov 2026) |
 | `03_Development/Week_01/W01_Stage_C_Formative_Quiz_v0.1.md` | W1 formative quiz **v0.1.1** — **approved gate C** (13 Nov 2026); I11 applied |
+| `04_SCORM_Packages/` | Shared `framework/`, `weeks/week01/` source, `tools/build_scorm.py`, `dist/W01_SCORM_v0.1.zip` (draft; not Brightspace-tested) |
+| `05_Quality_Assurance/W01_QA_Review_v0.1.md` | Week 01 QA: automated tests passed; lecturer review, Brightspace and screen-reader tests outstanding |
 
 Folder alias used inside these documents (filename references standardised under D9, 13 Nov 2026):
 

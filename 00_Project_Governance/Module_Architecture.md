@@ -84,7 +84,6 @@ A teaching framework, not a strictly linear workflow; real processes interact an
 
 | Document | Cited by | Needed for |
 |---|---|---|
-| `SCORM_Architecture_FROZEN.md` | SCORM Master Specification §10, §29, §43 | Frozen technical architecture (header, audio, navigation, progress, response capture, visual design components) |
 | W02–W10 Stage B packages, datasets, C3 case pack + marking guide | 05 §8, 06 | Practical materials |
 | `scripts/gen_w10.py` | 06 §6 | W10 synthetic extract generator |
 

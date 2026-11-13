@@ -1,0 +1,9 @@
+Medical informatics can sound like a computing subject, so let me be clear about what it is and what it isn't.
+
+Medical informatics is the use of data, information and systems to support healthcare and laboratory work. It is not IT support. Fixing a printer or updating a laptop is not what we mean.
+
+Think of three everyday examples. First, a laboratory tracking specimens: every tube must be linked to the right request, so the result goes back to the right patient. Second, a clinician viewing a result: the value only helps if it arrives with its units, its reference interval and any comments. Third, a clinic team looking at a year of HbA1c results to see how well its diabetes care is working.
+
+In each case the question is the same: is the information reliable, can the right person find it, and is it safe to use?
+
+For you as biomedical scientists, that matters directly. You produce laboratory results. Medical informatics is about what happens to those results once they leave the analyser — and how to stop a good measurement turning into a poor decision.

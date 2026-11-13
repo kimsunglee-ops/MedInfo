@@ -1,0 +1,645 @@
+{
+  "lesson": {
+    "weekNumber": "01",
+    "weeklyTitle": "Introduction to Medical Informatics and the Healthcare Information Ecosystem",
+    "packageVersion": "0.1",
+    "curriculumSource": "01_Approved_10_Week_Syllabus_v0.2.2.md (content v0.2.5; working draft)",
+    "storyboard": "W01_Stage_B_OAL_Storyboard_v0.1.md (v0.1.1)"
+  },
+  "completion": {
+    "requireAllScreens": true,
+    "quizId": "W01_Q_quiz",
+    "required": [
+      {
+        "id": "W01_Q_ack",
+        "label": "Acknowledge the module rules on patient information and AI (Part 5)"
+      },
+      {
+        "id": "W01_Q_quiz",
+        "label": "Submit at least one attempt of the formative quiz (Part 6)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "LO1",
+      "title": "Patient A's test",
+      "minutes": 10
+    },
+    {
+      "id": "LO2",
+      "title": "What is medical informatics?",
+      "minutes": 25
+    },
+    {
+      "id": "LO3",
+      "title": "The journey of a test",
+      "minutes": 30
+    },
+    {
+      "id": "LO4",
+      "title": "Who does what in Singapore",
+      "minutes": 20
+    },
+    {
+      "id": "LO5",
+      "title": "Looking after patient information",
+      "minutes": 15
+    },
+    {
+      "id": "LO6",
+      "title": "Check and prepare",
+      "minutes": 20
+    }
+  ],
+  "screens": [
+    {
+      "id": "W01_S01",
+      "storyboardId": "W1-LO1-S1",
+      "section": "LO1",
+      "title": "Welcome to Week 01",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<p>This lesson introduces medical informatics by following a single laboratory test, from the moment it is ordered to the moment a doctor acts on the result.</p>"
+        },
+        {
+          "type": "callout",
+          "title": "This week's question",
+          "html": "<p><em>When an analyser produces a number, why is that not yet a reliable result in the doctor's hands?</em></p>",
+          "variant": "info"
+        },
+        {
+          "type": "html",
+          "html": "<p class=\"mi-hint\" aria-hidden=\"true\">Order → Collect → Transport → Receive → Analyse → Review → Report → Act</p><h2>By the end of this week you should be able to</h2><ul><li>explain the role of medical informatics in supporting healthcare delivery and biomedical laboratory operations;</li><li>distinguish data, information and knowledge using biomedical or healthcare examples;</li><li>map the main stages through which a laboratory test request becomes a reported result;</li><li>identify key stakeholders, information hand-offs and potential information risks within a healthcare workflow.</li></ul><h2>This lesson has six parts (about 2 hours)</h2><ol><li>Patient A's test — about 10 minutes</li><li>What is medical informatics? — about 25 minutes</li><li>The journey of a test — about 30 minutes</li><li>Who does what in Singapore — about 20 minutes</li><li>Looking after patient information — about 15 minutes</li><li>Check and prepare — about 20 minutes</li></ol>"
+        },
+        {
+          "type": "callout",
+          "title": "Fictional data",
+          "html": "<p>All patients, places, identifiers and results in this module are fictional.</p>",
+          "variant": "note"
+        }
+      ]
+    },
+    {
+      "id": "W01_S02",
+      "storyboardId": "W1-LO1-S2",
+      "section": "LO1",
+      "title": "Meet Patient A",
+      "blocks": [
+        {
+          "type": "callout",
+          "title": "Case card",
+          "html": "<p><strong>Patient A</strong> (fictional) is an adult with type 2 diabetes who attends an outpatient clinic at a fictional hospital.</p><p>At today's review, the doctor orders a <strong>renal panel</strong> (including potassium) and an <strong>HbA1c</strong>.</p>",
+          "variant": "case"
+        },
+        {
+          "type": "html",
+          "html": "<p>We will <strong>not</strong> interpret Patient A's results. This week we follow the information: who creates it, who checks it, and who needs it.</p>"
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_predict"
+        }
+      ]
+    },
+    {
+      "id": "W01_S03",
+      "storyboardId": "W1-LO1-S3",
+      "section": "LO1",
+      "title": "What do you already know?",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<p>These three questions draw on your earlier laboratory modules. They are not marked; use them to see where you are starting from.</p>"
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_pk1"
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_pk2"
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_pk3"
+        }
+      ]
+    },
+    {
+      "id": "W01_S04",
+      "storyboardId": "W1-LO2-S1",
+      "section": "LO2",
+      "title": "What medical informatics is",
+      "blocks": [
+        {
+          "type": "callout",
+          "title": "Definition",
+          "html": "<p><strong>Medical informatics</strong> is the use of data, information and systems to support healthcare and laboratory work.</p><p>It is not the same as IT support.</p>",
+          "variant": "info"
+        },
+        {
+          "type": "html",
+          "html": "<div class=\"mi-cards\"><div class=\"mi-card\"><h2>A laboratory tracking specimens</h2><p>Each tube is linked to its request, so the right result returns to the right patient.</p></div><div class=\"mi-card\"><h2>A clinician viewing a result</h2><p>The value arrives with its units, reference interval and comments, so it can be used safely.</p></div><div class=\"mi-card\"><h2>A team reviewing a trend</h2><p>A clinic looks at its HbA1c results over a year to see how well diabetes care is going.</p></div></div>"
+        },
+        {
+          "type": "callout",
+          "title": "Why this matters to a biomedical scientist",
+          "html": "<p>Your work produces laboratory results. Medical informatics is about making those results <strong>reliable, findable and safe to use</strong> once they leave the analyser.</p>",
+          "variant": "info"
+        }
+      ]
+    },
+    {
+      "id": "W01_S05",
+      "storyboardId": "W1-LO2-S2",
+      "section": "LO2",
+      "title": "Data, information and knowledge",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<div class=\"mi-pyramid\" role=\"list\" aria-label=\"Data, information and knowledge, from base to top\"><div role=\"listitem\"><strong>Data</strong> — a recorded value without enough context to act on.<br><em>An analyser shows \"5.8\".</em></div><div role=\"listitem\"><strong>Information</strong> — data with context: whose, what test, units, when, reference interval.<br><em>\"Potassium 5.8 mmol/L, Patient B (a fictional clinic patient), collected 08:40, reference interval 3.5–5.1 mmol/L.\"</em></div><div role=\"listitem\"><strong>Knowledge</strong> — understanding or rules used to decide what to do.<br><em>\"Delayed separation of blood can falsely raise potassium, so specimens must reach the laboratory within a stated time.\"</em></div></div>"
+        },
+        {
+          "type": "callout",
+          "title": "The boundary depends on context",
+          "html": "<p>The same item can move between categories when context is added or lost. You will try this on the next screen.</p>",
+          "variant": "info"
+        }
+      ]
+    },
+    {
+      "id": "W01_S06",
+      "storyboardId": "W1-LO2-S3",
+      "section": "LO2",
+      "title": "Sort the laboratory examples",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<p>Classify each example as data, information or knowledge. Then check your answers and read the feedback.</p>"
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_sort"
+        }
+      ]
+    },
+    {
+      "id": "W01_S07",
+      "storyboardId": "W1-LO2-S4",
+      "section": "LO2",
+      "title": "Same item, different category?",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<div class=\"mi-cards\"><div class=\"mi-card\"><h2>Before: data</h2><p>\"5.8\"</p><p class=\"mi-hint\">No patient, test, unit or time.</p></div><div class=\"mi-card\"><h2>After: information</h2><p>\"Potassium 5.8 mmol/L, Patient B, collected 08:40, reference interval 3.5–5.1 mmol/L\"</p><p class=\"mi-hint\">Linked to a patient, a test, a unit and a time.</p></div></div><p>Context turns data into information. When context goes missing — a lost unit, a dropped comment, a result separated from its patient — information turns back into data. Weeks 3 and 4 return to this problem.</p>"
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_reflect_dik"
+        }
+      ]
+    },
+    {
+      "id": "W01_S08",
+      "storyboardId": "W1-LO2-S5",
+      "section": "LO2",
+      "title": "Summary: data, information and knowledge",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<div class=\"mi-cards\"><div class=\"mi-card\"><h2>Data</h2><p>Recorded values or identifiers without enough context to act on.</p></div><div class=\"mi-card\"><h2>Information</h2><p>Data placed in context — patient, test, units, time, reference — so it can be interpreted.</p></div><div class=\"mi-card\"><h2>Knowledge</h2><p>Evidence-based understanding or rules that guide what to do.</p></div></div><p>Medical informatics supports the whole chain: capturing data, keeping its context, and making it available to the people who use knowledge to act.</p>"
+        }
+      ]
+    },
+    {
+      "id": "W01_S09",
+      "storyboardId": "W1-LO3-S1",
+      "section": "LO3",
+      "title": "From order to action: the journey of a test",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<p>A laboratory test passes through ten stages. At each stage someone creates, checks or uses information.</p><ol class=\"mi-journey\" aria-label=\"The ten stages of a laboratory test\"><li><strong>Test ordered</strong><span>Doctor</span></li><li><strong>Patient identified, specimen collected</strong><span>Phlebotomist or nurse</span></li><li><strong>Specimen transported</strong><span>Porter or courier</span></li><li><strong>Received and registered in the laboratory</strong><span>Laboratory staff</span></li><li><strong>Prepared for analysis</strong><span>Medical technologist</span></li><li><strong>Analysed</strong><span>Medical technologist with analyser</span></li><li><strong>Reviewed before release</strong><span>Medical technologist; senior or pathologist as required</span></li><li><strong>Reported</strong><span>Laboratory</span></li><li><strong>Received by the doctor</strong><span>Doctor (or covering doctor)</span></li><li><strong>Acted on and communicated</strong><span>Doctor; patient</span></li></ol>"
+        },
+        {
+          "type": "response",
+          "ref": "W01_Q_predict",
+          "template": "In Part 1 you estimated that {value} people would handle information about Patient A's test. Count the people and roles in the journey above. Was your estimate close?",
+          "empty": "In Part 1 you could estimate how many people handle information about the test. Count the people and roles in the journey above. How many are there?"
+        },
+        {
+          "type": "table",
+          "caption": "The journey of a laboratory test (generic, vendor-neutral)",
+          "head": [
+            "Stage",
+            "Who acts",
+            "Information created or used"
+          ],
+          "rowHeaders": true,
+          "rows": [
+            [
+              "1. Test ordered",
+              "Doctor",
+              "Patient identity; tests; clinical details; urgency; requesting doctor"
+            ],
+            [
+              "2. Patient identified, specimen collected",
+              "Phlebotomist or nurse",
+              "Identity check; labelled tubes; collection time; collector"
+            ],
+            [
+              "3. Specimen transported",
+              "Porter or courier",
+              "Specimens with request; dispatch time"
+            ],
+            [
+              "4. Received and registered in the laboratory",
+              "Laboratory staff",
+              "Label–request match; specimen suitability; receipt time; laboratory number"
+            ],
+            [
+              "5. Prepared for analysis",
+              "Medical technologist",
+              "Processing record; any specimen-quality comment"
+            ],
+            [
+              "6. Analysed",
+              "Medical technologist with analyser",
+              "Measured values with units; QC status"
+            ],
+            [
+              "7. Reviewed before release",
+              "Medical technologist; senior or pathologist as required",
+              "Reference intervals; previous results; review decision"
+            ],
+            [
+              "8. Reported",
+              "Laboratory",
+              "Report with values, units, reference intervals, flags, comments"
+            ],
+            [
+              "9. Received by the doctor",
+              "Doctor (or covering doctor)",
+              "Notification; result viewed"
+            ],
+            [
+              "10. Acted on and communicated",
+              "Doctor; patient",
+              "Decision; documentation; information to the patient"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Systems by role only",
+          "html": "<p>This week, information systems are named only by what they are for — for example, \"where the order is placed\" or \"the system that manages laboratory work\". Week 2 explains what these systems do.</p>",
+          "variant": "note"
+        }
+      ]
+    },
+    {
+      "id": "W01_S10",
+      "storyboardId": "W1-LO3-S2",
+      "section": "LO3",
+      "title": "Hand-offs",
+      "blocks": [
+        {
+          "type": "callout",
+          "title": "Definition",
+          "html": "<p>A <strong>hand-off</strong> is any point where information or a specimen passes between people or places.</p>",
+          "variant": "info"
+        },
+        {
+          "type": "html",
+          "html": "<p>Hand-offs in Patient A's journey include:</p><ul><li>doctor → phlebotomist or nurse (the order)</li><li>clinic → porter or courier (specimens and request)</li><li>courier → laboratory reception (specimens arrive)</li><li>reception → medical technologist (registered specimen)</li><li>analyser → reviewer (measured values for review)</li><li>laboratory → doctor (the report)</li><li>doctor → patient (the decision and what it means)</li></ul><p>Hand-offs are where errors, delays and losses tend to happen, because responsibility and information both change hands.</p>"
+        }
+      ]
+    },
+    {
+      "id": "W01_S11",
+      "storyboardId": "W1-LO3-S3",
+      "section": "LO3",
+      "title": "Worked example: from collection to laboratory receipt",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<p>Follow one hand-off step by step: the specimen leaves the clinic and arrives in the laboratory.</p><ol class=\"mi-steps\"><li><strong>Created at collection:</strong> labelled tubes, the collection time and the identity of the person who collected the blood.</li><li><strong>What travels:</strong> the specimens together with the request.</li><li><strong>What the laboratory checks:</strong> the label matches the request, the specimen is suitable, and the time of receipt is recorded.</li><li><strong>What can go wrong:</strong> <span class=\"mi-risk\"><svg viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Triangle symbol\"><path d=\"M12 3 L22 21 H2 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></svg> a wrong label</span> (error) · <span class=\"mi-risk\"><svg viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Clock symbol\"><circle cx=\"12\" cy=\"12\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><path d=\"M12 7 V12 L15.5 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></svg> late arrival</span> (delay) · <span class=\"mi-risk\"><svg viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Broken circle symbol\"><circle cx=\"12\" cy=\"12\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-dasharray=\"44 12.5\" transform=\"rotate(-60 12 12)\"/></svg> a missing collection time</span> (loss).</li><li><strong>Consequence:</strong> a correct analysis on the wrong or unsuitable specimen still gives an unreliable result.</li></ol>"
+        },
+        {
+          "type": "callout",
+          "title": "The key point",
+          "html": "<p>An analyser can work perfectly and still produce a result that should not be trusted, because reliability depends on every step before and after analysis.</p>",
+          "variant": "info"
+        }
+      ]
+    },
+    {
+      "id": "W01_S12",
+      "storyboardId": "W1-LO3-S4",
+      "section": "LO3",
+      "title": "Your turn: the report reaches the doctor",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<p>Now annotate a different hand-off: the <strong>laboratory report → the doctor</strong>. Use the worked example as your model.</p>"
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_annotate"
+        }
+      ]
+    },
+    {
+      "id": "W01_S13",
+      "storyboardId": "W1-LO3-S5",
+      "section": "LO3",
+      "title": "Three types of information risk",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<div class=\"mi-cards\"><div class=\"mi-card\"><h2><span class=\"mi-risk\"><svg viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Triangle symbol\"><path d=\"M12 3 L22 21 H2 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></svg> Error</span></h2><p>The information is wrong — for example, a result attached to the wrong patient.</p></div><div class=\"mi-card\"><h2><span class=\"mi-risk\"><svg viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Clock symbol\"><circle cx=\"12\" cy=\"12\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><path d=\"M12 7 V12 L15.5 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></svg> Delay</span></h2><p>The right information arrives too late to support the decision.</p></div><div class=\"mi-card\"><h2><span class=\"mi-risk\"><svg viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Broken circle symbol\"><circle cx=\"12\" cy=\"12\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-dasharray=\"44 12.5\" transform=\"rotate(-60 12 12)\"/></svg> Loss</span></h2><p>The information is missing or never reaches anyone who can act on it.</p></div></div>"
+        },
+        {
+          "type": "callout",
+          "title": "In the practical",
+          "html": "<p>You will use these same symbols on your journey map. They differ by <strong>shape</strong>, so they can be told apart without colour.</p>",
+          "variant": "note"
+        }
+      ]
+    },
+    {
+      "id": "W01_S14",
+      "storyboardId": "W1-LO4-S1",
+      "section": "LO4",
+      "title": "Singapore's health information landscape",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<p>Patient A's test happens inside a wider system. You only need to recognise these roles now; Week 9 looks at them in depth.</p><div class=\"mi-cards\"><div class=\"mi-card\"><h2>Ministry of Health (MOH)</h2><p>Sets health policy and regulates healthcare services.</p></div><div class=\"mi-card\"><h2>Synapxe</h2><p>The national HealthTech agency for the public healthcare sector. It builds and runs national systems, including the NEHR and HealthHub. It is not a regulator.</p></div><div class=\"mi-card\"><h2>Public healthcare clusters</h2><p>Three regional clusters deliver public healthcare: NHG Health (Central), NUHS (Western) and SingHealth (Eastern). Each uses its own institutional systems.</p></div><div class=\"mi-card\"><h2>NEHR</h2><p>The National Electronic Health Record: a national repository of <strong>selected key health information</strong> copied from providers' own systems. It does not hold every record or doctors' detailed notes.</p></div><div class=\"mi-card\"><h2>HealthHub</h2><p>A patient-facing app for viewing records, booking appointments and paying bills. It is <strong>not</strong> the NEHR, although some records it shows come from the NEHR.</p></div></div><p><strong>How they connect:</strong> MOH regulates · Synapxe builds and runs national systems · clusters and other providers deliver care · providers share key information with the NEHR · patients view some of it through HealthHub.</p>"
+        },
+        {
+          "type": "callout",
+          "title": "Looking ahead",
+          "html": "<p>Under the Health Information Act (passed in January 2026), licensed healthcare providers, including clinical laboratories, will be required to contribute key health information, such as laboratory results, to the NEHR. MOH intends the Act to take effect from early 2027. Weeks 4, 8 and 9 cover this.</p>",
+          "variant": "note"
+        },
+        {
+          "type": "sources",
+          "title": "Sources",
+          "items": [
+            {
+              "text": "Ministry of Health, Our partners — public healthcare clusters.",
+              "url": "https://www.moh.gov.sg/about-us/our-partners/",
+              "ref": "R13"
+            },
+            {
+              "text": "NHG Health, NHG Health Yearbook 2025.",
+              "url": null,
+              "ref": "R14"
+            },
+            {
+              "text": "Synapxe, About National Electronic Health Record System (NEHR).",
+              "url": "https://www.synapxe.sg/nehr/",
+              "ref": "R5"
+            },
+            {
+              "text": "Synapxe, About HealthHub.",
+              "url": "https://synapxe.sg/healthtech/national-programmes/healthhub",
+              "ref": "R10"
+            },
+            {
+              "text": "Ministry of Health, Circular MOH-MHC-0018-2026, Overview and Implementation of the Health Information Act (6 Mar 2026).",
+              "url": "https://isomer-user-content.by.gov.sg/7/b4959e8f-ca85-469e-b4d5-067581b7ea10/MOH%20MHC%20Cir%200018_2026%20Overview%20and%20Implementation%20of%20the%20Health%20Information%20Act%20(HIA).pdf",
+              "ref": "R1"
+            },
+            {
+              "text": "gov.sg, What is the Health Information Bill? (13 Jan 2026).",
+              "url": "https://www.gov.sg/explainers/health-information-bill/",
+              "ref": "R2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W01_S15",
+      "storyboardId": "W1-LO4-S2",
+      "section": "LO4",
+      "title": "Reading: what the NEHR holds",
+      "blocks": [
+        {
+          "type": "callout",
+          "title": "Guiding question",
+          "html": "<p><em>What does the NEHR hold, what does it not hold, and who manages it?</em></p>",
+          "variant": "info"
+        },
+        {
+          "type": "html",
+          "html": "<p>Read the Synapxe page about the NEHR (about 8 minutes). It opens in a new tab.</p>"
+        },
+        {
+          "type": "sources",
+          "title": "Reading",
+          "items": [
+            {
+              "text": "Synapxe, About National Electronic Health Record System (NEHR).",
+              "url": "https://www.synapxe.sg/nehr/",
+              "ref": "R5"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "If the link does not open: summary of the source",
+          "html": "<ul><li>The NEHR is a national repository of selected key health information, copied from healthcare institutions' own systems. It does not hold doctors' detailed notes.</li><li>It is owned by MOH and managed by Synapxe, and has been in use since 2011.</li><li>Access is limited to authorised healthcare professionals who are providing care to the patient.</li><li>Patients can see which providers have accessed their record through HealthHub.</li></ul>",
+          "variant": "note"
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_reading_note"
+        },
+        {
+          "type": "sources",
+          "title": "Sources",
+          "items": [
+            {
+              "text": "Synapxe, About National Electronic Health Record System (NEHR).",
+              "url": "https://www.synapxe.sg/nehr/",
+              "ref": "R5"
+            },
+            {
+              "text": "Synapxe, NEHR FAQ.",
+              "url": "https://www.synapxe.sg/healthtech/national-programmes/national-electronic-health-record-nehr/faq",
+              "ref": "R6"
+            },
+            {
+              "text": "Ministry of Health, Circular MOH-MHC-0018-2026, Overview and Implementation of the Health Information Act (6 Mar 2026).",
+              "url": "https://isomer-user-content.by.gov.sg/7/b4959e8f-ca85-469e-b4d5-067581b7ea10/MOH%20MHC%20Cir%200018_2026%20Overview%20and%20Implementation%20of%20the%20Health%20Information%20Act%20(HIA).pdf",
+              "ref": "R1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W01_S16",
+      "storyboardId": "W1-LO4-S3",
+      "section": "LO4",
+      "title": "Match each organisation to its role",
+      "blocks": [
+        {
+          "type": "interaction",
+          "ref": "W01_Q_match"
+        }
+      ]
+    },
+    {
+      "id": "W01_S17",
+      "storyboardId": "W1-LO4-S4",
+      "section": "LO4",
+      "title": "Summary: who does what",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<ul><li><strong>MOH</strong> regulates; <strong>Synapxe</strong> builds and runs national systems; <strong>clusters</strong> deliver care.</li><li>The <strong>NEHR</strong> holds selected key health information — not every record.</li><li><strong>HealthHub</strong> is a patient app — not the NEHR.</li><li>A hospital's own record system is separate from these national shared services.</li></ul><p>Recognising these distinctions is enough for now. Week 9 returns to the Singapore ecosystem in depth.</p>"
+        }
+      ]
+    },
+    {
+      "id": "W01_S18",
+      "storyboardId": "W1-LO5-S1",
+      "section": "LO5",
+      "title": "Confidentiality, integrity and availability",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<div class=\"mi-cards\"><div class=\"mi-card\"><h2>Confidentiality</h2><p>Only people who need the information for their role can see it.</p><p class=\"mi-hint\">Laboratory example: a result is visible only to staff involved in the patient's care.</p></div><div class=\"mi-card\"><h2>Integrity</h2><p>Information is accurate, complete and attached to the right patient.</p><p class=\"mi-hint\">Laboratory example: the value, its units and the patient it belongs to are all correct.</p></div><div class=\"mi-card\"><h2>Availability</h2><p>Information is there when it is needed.</p><p class=\"mi-hint\">Laboratory example: the doctor can see the result when deciding on care.</p></div></div>"
+        },
+        {
+          "type": "callout",
+          "title": "A common misunderstanding",
+          "html": "<p>Confidentiality does not mean that nobody sees the data. It means the <strong>right</strong> people see it.</p>",
+          "variant": "info"
+        }
+      ]
+    },
+    {
+      "id": "W01_S19",
+      "storyboardId": "W1-LO5-S2",
+      "section": "LO5",
+      "title": "Which property is at risk?",
+      "blocks": [
+        {
+          "type": "interaction",
+          "ref": "W01_Q_cia"
+        }
+      ]
+    },
+    {
+      "id": "W01_S20",
+      "storyboardId": "W1-LO5-S3",
+      "section": "LO5",
+      "title": "Module rules: patient information and AI",
+      "blocks": [
+        {
+          "type": "callout",
+          "title": "Three rules for this module",
+          "html": "<ol><li>Never enter identifiable patient information into external AI tools.</li><li>This module uses fictional data and approved tools only.</li><li>Never access the NEHR or any real patient record for coursework, including on placement.</li></ol>",
+          "variant": "info"
+        },
+        {
+          "type": "html",
+          "html": "<p>The same care applies to confidential institutional information, unreleased research data, passwords and login details: none of these should be entered into public AI tools.</p><p>The NEHR may be used only for patient care and approved purposes. It is not available for teaching or coursework.</p>"
+        },
+        {
+          "type": "sources",
+          "title": "Sources",
+          "items": [
+            {
+              "text": "Ministry of Health, Circular MOH-MHC-0018-2026, Overview and Implementation of the Health Information Act (6 Mar 2026).",
+              "url": "https://isomer-user-content.by.gov.sg/7/b4959e8f-ca85-469e-b4d5-067581b7ea10/MOH%20MHC%20Cir%200018_2026%20Overview%20and%20Implementation%20of%20the%20Health%20Information%20Act%20(HIA).pdf",
+              "ref": "R1"
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_ack"
+        }
+      ]
+    },
+    {
+      "id": "W01_S21",
+      "storyboardId": "W1-LO5-S4",
+      "section": "LO5",
+      "title": "Summary: looking after patient information",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<ul><li><strong>Confidentiality</strong>: the right people, and only them.</li><li><strong>Integrity</strong>: accurate, complete and attached to the right patient.</li><li><strong>Availability</strong>: there when it is needed.</li></ul><p>Looking ahead: Week 2 adds who can access what in information systems; Week 8 covers governance and the law.</p>"
+        }
+      ]
+    },
+    {
+      "id": "W01_S22",
+      "storyboardId": "W1-LO6-S1",
+      "section": "LO6",
+      "title": "Formative quiz",
+      "blocks": [
+        {
+          "type": "interaction",
+          "ref": "W01_Q_quiz"
+        }
+      ]
+    },
+    {
+      "id": "W01_S23",
+      "storyboardId": "W1-LO6-S2",
+      "section": "LO6",
+      "title": "Prepare for the practical",
+      "blocks": [
+        {
+          "type": "html",
+          "html": "<h2>Practical: Map the journey of a laboratory test</h2><p>This is Part 1 of a two-week task. You will keep your map and extend it in Week 2.</p>"
+        },
+        {
+          "type": "callout",
+          "title": "Case card",
+          "html": "<p><strong>Patient A</strong> (fictional) is an adult with type 2 diabetes attending the outpatient clinic at <strong>Riverside General Hospital</strong> (fictional). At today's review, the doctor orders a <strong>renal panel</strong> (including potassium) and an <strong>HbA1c</strong>. Blood is taken in the clinic and sent to the hospital laboratory. The results will return to the doctor, who will decide on follow-up.</p><p>You will not interpret Patient A's results. Your job is to follow the information.</p>",
+          "variant": "case"
+        },
+        {
+          "type": "html",
+          "html": "<h2>Your role</h2><p>Your role will be assigned in class: ordering doctor, phlebotomist or clinic nurse, medical technologist, or clinic administrator.</p><h2>What you will produce</h2><p>An <strong>information-journey map</strong> on an A3 template, in your group.</p><h2>Success criteria</h2><ol><li>Main stages from order to clinical use shown in sequence</li><li>Each stage names who acts and the information created or used</li><li>At least four hand-offs marked</li><li>At least three risk points, classified with consequences</li><li>Confidentiality and integrity points marked</li><li>Privacy decision justified</li><li>Explanation of why an analyser value alone is not reliable</li></ol>"
+        },
+        {
+          "type": "interaction",
+          "ref": "W01_Q_practical_question"
+        }
+      ]
+    },
+    {
+      "id": "W01_S24",
+      "storyboardId": "W1-LO6-S3",
+      "section": "LO6",
+      "title": "Week summary and look ahead",
+      "blocks": [
+        {
+          "type": "callout",
+          "title": "Big idea",
+          "html": "<p>A laboratory result is the product of a chain of people, information and hand-offs. Its reliability depends on the whole chain, not only on the analyser.</p>",
+          "variant": "info"
+        },
+        {
+          "type": "html",
+          "html": "<p>Back to this week's question: an analyser value is not yet a reliable result because it must still be attached to the right patient, reviewed, reported with its context and received by the right doctor in time.</p><p><strong>Next week:</strong> your map gains a systems layer — where information systems create, check and move information, and what happens when one fails.</p>"
+        },
+        {
+          "type": "completion"
+        }
+      ]
+    }
+  ]
+}

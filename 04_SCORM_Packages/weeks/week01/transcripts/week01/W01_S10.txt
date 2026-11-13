@@ -1,0 +1,5 @@
+A hand-off is any point where information or a specimen passes from one person or place to another.
+
+Look at how many there are in Patient A's journey: from the doctor to the person collecting blood, from the clinic to the courier, from the courier to laboratory reception, within the laboratory, from the laboratory back to the doctor, and from the doctor to the patient.
+
+Why do hand-offs matter so much? Because at each one, responsibility changes hands as well as information. The person receiving may not know what the sender knew. Something can be mislabelled, held up, or simply not passed on. That's why errors, delays and losses tend to cluster at hand-offs rather than in the middle of a well-run step.

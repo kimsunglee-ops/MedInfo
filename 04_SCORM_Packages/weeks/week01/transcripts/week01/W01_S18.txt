@@ -1,0 +1,9 @@
+Patient information needs protecting in three different ways, and it helps to keep them separate.
+
+Confidentiality means only the people who need the information for their role can see it. It doesn't mean nobody sees it — a result that no one can see is no use. It means the right people, and only them.
+
+Integrity means the information is accurate, complete and attached to the right patient. A perfectly measured potassium filed in the wrong record has lost its integrity.
+
+Availability means the information is there when it is needed. If the laboratory system goes down and the doctor can't see a result while deciding on care, the result exists but isn't available.
+
+Each of these maps back to the journey you've just studied, and we'll use them again when we look at access in Week 2 and at governance in Week 8.

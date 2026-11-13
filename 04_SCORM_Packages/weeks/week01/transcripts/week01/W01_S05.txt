@@ -1,0 +1,9 @@
+Let's separate three words that are often used loosely: data, information and knowledge.
+
+Data are recorded values that don't yet have enough context to act on. Imagine an analyser screen showing 5.8. Five point eight what? For whom? Taken when? On its own, you can't safely use it.
+
+Information is data with context. "Potassium 5.8 millimoles per litre, Patient B, collected at 08:40, reference interval 3.5 to 5.1." Now we know whose result it is, what was measured, in what units, when, and what range to compare it with. Patient B, by the way, is just a teaching example — not Patient A.
+
+Knowledge is the understanding we use to decide what to do. For example: delayed separation of blood can falsely raise potassium, so specimens must reach the laboratory within a stated time. That is a general rule, built from evidence, that guides action across many specimens.
+
+The important point is that these boundaries depend on context. Add context and data becomes information. Lose context and information slides back into data. You'll test that idea on the next screen.

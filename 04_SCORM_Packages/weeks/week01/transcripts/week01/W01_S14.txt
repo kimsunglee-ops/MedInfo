@@ -1,0 +1,13 @@
+Patient A's test doesn't happen in isolation. It sits inside Singapore's wider healthcare system, so let's get a simple map of who does what. You only need to recognise these roles for now; we'll go deeper in Week 9.
+
+The Ministry of Health, MOH, sets health policy and regulates healthcare services.
+
+Synapxe is the national HealthTech agency for the public healthcare sector. It builds and runs national systems, including the National Electronic Health Record and HealthHub. It is not a regulator — that's a common mix-up.
+
+Care itself is delivered by providers, including three public healthcare clusters: NHG Health, NUHS and SingHealth. Each runs its own institutional systems.
+
+The NEHR, the National Electronic Health Record, holds selected key health information copied from providers' own systems. It does not hold every record, or doctors' detailed notes.
+
+HealthHub is an app for patients. It can show some records drawn from the NEHR, but it is not the NEHR.
+
+One thing to watch for later: under the Health Information Act, passed in January 2026, licensed providers, including clinical laboratories, will be required to contribute key health information such as laboratory results to the NEHR. MOH intends this to take effect from early 2027. We'll pick that up in Weeks 4, 8 and 9.

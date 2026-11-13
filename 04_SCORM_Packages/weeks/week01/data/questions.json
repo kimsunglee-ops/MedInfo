@@ -1,0 +1,549 @@
+{
+  "W01_Q_predict": {
+    "type": "predict",
+    "title": "Predict",
+    "prompt": "How many different people will handle information about this test before the doctor acts on it?",
+    "feedback": "Most students underestimate. Keep your number — you will check it in Part 3."
+  },
+  "W01_Q_pk1": {
+    "type": "shortanswer",
+    "title": "Question 1",
+    "maxLength": 200,
+    "prompt": "Name two patient identifiers that should be checked before blood is collected.",
+    "expected": "any two agreed identifiers, for example full name and date of birth, or name and hospital number.",
+    "feedback": "Correct identification at collection protects every later step. Week 2 returns to identifiers as a workflow control."
+  },
+  "W01_Q_pk2": {
+    "type": "order",
+    "title": "Question 2",
+    "prompt": "Put these steps in order, from first to last.",
+    "items": [
+      {
+        "id": "a",
+        "text": "Analysis"
+      },
+      {
+        "id": "r",
+        "text": "Specimen received in the laboratory"
+      },
+      {
+        "id": "o",
+        "text": "Test ordered"
+      },
+      {
+        "id": "p",
+        "text": "Result reported"
+      }
+    ],
+    "correct": [
+      "o",
+      "r",
+      "a",
+      "p"
+    ],
+    "feedbackCorrect": "This is the backbone of today's journey map.",
+    "feedbackIncorrect": "The order is: test ordered → specimen received → analysis → result reported. This is the backbone of today's journey map."
+  },
+  "W01_Q_pk3": {
+    "type": "single",
+    "title": "Question 3",
+    "prompt": "True or false: if the analyser's quality control is in range, every result from that run is reliable for the patient.",
+    "options": [
+      {
+        "id": "t",
+        "text": "True"
+      },
+      {
+        "id": "f",
+        "text": "False"
+      }
+    ],
+    "answer": "f",
+    "feedbackCorrect": "QC tells us the analytical process is working. It does not tell us the specimen belonged to the right patient or reached the right doctor. Part 3 shows why.",
+    "feedbackIncorrect": "The answer is false. QC tells us the analytical process is working. It does not tell us the specimen belonged to the right patient or reached the right doctor. Part 3 shows why."
+  },
+  "W01_Q_sort": {
+    "type": "classify",
+    "title": "Data, information or knowledge?",
+    "prompt": "Choose a category for each example.",
+    "categories": [
+      "Data",
+      "Information",
+      "Knowledge"
+    ],
+    "summary": "Look back at any you missed: what context would change the category?",
+    "items": [
+      {
+        "id": "i1",
+        "text": "\"5.8\" shown on an analyser screen",
+        "answer": "Data",
+        "feedback": "A value without patient, test, unit or time cannot be acted on."
+      },
+      {
+        "id": "i2",
+        "text": "\"Potassium 5.8 mmol/L, Patient B, collected 08:40, reference interval 3.5–5.1 mmol/L\"",
+        "answer": "Information",
+        "feedback": "Context — patient, test, unit, time, reference — makes it usable."
+      },
+      {
+        "id": "i3",
+        "text": "\"Delayed separation of blood can falsely raise potassium, so specimens must reach the laboratory within a stated time.\"",
+        "answer": "Knowledge",
+        "feedback": "A general rule from experience and evidence that guides action."
+      },
+      {
+        "id": "i4",
+        "text": "A barcode number printed on a specimen tube label",
+        "answer": "Data",
+        "feedback": "An identifier on its own; it gains meaning only when linked to a request."
+      },
+      {
+        "id": "i5",
+        "text": "\"Specimen received 10:15; renal panel; linked to Patient A's request\"",
+        "answer": "Information",
+        "feedback": "A receipt record that tells staff what arrived, when and for whom."
+      },
+      {
+        "id": "i6",
+        "text": "A clinic's HbA1c results for the past year, summarised as a trend chart",
+        "answer": "Information",
+        "feedback": "Organised and summarised data that shows a pattern."
+      },
+      {
+        "id": "i7",
+        "text": "A clinical guideline on how often people with diabetes should have HbA1c checked",
+        "answer": "Knowledge",
+        "feedback": "Generalised, evidence-based guidance used to decide what to do."
+      },
+      {
+        "id": "i8",
+        "text": "An unlabelled column of numbers exported from an analyser",
+        "answer": "Data",
+        "feedback": "Without labels or units, these values cannot be interpreted safely."
+      }
+    ]
+  },
+  "W01_Q_reflect_dik": {
+    "type": "reflection",
+    "title": "Reflect (not marked)",
+    "maxLength": 250,
+    "prompt": "Which example on the previous screen was hardest to classify, and what context would settle it?"
+  },
+  "W01_Q_annotate": {
+    "type": "annotate",
+    "title": "Annotate the hand-off: laboratory report → doctor",
+    "maxLength": 250,
+    "prompt": "Complete the four callouts, then compare your answer with the model.",
+    "fields": [
+      {
+        "id": "travels",
+        "label": "1. What information travels?"
+      },
+      {
+        "id": "check",
+        "label": "2. What should be checked?"
+      },
+      {
+        "id": "risk",
+        "label": "3. One risk, and its type (error, delay or loss)"
+      },
+      {
+        "id": "consequence",
+        "label": "4. The consequence if it goes wrong"
+      }
+    ],
+    "model": [
+      {
+        "label": "Travels",
+        "text": "values, units, reference intervals, flags, comments, patient identity, requesting doctor."
+      },
+      {
+        "label": "Check",
+        "text": "right patient, right doctor, report complete, any urgent flag noticed."
+      },
+      {
+        "label": "Risk examples",
+        "text": "sent to a doctor no longer caring for the patient (loss); urgent result not seen for hours (delay); comment dropped so the result is misread (error)."
+      },
+      {
+        "label": "Consequence",
+        "text": "a reliable result fails to support the right decision at the right time."
+      }
+    ]
+  },
+  "W01_Q_reading_note": {
+    "type": "reflection",
+    "title": "Your note (not marked)",
+    "maxLength": 250,
+    "prompt": "In two or three sentences: what does the NEHR hold, what does it not hold, and who manages it?"
+  },
+  "W01_Q_match": {
+    "type": "classify",
+    "title": "Match each organisation or service to its role",
+    "shuffleCategories": true,
+    "prompt": "Choose the role that fits each organisation or service.",
+    "categories": [
+      "Sets health policy and regulates healthcare services",
+      "National HealthTech agency that builds and runs national health IT systems",
+      "Public healthcare clusters delivering care",
+      "National repository of selected key health information",
+      "Patient-facing app for records, appointments and payments",
+      "Institutional system used to deliver care within that organisation"
+    ],
+    "items": [
+      {
+        "id": "m1",
+        "text": "MOH",
+        "answer": "Sets health policy and regulates healthcare services",
+        "feedback": "Synapxe does not regulate; it builds and runs systems."
+      },
+      {
+        "id": "m2",
+        "text": "Synapxe",
+        "answer": "National HealthTech agency that builds and runs national health IT systems",
+        "feedback": "Not a hospital or regulator."
+      },
+      {
+        "id": "m3",
+        "text": "NHG Health, NUHS, SingHealth",
+        "answer": "Public healthcare clusters delivering care",
+        "feedback": "Clusters are care providers, not IT agencies."
+      },
+      {
+        "id": "m4",
+        "text": "NEHR",
+        "answer": "National repository of selected key health information",
+        "feedback": "It does not hold every record or doctors' detailed notes."
+      },
+      {
+        "id": "m5",
+        "text": "HealthHub",
+        "answer": "Patient-facing app for records, appointments and payments",
+        "feedback": "It is not the NEHR, although some records shown come from it."
+      },
+      {
+        "id": "m6",
+        "text": "A hospital's own record system",
+        "answer": "Institutional system used to deliver care within that organisation",
+        "feedback": "Distinct from national shared records."
+      }
+    ]
+  },
+  "W01_Q_cia": {
+    "type": "classify",
+    "title": "Choose the property most at risk",
+    "prompt": "For each scenario, which property of patient information is most at risk?",
+    "categories": [
+      "Confidentiality",
+      "Integrity",
+      "Availability"
+    ],
+    "items": [
+      {
+        "id": "c1",
+        "text": "A printed laboratory report is left on a shared printer in a clinic corridor.",
+        "answer": "Confidentiality",
+        "feedback": "People with no role in the patient's care could read it."
+      },
+      {
+        "id": "c2",
+        "text": "A result is filed against the wrong patient's record.",
+        "answer": "Integrity",
+        "feedback": "The value may be correct, but it is attached to the wrong person."
+      },
+      {
+        "id": "c3",
+        "text": "The laboratory system is unavailable for two hours and results cannot be viewed.",
+        "answer": "Availability",
+        "feedback": "Correct results exist but cannot support decisions in time; Week 2 explores downtime."
+      }
+    ]
+  },
+  "W01_Q_ack": {
+    "type": "acknowledge",
+    "title": "Acknowledgement",
+    "label": "I have read the three module rules and will follow them."
+  },
+  "W01_Q_practical_question": {
+    "type": "reflection",
+    "title": "Bring one question",
+    "maxLength": 250,
+    "prompt": "Write one question you would like answered in the practical."
+  },
+  "W01_Q_quiz": {
+    "type": "quiz",
+    "title": "Week 01 formative quiz",
+    "maxAttempts": 2,
+    "intro": "8 questions · formative and ungraded · 2 attempts · feedback and correct answers after each attempt · answer options are shuffled. Complete it on your own, without AI tools.",
+    "items": [
+      {
+        "id": "q1",
+        "type": "single",
+        "shuffle": true,
+        "prompt": "Which statement best describes <strong>information</strong> in a laboratory setting?",
+        "options": [
+          {
+            "id": "A",
+            "text": "A recorded value, such as a number shown on an analyser screen"
+          },
+          {
+            "id": "B",
+            "text": "Data placed in context — whose result, which test, units and when — so it can be interpreted"
+          },
+          {
+            "id": "C",
+            "text": "A general rule, built from evidence and experience, that guides what to do"
+          },
+          {
+            "id": "D",
+            "text": "Any value that has been stored electronically in a hospital system"
+          }
+        ],
+        "answer": "B",
+        "explanation": "Information is data with enough context to be interpreted and used. \"5.8\" becomes information when it is linked to a patient, a test, units, a time and a reference interval.",
+        "rationale": {
+          "A": "This describes data: a value without context.",
+          "C": "This describes knowledge: a general rule that guides action.",
+          "D": "This confuses storage with meaning. A value can be stored electronically and still lack the context that makes it information."
+        },
+        "feedbackCorrect": "Right. Context is what turns data into information.",
+        "feedbackIncorrect": "Not quite. Ask: does this item have enough context — patient, test, units, time — to be interpreted? Review Part 2, \"Data, information and knowledge\"."
+      },
+      {
+        "id": "q2",
+        "type": "single",
+        "shuffle": true,
+        "prompt": "A laboratory procedure states: <em>\"Specimens without a collection time on the label must be rejected and recollected.\"</em> How is this statement best classified?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Data"
+          },
+          {
+            "id": "B",
+            "text": "Information"
+          },
+          {
+            "id": "C",
+            "text": "Knowledge"
+          }
+        ],
+        "answer": "C",
+        "explanation": "The statement is a general rule, based on understanding that a missing collection time prevents staff from judging whether a specimen is suitable. Staff apply it to decide what to do with any specimen. That makes it knowledge.",
+        "rationale": {
+          "A": "It is not a raw value or identifier.",
+          "B": "It contains no patient-specific facts in context. It would produce information (e.g. \"Specimen 26-0451 rejected: no collection time\") when applied to a specimen."
+        },
+        "feedbackCorrect": "Yes. It is a rule that guides action across all specimens.",
+        "feedbackIncorrect": "Look for patient-specific context. This statement applies to every specimen and tells staff what to do, so it is a rule. Review Part 2, \"Data, information and knowledge\" and \"Same item, different category?\"."
+      },
+      {
+        "id": "q3",
+        "type": "order",
+        "prompt": "Put these stages of Patient A's test in the correct order, from first to last.",
+        "items": [
+          {
+            "id": "rev",
+            "text": "Result reviewed before release"
+          },
+          {
+            "id": "ord",
+            "text": "Test ordered"
+          },
+          {
+            "id": "ana",
+            "text": "Specimen analysed"
+          },
+          {
+            "id": "doc",
+            "text": "Result received by the doctor"
+          },
+          {
+            "id": "col",
+            "text": "Patient identified and specimen collected"
+          },
+          {
+            "id": "reg",
+            "text": "Specimen received and registered in the laboratory"
+          }
+        ],
+        "correct": [
+          "ord",
+          "col",
+          "reg",
+          "ana",
+          "rev",
+          "doc"
+        ],
+        "explanation": "The order is: test ordered → patient identified and specimen collected → specimen received and registered → specimen analysed → result reviewed before release → result received by the doctor. Review comes before the result leaves the laboratory.",
+        "feedbackCorrect": "Correct. This sequence is the backbone of your practical map.",
+        "feedbackIncorrect": "Check two points: the laboratory registers a specimen only after it arrives, and results are reviewed before release. Review Part 3, \"From order to action\"."
+      },
+      {
+        "id": "q4",
+        "type": "single",
+        "shuffle": true,
+        "prompt": "A classmate says: <em>\"If Patient A can see a lab result in HealthHub, then every result Patient A has ever had must be stored in the NEHR.\"</em> Which response is most accurate?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Correct — HealthHub is the patient's view of the NEHR, which stores all healthcare records."
+          },
+          {
+            "id": "B",
+            "text": "Not correct — the NEHR holds selected key health information, and HealthHub is a separate patient-facing app that shows some records drawn from it."
+          },
+          {
+            "id": "C",
+            "text": "Not correct — lab results in HealthHub come only from private clinics, not the NEHR."
+          },
+          {
+            "id": "D",
+            "text": "Correct — every provider in Singapore has uploaded all past records to the NEHR since 2011."
+          }
+        ],
+        "answer": "B",
+        "explanation": "The NEHR is a national repository of selected key health information, not every record. HealthHub is a patient-facing app; its lab reports come from the NEHR, cover general lab tests from the past three years, and may not include every detail of the printed report.",
+        "rationale": {
+          "A": "This combines two misconceptions: HealthHub is not the NEHR, and the NEHR does not hold all records.",
+          "C": "HealthHub lab reports are drawn from the NEHR.",
+          "D": "Not all providers contribute yet, and contribution under the new national rules applies to records going forward."
+        },
+        "feedbackCorrect": "Right. Keep the distinction: the NEHR is a selective national record; HealthHub is a patient app.",
+        "feedbackIncorrect": "The NEHR holds selected key information, and HealthHub is a separate app. Review Part 4, \"Singapore's health information landscape\" and the NEHR reading."
+      },
+      {
+        "id": "q5",
+        "type": "single",
+        "shuffle": true,
+        "prompt": "Suppose the analyser's internal quality control for potassium was within limits all morning, and Patient A's potassium was measured on that analyser during the same period. What can you conclude?",
+        "options": [
+          {
+            "id": "A",
+            "text": "The result is reliable for Patient A's doctor."
+          },
+          {
+            "id": "B",
+            "text": "The analytical process was performing as expected, but the result could still be unreliable — for example, if the specimen was mislabelled or the report reached the wrong doctor."
+          },
+          {
+            "id": "C",
+            "text": "Quality control results tell us nothing about patient results."
+          },
+          {
+            "id": "D",
+            "text": "The result must be repeated, because quality control only applies to control samples."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Internal QC shows that the analytical process is performing within limits. It does not check whose specimen was tested, whether the specimen was suitable, or whether the result reaches the right person in time.",
+        "rationale": {
+          "A": "Analytical correctness is not the same as reliability for the patient.",
+          "C": "This over-corrects: QC is essential evidence about analytical performance.",
+          "D": "In-range QC does not require patient results to be repeated."
+        },
+        "feedbackCorrect": "Exactly. QC covers one link in the chain. Week 5 returns to the difference between QC and checking individual results.",
+        "feedbackIncorrect": "QC tells you the analytical step was working. Think about the steps before and after analysis. Review Part 3, the worked example."
+      },
+      {
+        "id": "q6",
+        "type": "single",
+        "shuffle": true,
+        "prompt": "Suppose four problems occurred during Patient A's test journey. Which would pose the <strong>greatest</strong> risk to patient safety, and why?",
+        "options": [
+          {
+            "id": "A",
+            "text": "The courier batches specimens and arrives 30 minutes later than usual — because any delay makes the result unusable."
+          },
+          {
+            "id": "B",
+            "text": "The tubes are labelled with another patient's details at collection — because a correct result would be silently attached to the wrong person, and later checks may not detect it."
+          },
+          {
+            "id": "C",
+            "text": "The clinic administrator can see that a report has arrived for Patient A — because this is a confidentiality breach."
+          },
+          {
+            "id": "D",
+            "text": "The laboratory number is printed in a small font on the receipt record — because staff might misread it."
+          }
+        ],
+        "answer": "B",
+        "explanation": "Wrong-patient labelling is a silent error at an early hand-off. Every later step can be performed correctly, yet the result belongs to someone else, and decisions for two patients may be affected.",
+        "rationale": {
+          "A": "Delay is a real risk (and can affect some tests — Week 3), but it is usually visible and recoverable; \"any delay makes the result unusable\" is an overstatement.",
+          "C": "Knowing that a report exists, in order to route it, is part of the administrator's role and is not a breach of the result values.",
+          "D": "A usability concern with lower likelihood and consequence than misidentification."
+        },
+        "feedbackCorrect": "Well reasoned. You weighed how likely a failure is to be detected and how serious its consequence would be.",
+        "feedbackIncorrect": "Compare how easily each problem would be noticed and what would happen if it were not. Review Part 3, the worked example and the three risk types."
+      },
+      {
+        "id": "q7",
+        "type": "single",
+        "shuffle": true,
+        "prompt": "Which example best shows medical informatics supporting <strong>laboratory operations</strong>?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Repairing a faulty centrifuge in the specimen-processing area"
+          },
+          {
+            "id": "B",
+            "text": "Linking each specimen to its request with a unique laboratory number, so results return to the right patient and doctor"
+          },
+          {
+            "id": "C",
+            "text": "Deciding which medicine to prescribe after the result is reported"
+          },
+          {
+            "id": "D",
+            "text": "Installing software updates on staff laptops"
+          }
+        ],
+        "answer": "B",
+        "explanation": "Medical informatics concerns how data and information are captured, linked, checked and delivered. A unique laboratory number linking specimen, request, patient and doctor is a core informatics control.",
+        "rationale": {
+          "A": "This is equipment maintenance, not information management.",
+          "C": "This is a clinical decision made by the doctor; informatics may support it, but making it is outside the BMS role.",
+          "D": "This is general IT support — a common misconception about what informatics means."
+        },
+        "feedbackCorrect": "Yes. Informatics keeps information linked and reliable as it moves.",
+        "feedbackIncorrect": "Look for the option about managing information, not equipment, IT maintenance or clinical decisions. Review Part 2, \"What medical informatics is\"."
+      },
+      {
+        "id": "q8",
+        "type": "single",
+        "shuffle": true,
+        "prompt": "Suppose the laboratory released Patient A's correct result, but it was sent only to a doctor who had left the clinic the week before, and no one else was notified. Which risk type does this <strong>best</strong> represent?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Error — the information is wrong"
+          },
+          {
+            "id": "B",
+            "text": "Delay — the right information arrives too late"
+          },
+          {
+            "id": "C",
+            "text": "Loss — the information does not reach anyone who can act on it"
+          },
+          {
+            "id": "D",
+            "text": "No risk — the laboratory released a correct result"
+          }
+        ],
+        "answer": "C",
+        "explanation": "The result is correct and released, but it goes only to someone no longer responsible, and no one else is told. Unless someone notices, it will never be acted on: that is loss.",
+        "rationale": {
+          "A": "The values are correct; nothing in the information itself is wrong.",
+          "B": "Delay applies if the result is eventually seen late. Here nothing would bring it to anyone's attention, so loss fits better.",
+          "D": "Release is not the end of the journey. A correct result that no one acts on does not support care."
+        },
+        "feedbackCorrect": "Right. A correct result can still be lost at the final hand-off.",
+        "feedbackIncorrect": "Ask: is the information wrong, late, or not received at all? Review Part 3, \"Three types of information risk\"."
+      }
+    ]
+  }
+}

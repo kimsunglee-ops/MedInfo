@@ -1,0 +1,7 @@
+Welcome to Medical Informatics. Over the next ten weeks we will look at how healthcare data are created, checked, shared and used — and you will see that laboratories sit right at the centre of that story.
+
+This week we start with something you already know well: a blood test. You have handled specimens and run analysers in your laboratory modules. What we are adding now is the information that travels with the specimen and with the result.
+
+Here is the question I want you to keep in mind: when an analyser produces a number, why is that not yet a reliable result in the doctor's hands? By the end of the lesson you should be able to answer it from several angles.
+
+Everything in this module is fictional — the patients, the hospital and the results — so we can examine problems openly without touching anyone's real data.

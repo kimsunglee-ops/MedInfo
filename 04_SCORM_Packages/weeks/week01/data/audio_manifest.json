@@ -1,0 +1,110 @@
+{
+  "W01_S01": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S01.mp3",
+    "transcript": "transcripts/week01/W01_S01.txt",
+    "status": "missing"
+  },
+  "W01_S02": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S02.mp3",
+    "transcript": "transcripts/week01/W01_S02.txt",
+    "status": "missing"
+  },
+  "W01_S03": {
+    "narration_enabled": false
+  },
+  "W01_S04": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S04.mp3",
+    "transcript": "transcripts/week01/W01_S04.txt",
+    "status": "missing"
+  },
+  "W01_S05": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S05.mp3",
+    "transcript": "transcripts/week01/W01_S05.txt",
+    "status": "missing"
+  },
+  "W01_S06": {
+    "narration_enabled": false
+  },
+  "W01_S07": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S07.mp3",
+    "transcript": "transcripts/week01/W01_S07.txt",
+    "status": "missing"
+  },
+  "W01_S08": {
+    "narration_enabled": false
+  },
+  "W01_S09": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S09.mp3",
+    "transcript": "transcripts/week01/W01_S09.txt",
+    "status": "missing"
+  },
+  "W01_S10": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S10.mp3",
+    "transcript": "transcripts/week01/W01_S10.txt",
+    "status": "missing"
+  },
+  "W01_S11": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S11.mp3",
+    "transcript": "transcripts/week01/W01_S11.txt",
+    "status": "missing"
+  },
+  "W01_S12": {
+    "narration_enabled": false
+  },
+  "W01_S13": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S13.mp3",
+    "transcript": "transcripts/week01/W01_S13.txt",
+    "status": "missing"
+  },
+  "W01_S14": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S14.mp3",
+    "transcript": "transcripts/week01/W01_S14.txt",
+    "status": "missing"
+  },
+  "W01_S15": {
+    "narration_enabled": false
+  },
+  "W01_S16": {
+    "narration_enabled": false
+  },
+  "W01_S17": {
+    "narration_enabled": false
+  },
+  "W01_S18": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S18.mp3",
+    "transcript": "transcripts/week01/W01_S18.txt",
+    "status": "missing"
+  },
+  "W01_S19": {
+    "narration_enabled": false
+  },
+  "W01_S20": {
+    "narration_enabled": true,
+    "audio": "audio/week01/W01_S20.mp3",
+    "transcript": "transcripts/week01/W01_S20.txt",
+    "status": "missing"
+  },
+  "W01_S21": {
+    "narration_enabled": false
+  },
+  "W01_S22": {
+    "narration_enabled": false
+  },
+  "W01_S23": {
+    "narration_enabled": false
+  },
+  "W01_S24": {
+    "narration_enabled": false
+  }
+}

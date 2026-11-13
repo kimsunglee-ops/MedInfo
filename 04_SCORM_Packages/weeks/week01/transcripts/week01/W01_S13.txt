@@ -1,0 +1,9 @@
+We'll use three words for information risk throughout the module: error, delay and loss.
+
+An error means the information is wrong — for example, a correct value filed against the wrong patient.
+
+A delay means the right information arrives, but too late to support the decision it was needed for.
+
+A loss means the information is missing, or never reaches anyone who can act on it.
+
+In the practical you'll mark these on your map with three symbols: a triangle for error, a clock for delay and a broken circle for loss. They differ by shape, so they work even without colour.

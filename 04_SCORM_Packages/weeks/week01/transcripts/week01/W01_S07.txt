@@ -1,0 +1,7 @@
+Here's the idea I'd like you to take away from this part.
+
+The same item can sit in different categories depending on its context. "5.8" on its own is data. Link it to a patient, a test, a unit and a time, and it becomes information.
+
+The reverse is just as important, and it's where real problems happen. If a unit is dropped when a result moves between systems, or a comment is lost, or a result becomes separated from its patient, information turns back into data — and someone may still act on it as if it were reliable.
+
+We'll return to this in Weeks 3 and 4, when we look at data quality and at what happens to results as they travel between systems. For now, use the reflection box to note which example you found hardest to classify, and what extra context would have settled it.

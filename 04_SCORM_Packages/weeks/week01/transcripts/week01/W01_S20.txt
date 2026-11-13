@@ -1,0 +1,9 @@
+Before we go further, here are three rules for this module.
+
+First, never enter identifiable patient information into external AI tools. Once it's typed in, you can't take it back.
+
+Second, in this module we use fictional data and approved tools only. Every patient you meet here, including Patient A, is invented.
+
+Third, never access the National Electronic Health Record, or any real patient record, for coursework — and that includes when you're on placement. The NEHR is there for patient care and approved purposes; teaching and coursework aren't among them.
+
+Please tick the box to confirm you've read these rules. It's part of completing this lesson.

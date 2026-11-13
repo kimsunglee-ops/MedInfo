@@ -1,0 +1,9 @@
+Now let's walk through the journey of a laboratory test, from the order to the action.
+
+It starts when the doctor orders the test. That order carries the patient's identity, the tests requested, clinical details and how urgent it is. Next, the patient is identified and the specimen collected — labelled tubes, a collection time, and a record of who collected it. The specimen is then transported to the laboratory, where it is received and registered: staff check that the label matches the request and that the specimen is suitable, record the time it arrived, and assign a laboratory number.
+
+Inside the laboratory the specimen is prepared and analysed. Then — and this matters — the result is reviewed before it is released, using reference intervals and any previous results. Only then is it reported. The doctor, or a covering doctor, receives it, and finally acts on it and communicates with the patient.
+
+At every one of those stages, someone creates, checks or uses information. Notice too that I've named systems only by what they're for — "where the order is placed", "the system that manages laboratory work". Week 2 looks at what those systems actually do.
+
+Now go back to your prediction from the start of the lesson. Count the people and roles on this journey. How close were you?

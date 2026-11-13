@@ -1,0 +1,13 @@
+Let's work through one hand-off in detail: the specimen leaving the clinic and arriving in the laboratory.
+
+First, what is created at collection? Labelled tubes, the time of collection, and the identity of the person who collected the blood.
+
+Second, what travels? The specimens, together with the request.
+
+Third, what does the laboratory check on arrival? That the label matches the request, that the specimen is suitable for the tests asked for, and the time it was received.
+
+Fourth, what can go wrong? A wrong label is an error. A late arrival is a delay. A missing collection time is a loss — the information simply isn't there when someone needs it.
+
+And fifth, the consequence. If the specimen is from the wrong patient, or unsuitable, the analyser can do its job perfectly and still produce a result that should not be trusted.
+
+That's the heart of this week's question. Reliability doesn't come from the analyser alone; it depends on every step before and after it. On the next screen, you'll try the same reasoning on a different hand-off.
