@@ -7,7 +7,8 @@
 **Applies to:** Lessons 01–10  
 **Technical standard:** SCORM 1.2  
 **Primary LMS:** Brightspace  
-**Architecture status:** Governed by `SCORM_Architecture_FROZEN.md`
+**Architecture status:** Governed by `SCORM_Architecture_FROZEN.md`  
+**Revision note (13 Nov 2026, curriculum owner):** (1) header titles follow §50; canonical examples revised. (2) No earlier validated packages exist: Week 01 is the gold-standard build (§41), and `SCORM_Architecture_FROZEN.md` is created from it and frozen on Week 01 approval.
 
 ---
 
@@ -1254,30 +1255,34 @@ Where:
 
 ### 2. Canonical Examples
 
+*Revised 13 Nov 2026 (curriculum owner decision): examples now use the §50 lesson titles. The earlier examples used superseded 12-week titles.*
+
 Week 01:
 
 > Medical Informatics
-> Week 01 · Introduction to Medical Informatics: From Patient to Data
+> Week 01 · Introduction to Medical Informatics and the Healthcare Information Ecosystem
 
 Week 02:
 
 > Medical Informatics
-> Week 02 · Healthcare Data Quality, Meaning and Clinical Context
+> Week 02 · Healthcare Information Systems and Clinical Workflows
 
 Week 03:
 
 > Medical Informatics
-> Week 03 · [Approved Week 3 Title]
+> Week 03 · Laboratory Data: Generation, Quality, Meaning and Context
 
 Week 04:
 
 > Medical Informatics
-> Week 04 · Healthcare Interoperability
+> Week 04 · Laboratory Information Management, Interoperability and Healthcare Data Exchange
 
 Week 05:
 
 > Medical Informatics
-> Week 05 · Healthcare Data Analytics and Visualisation
+> Week 05 · Laboratory Result Validation and Reporting Safety
+
+All weeks: use the §50 table.
 
 ### 3. Frozen Visual Component
 
