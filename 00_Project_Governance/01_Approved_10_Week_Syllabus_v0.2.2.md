@@ -7,7 +7,7 @@
 **Proposed duration:** 10 weeks
 **Proposed weekly learning hours:** 2 hours online asynchronous learning (OAL) + 2 hours practical/applied learning
 **Document status:** Working draft — not yet approved
-**Version:** 0.2.4 (12 November 2026)
+**Version:** 0.2.5 (13 November 2026)
  
 ---
  
@@ -23,6 +23,7 @@
 | 0.2.2 | 1 Nov 2026 | Summative structure Option A recorded; Week 10 hosts C3; §8 items 2 and 4 updated | Curriculum owner, 1 Nov 2026 |
 | 0.2.3 | 12 Nov 2026 | Weeks 7 and 9 case wording "after discharge" → "following the clinic review"; alignment matrix G3 (Week 6) and G4 (Week 9) applied; Week 10 setting decided (community INR POCT network); PAIR added to §6.4; blueprint reference `30_` → `03_Assessment_Blueprint_v0.1.md`. OAL key concepts for Weeks 6, 8 and 9 grouped into five (topics unchanged; see `05_Weekly_Learning_Architecture_W2-W10_v0.1.md`) | Curriculum owner, 12 Nov 2026 |
 | 0.2.4 | 12 Nov 2026 | Alignment matrix G2 applied (WLO 3.1 adds "lifecycle stage"); G5 applied (WLOs 9.1 and 9.2 merged; Week 9 now has three WLOs); Patient A case values approved and recorded in `06_Case_State_Register_v0.1.md`; §8 item 15 closed | Curriculum owner, 12 Nov 2026 |
+| 0.2.5 | 13 Nov 2026 | Week 9 practical scenario corrected (architecture decision D15, per MOH HIA FAQ v1.2, 27 Aug 2026): the generating hospital laboratory, not the community clinic, contributes laboratory reports to NEHR; the clinic contributes its own specified information. Topics, WLOs and MLO mapping unchanged | Curriculum owner, 13 Nov 2026 |
  
 ## 0.2 Changes applied in v0.2
  
@@ -693,7 +694,7 @@ Established: Weeks 1–7. New: an information incident involving Patient A's rec
  
 **Activity: Evaluate the implementation of an information improvement**
  
-A fictional community provider caring for Patient A following the clinic review must begin contributing laboratory results to NEHR when the Health Information Act takes effect, and proposes a new result-sharing workflow with the hospital laboratory.
+Following the clinic review, a fictional community GP clinic takes over Patient A's follow-up. When the Health Information Act takes effect, the hospital laboratory that generates Patient A's results contributes its laboratory reports to NEHR, and the clinic contributes its own specified key health information. The clinic proposes a new electronic result-sharing workflow with the hospital laboratory. *(v0.2.5: D15)*
  
 Students evaluate:
 - The problem and intended users.
