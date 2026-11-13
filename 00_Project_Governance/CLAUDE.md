@@ -102,7 +102,7 @@ Design documents elsewhere:
 | `02_Learning_Design/05_Weekly_Learning_Architecture_W2-W10_v0.1.md` | Stage A designs W2–W10 (v0.3.3): weekly template, PAIR map, central questions, big ideas, OAL/practical outlines, open decisions D8–D15 |
 | `03_Development/Week_01/W01_Stage_A_Instructional_Design_v0.1.md` | Week 1 Stage A design (reference week) |
 | `03_Development/Week_01/W01_Stage_B_OAL_Storyboard_v0.1.md` | W1 OAL storyboard **v0.1.1** — approved gate B; D10 applied |
-| `03_Development/Week_01/W01_Stage_B_Practical_Package_v0.1.md` | W1 practical package v0.1 — draft, gate B |
+| `03_Development/Week_01/W01_Stage_B_Practical_Package_v0.1.md` | W1 practical package v0.1 — **approved gate B** (13 Nov 2026) |
 | `03_Development/Week_01/W01_Stage_C_Formative_Quiz_v0.1.md` | W1 formative quiz **v0.1.1** — draft, gate C; I11 applied |
 
 Folder alias used inside these documents (filename references standardised under D9, 13 Nov 2026):

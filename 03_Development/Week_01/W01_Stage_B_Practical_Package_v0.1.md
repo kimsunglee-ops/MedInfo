@@ -3,7 +3,7 @@
 **Practical title:** Map the journey of a laboratory test (Part 1 of a two-week artefact)
 **Module:** Medical Informatics (Year 3 BMS, Ngee Ann Polytechnic)
 **Version:** 0.1 (1 November 2026)
-**Status:** Draft for approval at design gate B
+**Status:** **Approved at design gate B** (curriculum owner, 13 Nov 2026). Paper A3 templates confirmed as the delivery default (§14). Case content checked against `06_Case_State_Register_v0.1.md` §2 (W1 facts): consistent
 **Baseline:** `W01_Stage_A_Instructional_Design_v0.1.md` (approved); T&L Design v0.1.1 §2.2
 **Delivery:** face-to-face classroom; ≤ 25 students; groups of 3–4 (6–7 groups); paper A3 templates (default — see §14)
  
